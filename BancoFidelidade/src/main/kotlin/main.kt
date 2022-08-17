@@ -1,31 +1,23 @@
-fun main (){
-    print("Bem-vindo ao Banco Fidelidade")
-    val titular = "Alex"
-    val numeroConta = 1000
+fun main() {
+    val contaAlex = Conta()
+    contaAlex.titular = "Alex"
+    println(contaAlex.titular)
+
+    val contaFran = Conta()
+    contaFran.titular = "Fran"
+    println(contaFran.titular)
+
+    contaAlex.saldo = -100.0
+    contaFran.saldo = 1000.0
+
+    contaAlex.numeroConta = 1000
+    contaFran.numeroConta = 1001
+
+}
+
+class Conta {
+    var titular: String = ""
+    var numeroConta = 0
     var saldo = 0.0
-
-    println("Titular $titular")
-    println("Numero da Conta $numeroConta")
-    println("Saldo da conta $saldo")
-
-    saldo = somaSaldo(saldo)
-    testaCondicao(saldo)
-
 }
 
-private fun somaSaldo(saldo: Double): Double {
-    var saldo1 = saldo
-    for (i in 1..50) {
-        saldo1 += 10 + i
-        println(saldo1)
-    }
-    return saldo1
-}
-
-private fun testaCondicao(saldo: Double) {
-    when {
-        saldo > 0.0 -> println("Tem grana")
-        saldo == 0.0 -> println("Conta ta zerada")
-        else -> println("Ta no vermelho")
-    }
-}
