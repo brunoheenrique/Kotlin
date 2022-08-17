@@ -27,11 +27,11 @@ fun main() {
     println("Saldo do Alex ${contaAlex.saldo}")
     println("Saldo da Fran ${contaFran.saldo}")
 
-    contaAlex.sacar(300.40)
-    contaFran.sacar(300.00)
+    contaAlex.transferencia(50.0, contaFran)
 
     println("Saldo do Alex ${contaAlex.saldo}")
     println("Saldo da Fran ${contaFran.saldo}")
+
 
 }
 
@@ -51,13 +51,17 @@ class Conta {
         }
     }
 
-    fun transferencia(valor: Double, contaDestino: Conta) {
-        when {
+    fun transferencia(valor: Double, contaDestino: Conta): Boolean {
+        return when {
             this.saldo > valor -> {
-                this.saldo-=valor
-                contaDestino.saldo+=valor}
+                this.saldo -= valor
+                contaDestino.saldo += valor
+                true
+            }
+
             else -> {
                 println("Valor solicitado maior do que saldo em conta. Operação cancelada")
+                false
             }
         }
     }
