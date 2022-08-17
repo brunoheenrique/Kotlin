@@ -40,13 +40,26 @@ class Conta {
     var numeroConta = 0
     var saldo = 0.0
 
-    fun depositar(valor:Double){
-        this.saldo+=valor
+    fun depositar(valor: Double) {
+        this.saldo += valor
     }
 
-    fun sacar(valor: Double){
-        when {this.saldo > valor -> this.saldo-=valor
-        else -> println("Valor solicitado maior do que saldo em conta. Operação cancelada")}
+    fun sacar(valor: Double) {
+        when {
+            this.saldo > valor -> this.saldo -= valor
+            else -> println("Valor solicitado maior do que saldo em conta. Operação cancelada")
+        }
+    }
+
+    fun transferencia(valor: Double, contaDestino: Conta) {
+        when {
+            this.saldo > valor -> {
+                this.saldo-=valor
+                contaDestino.saldo+=valor}
+            else -> {
+                println("Valor solicitado maior do que saldo em conta. Operação cancelada")
+            }
+        }
     }
 }
 
