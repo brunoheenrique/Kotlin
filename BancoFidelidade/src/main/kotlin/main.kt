@@ -1,71 +1,33 @@
 fun main() {
-    val contaAlex = Conta()
-    contaAlex.setTitular("Alex")
-    println(contaAlex.getTitular())
+    val contaAlex = Conta("Alex", 1000)
+    val contaFran = Conta("Fran", 1001)
 
-    val contaFran = Conta()
-    contaFran.setTitular("Fran")
-    println(contaFran.getTitular())
-
-    contaAlex.setSaldo(100.0)
-    contaFran.setSaldo(1000.0)
-
-    println(contaAlex.getNumeroConta())
-    println(contaFran.getNumeroConta())
-
-    contaAlex.setNumeroConta(1000)
-    contaFran.setNumeroConta(1001)
+    contaAlex.depositar(100.0)
+    contaFran.depositar(1000.0)
 
     println("Despositando grana")
 
     contaAlex.depositar(4022.0)
     contaFran.depositar(32.30)
 
-    println("Saldo do Alex ${contaAlex.getSaldo()}")
-    println("Saldo da Fran ${contaFran.getSaldo()}")
+    println("Saldo do Alex ${contaAlex.saldo}")
+    println("Saldo da Fran ${contaFran.saldo}")
 
     contaAlex.sacar(400.0)
     contaFran.sacar(1000.0)
 
-    println("Saldo do Alex ${contaAlex.getSaldo()}")
-    println("Saldo da Fran ${contaFran.getSaldo()}")
+    println("Saldo do Alex ${contaAlex.saldo}")
+    println("Saldo da Fran ${contaFran.saldo}")
 
     contaAlex.transferencia(50.0, contaFran)
 
-    println("Saldo do Alex ${contaAlex.getSaldo()}")
-    println("Saldo da Fran ${contaFran.getSaldo()}")
+    println("Saldo do Alex ${contaAlex.saldo}")
+    println("Saldo da Fran ${contaFran.saldo}")
 }
 
-class Conta {
-    private var titular: String = ""
-    private var numeroConta = 0
-    private var saldo = 0.0
-
-    fun getSaldo(): Double {
-        return this.saldo
-    }
-
-    fun getNumeroConta(): Int {
-        return this.numeroConta
-    }
-
-    fun getTitular(): String {
-        return this.titular
-    }
-
-    fun setSaldo(valor: Double) {
-        if (valor > 0) {
-            this.saldo += valor
-        }
-    }
-
-    fun setNumeroConta(valor:Int){
-        this.numeroConta = valor
-    }
-
-    fun setTitular(nome:String){
-        this.titular = nome
-    }
+class Conta(private var titular: String, private var numeroConta: Int) {
+    var saldo = 0.0
+        private set
 
     fun depositar(valor: Double) {
         this.saldo += valor
