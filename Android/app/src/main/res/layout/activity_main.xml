@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView android:id="@+id/main_cesta_de_frutas_textview"
+    <TextView android:id="@+id/main_titulo_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#757575"
+        android:layout_margin="16dp"
+        android:text="@string/string_cesta_de_frutas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView android:id="@+id/main_descricao_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/string_frutas"
+        android:textColor="#757575"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/main_titulo_textview"
+        app:layout_constraintStart_toStartOf="@id/main_titulo_textview"/>
+
+    <TextView
+        android:id="@+id/main_preco_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/string_preco"
+        android:textColor="#757575"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toStartOf="@id/main_descricao_textview"
+        app:layout_constraintTop_toBottomOf="@id/main_descricao_textview"
+        tools:ignore="TextContrastCheck" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
