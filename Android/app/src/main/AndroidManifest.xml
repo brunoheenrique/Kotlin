@@ -13,14 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Orgs"
         tools:targetApi="31">
-        <activity android:name=".view.MainActivity"
+        <activity
+            android:name=".view.activity.FormularioProdutoActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+    </application>
 
 </manifest>

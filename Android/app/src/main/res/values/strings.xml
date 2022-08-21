@@ -3,4 +3,7 @@
     <string name="string_cesta_de_frutas">Cesta de Frutas</string>
     <string name="string_frutas">Laranja, manga e uva</string>
     <string name="string_preco">19,99</string>
+    <string name="string_nome_hint">Nome</string>
+    <string name="string_desc_hint">Descrição</string>
+    <string name="string_valor_hint">Preço</string>
 </resources>
