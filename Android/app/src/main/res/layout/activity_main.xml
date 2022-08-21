@@ -24,7 +24,7 @@
         android:layout_margin="16dp"
         android:backgroundTint="@color/purple_700"
         android:clickable="true"
-        android:contentDescription="@string/string_botao_salvar"
+        android:contentDescription="@string/string_content_buttons"
         android:focusable="true"
         app:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
