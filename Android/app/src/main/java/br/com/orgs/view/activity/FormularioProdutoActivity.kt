@@ -5,6 +5,7 @@ import android.os.PersistableBundle
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import br.com.orgs.R
+import br.com.orgs.controller.dao.ProdutosDao
 import br.com.orgs.model.Produto
 import java.math.BigDecimal
 
@@ -28,11 +29,15 @@ class FormularioProdutoActivity : AppCompatActivity(R.layout.activity_formulario
                 BigDecimal(valorEmTexto)
             }
 
-            Produto(
+            val produtoNovo = Produto(
                 nome,
                 descricao,
                 valor
             )
+
+            val dao = ProdutosDao()
+            dao.adiciona(produtoNovo)
+
         }
     }
 
