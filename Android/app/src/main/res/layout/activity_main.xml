@@ -17,5 +17,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_botao_add_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/purple_700"
+        android:clickable="true"
+        android:contentDescription="@string/string_botao_salvar"
+        android:focusable="true"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_action_add"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
