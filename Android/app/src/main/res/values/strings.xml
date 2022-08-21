@@ -6,4 +6,5 @@
     <string name="string_nome_hint">Nome</string>
     <string name="string_desc_hint">Descrição</string>
     <string name="string_valor_hint">Preço</string>
+    <string name="string_botao_salvar">SALVAR</string>
 </resources>

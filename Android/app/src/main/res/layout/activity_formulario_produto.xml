@@ -1,48 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.activity.FormularioProdutoActivity">
+    android:fillViewport="true">
 
-    <EditText android:id="@+id/formulario_campo_nome"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/formulario_campo_descricao"
-        android:hint="@string/string_nome_hint"
-        android:layout_margin="8dp"
-        android:autofillHints=""
-        android:inputType="text"
-        tools:ignore="LabelFor" />
+        tools:context=".view.activity.FormularioProdutoActivity">
 
-    <EditText android:id="@+id/formulario_campo_descricao"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/formulario_campo_nome"
-        app:layout_constraintBottom_toTopOf="@id/formulario_campo_valor"
-        android:hint="@string/string_desc_hint"
-        android:layout_margin="8dp"
-        android:autofillHints=""
-        android:inputType="text"
-        tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/formulario_campo_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:hint="@string/string_nome_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@id/formulario_campo_descricao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor,TextContrastCheck" />
 
-    <EditText android:id="@+id/formulario_campo_valor"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/formulario_campo_descricao"
-        android:hint="@string/string_valor_hint"
-        android:layout_margin="8dp"
-        android:autofillHints=""
-        android:inputType="number"
-        tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/formulario_campo_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints=""
+            android:hint="@string/string_desc_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@id/formulario_campo_valor"
+            app:layout_constraintEnd_toEndOf="@id/formulario_campo_nome"
+            app:layout_constraintStart_toStartOf="@id/formulario_campo_nome"
+            app:layout_constraintTop_toBottomOf="@id/formulario_campo_nome"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/formulario_campo_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints=""
+            android:hint="@string/string_valor_hint"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@id/formulario_campo_descricao"
+            app:layout_constraintStart_toStartOf="@id/formulario_campo_descricao"
+            app:layout_constraintTop_toBottomOf="@id/formulario_campo_descricao"
+            tools:ignore="LabelFor" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/formulario_botao_salvar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/purple_700"
+            android:text="@string/string_botao_salvar"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/formulario_campo_valor"
+            app:layout_constraintVertical_bias="1"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
