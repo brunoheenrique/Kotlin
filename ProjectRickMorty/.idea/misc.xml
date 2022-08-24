@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/botao_arredondado.xml" value="0.1505" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/botao_personagens_arredondado.xml" value="0.1595" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/layout/activity_main_menu.xml" value="0.22" />
