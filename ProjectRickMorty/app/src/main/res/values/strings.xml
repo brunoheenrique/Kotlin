@@ -2,4 +2,6 @@
     <string name="app_name">Project Rick &amp; Morty</string>
     <string name="content_description_images">""</string>
     <string name="string_personagens">PERSONAGENS</string>
+    <string name="string_episodios">EPISÓDIOS</string>
+    <string name="string_locais">LOCAIS</string>
 </resources>
