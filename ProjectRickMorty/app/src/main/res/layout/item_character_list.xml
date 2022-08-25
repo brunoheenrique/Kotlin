@@ -64,7 +64,7 @@
                 app:layout_constraintTop_toBottomOf="@id/item_character_name"
                 tools:ignore="TextContrastCheck"
                 android:text="@string/string_genero"
-                tools:textColor="@color/azul_claro_rick" />
+                android:textColor="@color/azul_claro_rick" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
