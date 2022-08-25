@@ -18,7 +18,12 @@ class CharacterListActivity : AppCompatActivity() {
             Characters("Morty Smith", "Human", "Male"),
             Characters("Jerry Smith","Human", "Male"),
             Characters("Betty Smith","Human", "Female"),
-            Characters("Summer Smith", "Human", "Female")
+            Characters("Summer Smith", "Human", "Female"),
+            Characters("Pessoa Pássaro", "BirdPerson", "Male"),
+            Characters("Squanchy","Squanchy","Male"),
+            Characters("Senhor Bunda Cagada", "???", "Male"),
+            Characters("Agablog","???","???"),
+            Characters("Senhor Resplendor","MermaidMan","Male")
         ))
 
     }
