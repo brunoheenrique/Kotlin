@@ -17,8 +17,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintVertical_bias="0.06"
         android:clipToOutline="true"
         app:srcCompat="@mipmap/ic_background_menu"
-        tools:targetApi="s" />
+        tools:targetApi="s"/>
+
+    <TextView
+        android:id="@+id/character_info_label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/string_label_nome"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/character_info_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/character_info_imageview" />
+
+    <TextView
+        android:id="@+id/character_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/character_info_label_name"
+        app:layout_constraintTop_toTopOf="@id/character_info_label_name"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        tools:text = "@string/string_teste_nome"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
