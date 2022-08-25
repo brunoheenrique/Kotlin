@@ -16,5 +16,17 @@ class MainMenuActivity : AppCompatActivity() {
             val intent = Intent(this, CharacterListActivity::class.java)
             startActivity(intent)
         }
+
+        val episodesButton = findViewById<Button>(R.id.menu_botao_episodios)
+        episodesButton.setOnClickListener{
+            val intent = Intent(this, CharacterListActivity::class.java)
+            startActivity(intent)
+        }
+
+        val placesButton = findViewById<Button>(R.id.menu_botao_locais)
+        placesButton.setOnClickListener{
+            val intent = Intent(this, CharacterListActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
