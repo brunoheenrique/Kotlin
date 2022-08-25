@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.projectrickmorty.R
 import br.com.projectrickmorty.model.Characters
-import org.w3c.dom.Text
 
 class CharacterListAdapter(
     private val context: Context,
