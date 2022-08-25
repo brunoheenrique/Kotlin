@@ -22,7 +22,8 @@ class CharacterListAdapter(
             name.text = character.name
             val specie = itemView.findViewById<TextView>(R.id.item_character_specie)
             specie.text = character.specie
-
+            val gender = itemView.findViewById<TextView>(R.id.item_character_gender)
+            gender.text = character.gender
         }
     }
 
