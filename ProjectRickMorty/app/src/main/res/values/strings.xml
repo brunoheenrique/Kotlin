@@ -5,4 +5,6 @@
     <string name="string_episodios">EPISÓDIOS</string>
     <string name="string_locais">LOCAIS</string>
     <string name="string_teste_nome">Rick Sanchez</string>
+    <string name="string_genero">Male</string>
+    <string name="string_specie">Human</string>
 </resources>

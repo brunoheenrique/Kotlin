@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/item_character_list_cardview"
@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" >
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -26,29 +26,45 @@
                 android:id="@+id/item_character_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="@string/string_teste_nome"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="2dp"
                 android:textColor="@color/black"
                 android:textSize="40sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/string_teste_nome"
+                />
 
             <TextView
                 android:id="@+id/item_character_specie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text = "Human"
                 android:layout_marginStart="8dp"
-                android:textSize="20sp"
                 android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="@id/item_character_name"
+                app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toStartOf="@id/item_character_name"
                 app:layout_constraintTop_toBottomOf="@id/item_character_name"
-                app:layout_constraintEnd_toEndOf="@id/item_character_name"
-                app:layout_constraintHorizontal_bias="0"/>
+                android:text="@string/string_specie" />
+
+            <TextView
+                android:id="@+id/item_character_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/item_character_specie"
+                app:layout_constraintTop_toBottomOf="@id/item_character_name"
+                tools:ignore="TextContrastCheck"
+                android:text="@string/string_genero"
+                tools:textColor="@color/azul_claro_rick" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
