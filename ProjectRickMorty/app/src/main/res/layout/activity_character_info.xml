@@ -137,10 +137,11 @@
 
     <TextView
         android:id="@+id/character_info_label_local"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
+        android:textAlignment="center"
         android:text="@string/string_local_label"
         android:textColor="@color/azul_mais_claro_metal"
         android:textSize="22sp"
