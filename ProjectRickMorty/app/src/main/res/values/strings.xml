@@ -7,5 +7,14 @@
     <string name="string_teste_nome">Rick Sanchez</string>
     <string name="string_genero">Male</string>
     <string name="string_specie">Human</string>
+    <string name="string_status">Alive</string>
+    <string name="string_local">Earth</string>
+    <string name="string_tipo">""</string>
+    <string name="string_origem">Earth (C-137)</string>
     <string name="string_label_nome">Nome:</string>
+    <string name="string_genero_label">Gênero:</string>
+    <string name="string_specie_label">Especie:</string>
+    <string name="string_status_label">Status:</string>
+    <string name="string_local_label">Local:</string>
+    <string name="string_origem_label">Origem:</string>
 </resources>
