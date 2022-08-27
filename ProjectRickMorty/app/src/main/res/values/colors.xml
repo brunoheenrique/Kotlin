@@ -8,8 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="cinza_claro">#FFBAB6B6</color>
+    <color name="cinza">#808080</color>
     <color name="azul_claro_rick">#FF3DA4BD</color>
     <color name="verde_limao">#32CD32</color>
     <color name="vermelho_escuro">#8B0000</color>
     <color name="rosa_escuro">#FF1493</color>
+    <color name="azul_metalico">#4682B4</color>
+    <color name="azul_mais_claro_metal">#29B6F6</color>
+    <color name="cinza_mais_branco">#BCAAA4</color>
 </resources>
