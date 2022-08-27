@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="cinza_claro">#FFBAB6B6</color>
     <color name="azul_claro_rick">#FF3DA4BD</color>
+    <color name="verde_limao">#32CD32</color>
+    <color name="vermelho_escuro">#8B0000</color>
+    <color name="rosa_escuro">#FF1493</color>
 </resources>

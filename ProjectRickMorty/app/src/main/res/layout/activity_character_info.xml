@@ -31,7 +31,7 @@
         android:text="@string/string_label_nome"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@id/character_info_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,8 +40,8 @@
         android:id="@+id/character_info_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_name"
         app:layout_constraintStart_toEndOf="@id/character_info_label_name"
@@ -53,11 +53,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="320dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/string_label_nome"
+        android:layout_marginStart="40dp"
+        android:text="@string/string_status_label"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@id/character_info_status"
         app:layout_constraintStart_toEndOf="@id/character_info_name"
         app:layout_constraintTop_toTopOf="parent" />
@@ -66,12 +66,66 @@
         android:id="@+id/character_info_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/verde_limao"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/character_info_label_status"
+        app:layout_constraintStart_toEndOf="@id/character_info_label_status"
+        app:layout_constraintTop_toTopOf="@id/character_info_label_status"
+        tools:ignore="TextContrastCheck"
+        tools:text="@string/string_status" />
+
+    <TextView
+        android:id="@+id/character_info_label_specie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_marginStart="16dp"
-        android:textSize="16sp"
+        android:text="@string/string_specie_label"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@id/character_info_label_name"
-        app:layout_constraintStart_toEndOf="@id/character_info_label_name"
-        app:layout_constraintTop_toTopOf="@id/character_info_label_name"
-        tools:text="@string/string_teste_nome" />
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@id/character_info_specie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/character_info_label_name" />
+
+    <TextView
+        android:id="@+id/character_info_specie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/character_info_label_specie"
+        app:layout_constraintStart_toEndOf="@id/character_info_label_specie"
+        app:layout_constraintTop_toTopOf="@id/character_info_label_specie"
+        tools:text="@string/string_specie" />
+
+    <TextView
+        android:id="@+id/character_info_label_genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/string_status_label"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@id/character_info_status"
+        app:layout_constraintStart_toEndOf="@id/character_info_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/character_info_genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/verde_limao"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/character_info_label_status"
+        app:layout_constraintStart_toEndOf="@id/character_info_label_status"
+        app:layout_constraintTop_toTopOf="@id/character_info_label_status"
+        tools:ignore="TextContrastCheck"
+        tools:text="@string/string_status" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
