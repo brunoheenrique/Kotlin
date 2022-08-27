@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cinza_claro">
+    android:background="@drawable/rick_backgroun5">
 
     <ImageView
         android:id="@+id/logo_main_menu"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="190dp"
         android:contentDescription="@string/content_description_images"
         android:src="@mipmap/ic_logo_menu_foreground"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,17 +22,18 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="135dp"
         android:layout_marginEnd="35dp"
+        android:background="@drawable/botao_arredondado"
+        android:text="@string/string_menu_personagens"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:background="@drawable/botao_arredondado"
-        android:text="@string/string_menu_personagens"
         app:layout_constraintBottom_toTopOf="@id/menu_botao_personagens"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo_main_menu" />
+        app:layout_constraintTop_toBottomOf="@id/logo_main_menu"
+        tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/menu_botao_episodios"
