@@ -50,7 +50,7 @@
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_name"
         app:layout_constraintStart_toEndOf="@id/character_info_label_name"
         app:layout_constraintTop_toTopOf="@id/character_info_label_name"
-        tools:text="@string/string_teste_nome" />
+        android:text="@string/string_teste_nome" />
 
     <TextView
         android:id="@+id/character_info_label_status"
@@ -78,7 +78,7 @@
         app:layout_constraintStart_toEndOf="@id/character_info_label_status"
         app:layout_constraintTop_toTopOf="@id/character_info_label_status"
         tools:ignore="TextContrastCheck"
-        tools:text="@string/string_status" />
+        android:text="@string/string_status" />
 
     <TextView
         android:id="@+id/character_info_label_specie"
@@ -106,7 +106,7 @@
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_specie"
         app:layout_constraintStart_toEndOf="@id/character_info_label_specie"
         app:layout_constraintTop_toTopOf="@id/character_info_label_specie"
-        tools:text="@string/string_specie" />
+        android:text="@string/string_specie" />
 
     <TextView
         android:id="@+id/character_info_label_genero"
@@ -133,13 +133,13 @@
         app:layout_constraintStart_toEndOf="@id/character_info_label_genero"
         app:layout_constraintTop_toTopOf="@id/character_info_label_genero"
         tools:ignore="TextContrastCheck"
-        tools:text="@string/string_genero" />
+        android:text="@string/string_genero" />
 
     <TextView
         android:id="@+id/character_info_label_local"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
         android:textAlignment="center"
         android:text="@string/string_local_label"
@@ -161,7 +161,7 @@
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_local"
         app:layout_constraintStart_toEndOf="@id/character_info_label_local"
         app:layout_constraintTop_toTopOf="@id/character_info_label_local"
-        tools:text="@string/string_local" />
+        android:text="@string/string_local" />
 
     <TextView
         android:id="@+id/character_info_label_origem"
@@ -189,7 +189,7 @@
         app:layout_constraintStart_toEndOf="@id/character_info_label_origem"
         app:layout_constraintTop_toTopOf="@id/character_info_label_origem"
         tools:ignore="TextContrastCheck"
-        tools:text="@string/string_origem" />
+        android:text="@string/string_origem" />
 
     <TextView
         android:id="@+id/character_info_label_tipo"
@@ -215,5 +215,5 @@
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_tipo"
         app:layout_constraintStart_toEndOf="@id/character_info_label_tipo"
         app:layout_constraintTop_toTopOf="@id/character_info_label_tipo"
-        tools:text="@string/string_tipo" />
+        android:text="@string/string_tipo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
