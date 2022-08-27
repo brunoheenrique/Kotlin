@@ -15,13 +15,13 @@
         android:background="@drawable/formato_arredondado_imagem"
         android:clipToOutline="true"
         android:contentDescription="@string/content_description_images"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06"
-        app:srcCompat="@drawable/rick_backgroun4"
+        app:srcCompat="@drawable/rick_backgroun3"
         tools:targetApi="s" />
 
     <TextView
