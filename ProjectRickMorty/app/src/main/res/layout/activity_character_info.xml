@@ -64,7 +64,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_status"
         app:layout_constraintStart_toEndOf="@id/character_info_name"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/character_info_status"
