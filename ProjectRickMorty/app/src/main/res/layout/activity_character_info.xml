@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06"
-        app:srcCompat="@drawable/rick_backgroun3"
+        app:srcCompat="@drawable/rick_profile_1"
         tools:targetApi="s" />
 
     <TextView
