@@ -18,4 +18,6 @@
     <string name="string_local_label">Visto por último:</string>
     <string name="string_origem_label">Origem:</string>
     <string name="string_tipo_label">Tipo:</string>
+    <string name="string_codigo_ep_teste">S01E01</string>
+    <string name="string_nome_ep_teste">Piloto</string>
 </resources>
