@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.CharacterListActivity">
+    tools:context=".view.activity.CharacterListActivity"
+    android:background="@drawable/rick_backgroun3">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/character_list_recyclerview"
