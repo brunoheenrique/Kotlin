@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">Project Rick &amp; Morty</string>
     <string name="content_description_images">""</string>
-    <string name="string_personagens">PERSONAGENS</string>
-    <string name="string_episodios">EPISÓDIOS</string>
-    <string name="string_locais">LOCAIS</string>
+    <string name="string_menu_personagens">PERSONAGENS</string>
+    <string name="string_menu_episodios">EPISÓDIOS</string>
+    <string name="string_menu_locais">LOCAIS</string>
     <string name="string_teste_nome">Rick Sanchez</string>
     <string name="string_genero">Male</string>
     <string name="string_specie">Human</string>
     <string name="string_status">Alive</string>
     <string name="string_local">Earth</string>
-    <string name="string_tipo">""</string>
+    <string name="string_tipo">-:-</string>
     <string name="string_origem">Earth (C-137)</string>
     <string name="string_label_nome">Nome:</string>
     <string name="string_genero_label">Gênero:</string>
@@ -17,4 +17,5 @@
     <string name="string_status_label">Status:</string>
     <string name="string_local_label">Local:</string>
     <string name="string_origem_label">Origem:</string>
+    <string name="string_tipo_label">Tipo:</string>
 </resources>

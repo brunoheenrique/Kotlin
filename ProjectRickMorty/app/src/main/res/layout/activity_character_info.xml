@@ -26,7 +26,7 @@
         android:id="@+id/character_info_label_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="350dp"
         android:layout_marginStart="16dp"
         android:text="@string/string_label_nome"
         android:textColor="@color/black"
@@ -40,7 +40,7 @@
         android:id="@+id/character_info_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="5dp"
         android:textSize="18sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_name"
@@ -52,8 +52,8 @@
         android:id="@+id/character_info_label_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="18dp"
         android:text="@string/string_status_label"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -66,7 +66,7 @@
         android:id="@+id/character_info_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="5dp"
         android:textColor="@color/verde_limao"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_status"
@@ -93,7 +93,7 @@
         android:id="@+id/character_info_specie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="5dp"
         android:textSize="18sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_specie"
@@ -105,27 +105,104 @@
         android:id="@+id/character_info_label_genero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
-        android:layout_marginStart="40dp"
-        android:text="@string/string_status_label"
+        android:layout_marginTop="30dp"
+        android:text="@string/string_genero_label"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="22sp"
-        app:layout_constraintEnd_toStartOf="@id/character_info_status"
-        app:layout_constraintStart_toEndOf="@id/character_info_name"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@id/character_info_genero"
+        app:layout_constraintStart_toStartOf="@id/character_info_label_status"
+        app:layout_constraintTop_toBottomOf="@id/character_info_label_status"/>
 
     <TextView
         android:id="@+id/character_info_genero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:textColor="@color/verde_limao"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/azul_claro_rick"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@id/character_info_label_status"
-        app:layout_constraintStart_toEndOf="@id/character_info_label_status"
-        app:layout_constraintTop_toTopOf="@id/character_info_label_status"
+        app:layout_constraintBottom_toBottomOf="@id/character_info_label_genero"
+        app:layout_constraintStart_toEndOf="@id/character_info_label_genero"
+        app:layout_constraintTop_toTopOf="@id/character_info_label_genero"
         tools:ignore="TextContrastCheck"
-        tools:text="@string/string_status" />
+        tools:text="@string/string_genero" />
+
+    <TextView
+        android:id="@+id/character_info_label_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/string_local_label"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@id/character_info_local"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/character_info_label_specie" />
+
+    <TextView
+        android:id="@+id/character_info_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/character_info_label_local"
+        app:layout_constraintStart_toEndOf="@id/character_info_label_local"
+        app:layout_constraintTop_toTopOf="@id/character_info_label_local"
+        tools:text="@string/string_local" />
+
+    <TextView
+        android:id="@+id/character_info_label_origem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/string_origem_label"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/character_info_label_local"
+        app:layout_constraintEnd_toStartOf="@id/character_info_origem"/>
+
+    <TextView
+        android:id="@+id/character_info_origem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/character_info_label_origem"
+        app:layout_constraintStart_toEndOf="@id/character_info_label_origem"
+        app:layout_constraintTop_toTopOf="@id/character_info_label_origem"
+        tools:ignore="TextContrastCheck"
+        tools:text="@string/string_origem" />
+
+    <TextView
+        android:id="@+id/character_info_label_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/string_tipo_label"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/character_info_label_genero"
+        app:layout_constraintTop_toBottomOf="@id/character_info_label_genero"
+        app:layout_constraintEnd_toStartOf="@id/character_info_tipo"/>
+
+    <TextView
+        android:id="@+id/character_info_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/character_info_label_tipo"
+        app:layout_constraintStart_toEndOf="@id/character_info_label_tipo"
+        app:layout_constraintTop_toTopOf="@id/character_info_label_tipo"
+        tools:text="@string/string_tipo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
