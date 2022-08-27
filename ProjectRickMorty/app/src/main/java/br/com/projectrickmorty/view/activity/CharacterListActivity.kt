@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.view.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
@@ -25,6 +26,9 @@ class CharacterListActivity : AppCompatActivity() {
             Characters("Agablog","???","???"),
             Characters("Senhor Resplendor","MermaidMan","Male")
         ))
+
+        val intent = Intent(this, CharacterInfoActivity::class.java)
+        startActivity(intent)
 
     }
 }
