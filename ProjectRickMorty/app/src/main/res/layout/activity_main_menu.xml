@@ -9,9 +9,11 @@
     <ImageView
         android:id="@+id/logo_main_menu"
         android:layout_width="0dp"
-        android:layout_height="190dp"
+        android:layout_height="240dp"
         android:contentDescription="@string/content_description_images"
         android:src="@mipmap/ic_logo_menu_foreground"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
