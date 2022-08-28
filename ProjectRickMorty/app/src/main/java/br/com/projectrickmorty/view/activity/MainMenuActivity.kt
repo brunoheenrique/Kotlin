@@ -25,7 +25,7 @@ class MainMenuActivity : AppCompatActivity() {
 
         val placesButton = findViewById<Button>(R.id.menu_botao_locais)
         placesButton.setOnClickListener{
-            val intent = Intent(this, CharacterListActivity::class.java)
+            val intent = Intent(this, LocalListActivity::class.java)
             startActivity(intent)
         }
     }
