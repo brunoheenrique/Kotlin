@@ -26,7 +26,7 @@ class EpisodeListAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(context)
-        val view = inflater.inflate(R.layout.activity_episode_list, parent, false)
+        val view = inflater.inflate(R.layout.item_episode_list, parent, false)
         return ViewHolder(view)
     }
 
