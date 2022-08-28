@@ -27,26 +27,26 @@
                 android:id="@+id/item_episode_list_code_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:textSize="38sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
+                android:layout_marginTop="5dp"
                 android:textColor="@color/black"
                 android:text="@string/string_codigo_ep_teste"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintStart_toStartOf="@id/item_episode_list_name_textview"
+                app:layout_constraintTop_toBottomOf="@id/item_episode_list_name_textview"/>
 
             <TextView
                 android:id="@+id/item_episode_list_name_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="8dp"
                 android:textColor="@color/black"
-                android:textSize="18sp"
+                android:textSize="36sp"
                 android:text="@string/string_nome_ep_teste"
-                app:layout_constraintStart_toStartOf="@id/item_episode_list_code_textview"
-                app:layout_constraintTop_toBottomOf="@id/item_episode_list_code_textview"
-                app:layout_constraintEnd_toEndOf="@id/item_episode_list_code_textview"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
                 app:layout_constraintHorizontal_bias="0.0"/>
 

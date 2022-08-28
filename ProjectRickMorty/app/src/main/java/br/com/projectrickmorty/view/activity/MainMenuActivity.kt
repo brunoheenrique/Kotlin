@@ -19,7 +19,7 @@ class MainMenuActivity : AppCompatActivity() {
 
         val episodesButton = findViewById<Button>(R.id.menu_botao_episodios)
         episodesButton.setOnClickListener{
-            val intent = Intent(this, CharacterListActivity::class.java)
+            val intent = Intent(this, EpisodeListActivity::class.java)
             startActivity(intent)
         }
 
