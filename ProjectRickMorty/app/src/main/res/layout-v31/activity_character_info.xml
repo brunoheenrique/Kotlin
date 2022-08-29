@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rick_backgroun6"
-    android:backgroundTint="#FFFFFF"
-    android:backgroundTintMode="multiply">
+    android:background="@drawable/fundo_azul_escuro_rick">
 
     <!--    ao implantar API deixar textos como tools-->
 
@@ -33,7 +31,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="375dp"
         android:text="@string/string_label_nome"
-        android:textColor="@color/azul_mais_claro_metal"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_name"
@@ -61,7 +59,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="375dp"
         android:text="@string/string_status_label"
-        android:textColor="@color/azul_mais_claro_metal"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_status"
@@ -89,7 +87,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:text="@string/string_specie_label"
-        android:textColor="@color/azul_mais_claro_metal"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_specie"
@@ -116,7 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/string_genero_label"
-        android:textColor="@color/azul_mais_claro_metal"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_genero"
@@ -145,7 +143,7 @@
         android:layout_marginTop="30dp"
         android:text="@string/string_local_label"
         android:textAlignment="center"
-        android:textColor="@color/azul_mais_claro_metal"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_local"
@@ -172,7 +170,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:text="@string/string_origem_label"
-        android:textColor="@color/azul_mais_claro_metal"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_origem"
@@ -199,7 +197,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/string_tipo_label"
-        android:textColor="@color/azul_mais_claro_metal"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_tipo"
@@ -208,7 +206,7 @@
 
     <TextView
         android:id="@+id/character_info_tipo"
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="@string/string_tipo"

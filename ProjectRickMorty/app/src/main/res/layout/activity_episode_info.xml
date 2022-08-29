@@ -3,9 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rick_backgroun6"
-    android:backgroundTint="@color/azul_meio_cinza"
-    android:backgroundTintMode="multiply">
+    android:background="@drawable/fundo_azul_escuro_rick">
 
     <!--    ao implantar API deixar textos como tools-->
 
@@ -16,7 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="100dp"
         android:text="@string/string_label_nome"
-        android:textColor="@color/azul_mais_claro_metal"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
