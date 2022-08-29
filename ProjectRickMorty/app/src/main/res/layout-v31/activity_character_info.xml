@@ -56,7 +56,7 @@
         android:id="@+id/character_info_label_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="375dp"
         android:text="@string/string_status_label"
         android:textColor="@color/white"
