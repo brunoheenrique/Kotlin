@@ -25,4 +25,9 @@
     <string name="string_data_lancamento_label">Data de Lançamento:</string>
     <string name="string_air_date_teste">21/01/2017</string>
     <string name="string_codigo_ep_label">Código Episódio:</string>
+    <string name="string_local_tipo">Planeta</string>
+    <string name="string_dimensao_label">Dimensão:</string>
+    <string name="string_dimensao_teste">C-137</string>
+    <string name="string_residents_label">Residentes:</string>
+    <string name="string_residentes_teste">Humanos</string>
 </resources>

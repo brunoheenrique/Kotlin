@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="br.com.projectrickmorty">
 
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        tools:ignore="ManifestOrder" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectRickMorty"
         tools:targetApi="31">
+        <activity
+            android:name=".view.activity.LocalInfoActivity"
+            android:exported="false" />
         <activity
             android:name=".view.activity.EpisodeInfoActivity"
             android:exported="false" />
@@ -38,7 +45,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET"
-        tools:ignore="ManifestOrder" />
 
 </manifest>

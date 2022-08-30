@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_azul_escuro_rick">
+
+    <!--    ao implantar API deixar textos como tools-->
+
+    <TextView
+        android:id="@+id/local_info_label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/string_label_nome"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/local_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/string_local"
+        android:textColor="@color/cinza_mais_branco"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/local_info_label_name"
+        app:layout_constraintTop_toTopOf="@id/local_info_label_name"
+        app:layout_constraintBottom_toBottomOf="@id/local_info_label_name"/>
+
+    <TextView
+        android:id="@+id/local_info_type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/string_tipo_label"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/local_info_label_name"
+        app:layout_constraintTop_toBottomOf="@id/local_info_label_name"/>
+
+    <TextView
+        android:id="@+id/local_info_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/string_local_tipo"
+        android:textColor="@color/cinza_mais_branco"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/local_info_type_label"
+        app:layout_constraintTop_toTopOf="@id/local_info_type_label"
+        app:layout_constraintBottom_toBottomOf="@id/local_info_type_label"/>
+
+    <TextView
+        android:id="@+id/local_info_dimensao_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_dimensao_label"
+        android:layout_marginTop="45dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/local_info_type_label"
+        app:layout_constraintTop_toBottomOf="@id/local_info_type_label"/>
+
+    <TextView
+        android:id="@+id/local_info_dimensao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/string_dimensao_teste"
+        android:textColor="@color/cinza_mais_branco"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/local_info_dimensao_label"
+        app:layout_constraintTop_toTopOf="@id/local_info_dimensao_label"
+        app:layout_constraintBottom_toBottomOf="@id/local_info_dimensao_label"/>
+
+    <TextView
+        android:id="@+id/local_info_residents_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/string_residents_label"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/local_info_dimensao_label"
+        app:layout_constraintTop_toBottomOf="@id/local_info_dimensao_label"/>
+
+    <TextView
+        android:id="@+id/local_info_residents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/cinza_mais_branco"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/string_residentes_teste"
+        app:layout_constraintStart_toEndOf="@id/local_info_residents_label"
+        app:layout_constraintTop_toTopOf="@id/local_info_residents_label"
+        app:layout_constraintBottom_toBottomOf="@id/local_info_residents_label"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
