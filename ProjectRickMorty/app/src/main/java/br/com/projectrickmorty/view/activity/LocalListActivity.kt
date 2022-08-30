@@ -1,7 +1,8 @@
 package br.com.projectrickmorty.view.activity
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import br.com.projectrickmorty.R
 import br.com.projectrickmorty.model.testemodel.Locals
@@ -25,5 +26,9 @@ class LocalListActivity : AppCompatActivity() {
             Locals("XC-1234"),
             Locals("BlopBlip"),
         ))
+
+        val intent = Intent(this, LocalInfoActivity::class.java)
+        startActivity(intent)
+
     }
 }

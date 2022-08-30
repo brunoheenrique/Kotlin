@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.view.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
@@ -28,6 +29,9 @@ class EpisodeListActivity : AppCompatActivity() {
             Episodes(nome = "A Rickle in Time","S02E01"),
             Episodes(nome = "Mortynight Run","S02E02")
         ))
+
+        val intent = Intent(this, EpisodeInfoActivity::class.java)
+        startActivity(intent)
 
     }
 }
