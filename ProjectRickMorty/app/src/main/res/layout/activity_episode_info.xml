@@ -34,6 +34,31 @@
         app:layout_constraintBottom_toBottomOf="@id/episode_info_label_name"/>
 
     <TextView
+        android:id="@+id/episode_info_label_code_ep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_codigo_ep_label"
+        android:textSize="22sp"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/episode_info_label_name"
+        app:layout_constraintTop_toBottomOf="@id/episode_info_label_name"/>
+
+    <TextView
+        android:id="@+id/episode_info_code_ep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/string_codigo_ep_teste"
+        android:textColor="@color/cinza_mais_branco"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/episode_info_label_code_ep"
+        app:layout_constraintTop_toTopOf="@id/episode_info_label_code_ep"
+        app:layout_constraintBottom_toBottomOf="@id/episode_info_label_code_ep"/>
+
+    <TextView
         android:id="@+id/episode_info_label_air_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,8 +67,8 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@id/episode_info_label_name"
-        app:layout_constraintTop_toBottomOf="@id/episode_info_label_name"/>
+        app:layout_constraintStart_toStartOf="@id/episode_info_label_code_ep"
+        app:layout_constraintTop_toBottomOf="@id/episode_info_label_code_ep"/>
 
     <TextView
         android:id="@+id/episode_info_air_data"

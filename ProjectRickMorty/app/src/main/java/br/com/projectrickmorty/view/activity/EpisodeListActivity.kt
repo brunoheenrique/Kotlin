@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
 import br.com.projectrickmorty.R
-import br.com.projectrickmorty.model.Episodes
+import br.com.projectrickmorty.model.testemodel.Episodes
 import br.com.projectrickmorty.view.recycler.adapter.EpisodeListAdapter
 
 class EpisodeListActivity : AppCompatActivity() {

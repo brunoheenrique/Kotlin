@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.projectrickmorty.R
-import br.com.projectrickmorty.model.Episodes
+import br.com.projectrickmorty.model.testemodel.Episodes
 
 class EpisodeListAdapter(
     private val context: Context,
