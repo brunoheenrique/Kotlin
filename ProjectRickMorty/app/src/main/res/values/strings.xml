@@ -22,4 +22,6 @@
     <string name="string_nome_ep_teste">Piloto</string>
     <string name="string_lista_local_label">Local:</string>
     <string name="string_ultimo_ep_teste">S05E10</string>
+    <string name="string_data_lancamento_label">Data de Lançamento:</string>
+    <string name="string_air_date_teste">21/01/2017</string>
 </resources>
