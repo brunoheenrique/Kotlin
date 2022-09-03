@@ -21,4 +21,5 @@ data class CharPosts(
     var location : Any,
     @SerializedName("image")
     var image : String
+
 )

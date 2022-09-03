@@ -7,20 +7,20 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.projectrickmorty.R
-import br.com.projectrickmorty.model.testemodel.Characters
+import br.com.projectrickmorty.model.CharPosts
 
 class CharacterListAdapter(
     private val context: Context,
-    private val characters : List <Characters>
+    private val characters : List <CharPosts>
 ) : RecyclerView.Adapter<CharacterListAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) :RecyclerView.ViewHolder(view) {
 
-        fun bind(character: Characters) {
+        fun bind(character: CharPosts) {
             val name = itemView.findViewById<TextView>(R.id.item_character_name)
             name.text = character.name
-            val specie = itemView.findViewById<TextView>(R.id.item_character_specie)
-            specie.text = character.specie
+            val species = itemView.findViewById<TextView>(R.id.item_character_specie)
+            species.text = character.species
             val gender = itemView.findViewById<TextView>(R.id.item_character_gender)
             gender.text = character.gender
         }
@@ -40,3 +40,5 @@ class CharacterListAdapter(
     override fun getItemCount(): Int = characters.size
 
 }
+
+
