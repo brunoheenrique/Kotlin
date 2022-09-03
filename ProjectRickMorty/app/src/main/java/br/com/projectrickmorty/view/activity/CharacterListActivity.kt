@@ -16,7 +16,7 @@ import retrofit2.Response
 
 class CharacterListActivity : AppCompatActivity() {
 
-    private val charlist = ArrayList<CharPosts>()
+    private val charlist = emptyList<CharPosts>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,7 +43,7 @@ class CharacterListActivity : AppCompatActivity() {
                 response: Response<List<CharPosts>>
             ) {
                 if(response.isSuccessful && response.body() != null){
-                    charlist.addAll(response.body()!!)
+                    charlist.map { charPosts -> charPosts }
                     Log.i("API","API ENTROU")
                 }
             }
