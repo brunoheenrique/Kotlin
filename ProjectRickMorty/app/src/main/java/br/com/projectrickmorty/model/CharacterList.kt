@@ -1,5 +1,9 @@
+@file:Suppress("DEPRECATED_ANNOTATION")
+
 package br.com.projectrickmorty.model
 
+
 data class CharacterList(
-    var results: List<CharPosts>
+    val results: List<CharPosts>
+
 )

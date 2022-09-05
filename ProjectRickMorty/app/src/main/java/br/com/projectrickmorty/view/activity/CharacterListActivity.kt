@@ -1,7 +1,9 @@
 package br.com.projectrickmorty.view.activity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
@@ -27,13 +29,14 @@ class CharacterListActivity : AppCompatActivity() {
 
         fetchChars()
 
+
 //        val intent = Intent(this, CharacterInfoActivity::class.java)
 //        startActivity(intent)
 
     }
 
     private fun fetchChars() {
-        val retrofitClient = NetworkUtils.getretrofit("https://rickandmortyapi.com/api/")
+        val retrofitClient = NetworkUtils.getretrofit("https://rickandmortyapi.com/")
         val endpoint = retrofitClient.create(CharacterService::class.java)
         val callback = endpoint.getPosts()
 
@@ -42,15 +45,20 @@ class CharacterListActivity : AppCompatActivity() {
                 call: Call<List<CharPosts>>,
                 response: Response<List<CharPosts>>
             ) {
-                if(response.isSuccessful && response.body() != null){
-                    charlist.map { charPosts -> charPosts }
-                    Log.i("API","API ENTROU")
+                response.body()?.forEach{
+                    val charName = findViewById<TextView>(R.id.item_character_name)
+                    val charSpecie = findViewById<TextView>(R.id.item_character_specie)
+                    val charGender = findViewById<TextView>(R.id.item_character_gender)
+                    charName.text = charName.text.toString().plus(it.name)
+                    charSpecie.text = charSpecie.text.toString().plus(it.species)
+                    charGender.text = charGender.text.toString().plus(it.gender)
                 }
+
             }
 
             override fun onFailure(call: Call<List<CharPosts>>, t: Throwable) {
                 Toast.makeText(baseContext, t.message, Toast.LENGTH_SHORT).show()
-                Log.i("API","API NAO ENTROU ENTROU")
+                Log.i("API", "API NAO ENTROU ENTROU - $t")
             }
 
         })

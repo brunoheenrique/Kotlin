@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.view.recycler.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -13,17 +14,18 @@ class CharacterListAdapter(
     private val context: Context
 ) : RecyclerView.Adapter<CharacterListAdapter.ViewHolder>() {
 
-    private val characters = emptyList<CharPosts>()
+    private var charlist = emptyList<CharPosts>()
 
     class ViewHolder(view: View) :RecyclerView.ViewHolder(view) {
 
+        var name_character = view.findViewById<TextView>(R.id.item_character_name)
+        var specie_character = view.findViewById<TextView>(R.id.item_character_name)
+        var gender_character = view.findViewById<TextView>(R.id.item_character_name)
+
         fun bind(character: CharPosts) {
-            val name = itemView.findViewById<TextView>(R.id.item_character_name)
-            name.text = character.name
-            val species = itemView.findViewById<TextView>(R.id.item_character_specie)
-            species.text = character.species
-            val gender = itemView.findViewById<TextView>(R.id.item_character_gender)
-            gender.text = character.gender
+            name_character.text = character.name
+            specie_character.text = character.species
+            gender_character.text = character.gender
         }
     }
 
@@ -34,11 +36,17 @@ class CharacterListAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val character = characters[position]
+        val character = charlist[position]
         holder.bind(character)
     }
 
-    override fun getItemCount(): Int = characters.size
+    override fun getItemCount(): Int = charlist.size
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun setCharacters(characters: List<CharPosts>){
+        charlist = characters
+        notifyDataSetChanged()
+    }
 
 }
 
