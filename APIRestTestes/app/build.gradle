@@ -8,7 +8,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "br.com.projectrickmorty"
+        applicationId "br.com.apiresttestes"
         minSdk 22
         targetSdk 32
         versionCode 1
@@ -22,7 +22,6 @@ android {
     }
 
     buildTypes {
-
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -59,7 +58,7 @@ dependencies {
     implementation 'androidx.fragment:fragment-ktx:1.5.2'
 
     //Picasso
-    implementation 'com.squareup.picasso:picsasso:2.71828'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
