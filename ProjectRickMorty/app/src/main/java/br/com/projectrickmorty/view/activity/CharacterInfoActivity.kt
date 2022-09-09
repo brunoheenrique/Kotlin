@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.view.activity
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -24,7 +25,7 @@ class CharacterInfoActivity : AppCompatActivity() {
         val imagemChar = findViewById<ImageView>(R.id.character_info_imageview)
         val origemTexto = findViewById<TextView>(R.id.character_info_origem)
 
-        viewModel.refreshCharacter(300)
+        viewModel.refreshCharacter(678)
         viewModel.characterByIdLiveData.observe(this) { response ->
             if (response == null) {
                 Toast.makeText(
@@ -33,6 +34,20 @@ class CharacterInfoActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
                 return@observe
+            }
+
+            if(response.gender.equals(other = "Male",  true)){
+                generoTexto.setTextColor(Color.parseColor("#FF3DA4BD"))
+            } else {
+                generoTexto.setTextColor(Color.parseColor("#FF1493"))
+            }
+
+            if(response.status.equals("Alive",  true)){
+                statusTexto.setTextColor(Color.parseColor("#32CD32"))
+            } else if (response.status.equals("Dead", true)) {
+                statusTexto.setTextColor(Color.parseColor("#FFEC0000"))
+            }else {
+                statusTexto.setTextColor(Color.parseColor("#808080"))
             }
 
             nomeTexto.text = response.name

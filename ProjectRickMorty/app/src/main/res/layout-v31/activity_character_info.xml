@@ -27,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
+        android:layout_marginStart="16dp"
         android:text="@string/string_label_nome"
         android:textColor="@color/white"
         android:textSize="22sp"
@@ -38,7 +39,7 @@
 
     <TextView
         android:id="@+id/character_info_name"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:textColor="@color/cinza_mais_branco"
@@ -46,7 +47,6 @@
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_name"
-        app:layout_constraintEnd_toStartOf="@id/character_info_label_status"
         app:layout_constraintStart_toEndOf="@id/character_info_label_name"
         app:layout_constraintTop_toTopOf="@id/character_info_label_name"
         tools:text="@string/string_teste_nome" />
@@ -55,7 +55,7 @@
         android:id="@+id/character_info_label_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="450dp"
         android:text="@string/string_status_label"
         android:textColor="@color/white"
@@ -99,13 +99,11 @@
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="10dp"
         android:textColor="#BCAAA4"
         android:textSize="18sp"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_specie"
-        app:layout_constraintEnd_toStartOf="@id/character_info_label_genero"
         app:layout_constraintStart_toEndOf="@id/character_info_label_specie"
         app:layout_constraintTop_toTopOf="@id/character_info_label_specie"
         tools:text="@string/string_specie" />
