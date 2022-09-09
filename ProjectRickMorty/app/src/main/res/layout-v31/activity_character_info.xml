@@ -190,30 +190,4 @@
         app:layout_constraintStart_toEndOf="@id/character_info_label_origem"
         app:layout_constraintTop_toTopOf="@id/character_info_label_origem"
         tools:ignore="TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/character_info_label_tipo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:text="@string/string_tipo_label"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@id/character_info_tipo"
-        app:layout_constraintStart_toStartOf="@id/character_info_label_genero"
-        app:layout_constraintTop_toBottomOf="@id/character_info_label_genero" />
-
-    <TextView
-        android:id="@+id/character_info_tipo"
-        android:layout_width="125dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        tools:text="@string/string_tipo"
-        android:textColor="@color/cinza_mais_branco"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/character_info_label_tipo"
-        app:layout_constraintStart_toEndOf="@id/character_info_label_tipo"
-        app:layout_constraintTop_toTopOf="@id/character_info_label_tipo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
