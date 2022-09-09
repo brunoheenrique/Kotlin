@@ -56,7 +56,7 @@
         android:id="@+id/character_info_label_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="375dp"
         android:text="@string/string_status_label"
         android:textColor="@color/white"
@@ -84,26 +84,27 @@
         android:id="@+id/character_info_label_specie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="55dp"
         android:text="@string/string_specie_label"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_specie"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/character_info_label_name"
         app:layout_constraintTop_toBottomOf="@id/character_info_label_name"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/character_info_specie"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
         tools:text="@string/string_specie"
         android:textColor="#BCAAA4"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/character_info_label_genero"
         app:layout_constraintBottom_toBottomOf="@id/character_info_label_specie"
         app:layout_constraintStart_toEndOf="@id/character_info_label_specie"
         app:layout_constraintTop_toTopOf="@id/character_info_label_specie" />
@@ -112,7 +113,7 @@
         android:id="@+id/character_info_label_genero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="55dp"
         android:text="@string/string_genero_label"
         android:textColor="@color/white"
         android:textSize="22sp"
@@ -136,46 +137,18 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/character_info_label_local"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="45dp"
-        android:text="@string/string_local_label"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@id/character_info_local"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/character_info_label_specie" />
-
-    <TextView
-        android:id="@+id/character_info_local"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        tools:text="@string/string_ultimo_ep_teste"
-        android:textColor="@color/cinza_mais_branco"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/character_info_label_local"
-        app:layout_constraintStart_toEndOf="@id/character_info_label_local"
-        app:layout_constraintTop_toTopOf="@id/character_info_label_local" />
-
-    <TextView
         android:id="@+id/character_info_label_origem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="55dp"
         android:text="@string/string_origem_label"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/character_info_origem"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/character_info_label_local" />
+        app:layout_constraintTop_toBottomOf="@id/character_info_label_specie" />
 
     <TextView
         android:id="@+id/character_info_origem"
