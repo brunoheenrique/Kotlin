@@ -10,10 +10,11 @@ import br.com.projectrickmorty.R
 import br.com.projectrickmorty.model.CharPosts
 
 class CharacterListAdapter(
-    private val context: Context
+    private val context: Context,
+    private val charlist: List<CharPosts>
 ) : RecyclerView.Adapter<CharacterListAdapter.ViewHolder>() {
 
-    private var charlist = emptyList<CharPosts>()
+
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
