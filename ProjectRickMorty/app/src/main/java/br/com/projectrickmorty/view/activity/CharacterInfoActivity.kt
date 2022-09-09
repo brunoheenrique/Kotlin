@@ -1,11 +1,13 @@
 package br.com.projectrickmorty.view.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import br.com.projectrickmorty.R
 import br.com.projectrickmorty.controller.retrofit.SharedViewModel
+import com.squareup.picasso.Picasso
 
 class CharacterInfoActivity : AppCompatActivity() {
 
@@ -19,10 +21,12 @@ class CharacterInfoActivity : AppCompatActivity() {
         val statusTexto = findViewById<TextView>(R.id.character_info_status)
         val specieTexto = findViewById<TextView>(R.id.character_info_specie)
         val generoTexto = findViewById<TextView>(R.id.character_info_genero)
+        val imagemChar = findViewById<ImageView>(R.id.character_info_imageview)
+        val origemTexto = findViewById<TextView>(R.id.character_info_origem)
 
-        viewModel.refreshCharacter(1)
-        viewModel.characterByIdLiveData.observe(this){ response ->
-            if(response == null){
+        viewModel.refreshCharacter(245)
+        viewModel.characterByIdLiveData.observe(this) { response ->
+            if (response == null) {
                 Toast.makeText(
                     this@CharacterInfoActivity,
                     "Chamada de API falhou!",
@@ -35,6 +39,8 @@ class CharacterInfoActivity : AppCompatActivity() {
             statusTexto.text = response.status
             specieTexto.text = response.species
             generoTexto.text = response.gender
+            origemTexto.text = response.origin.name
+            Picasso.get().load(response.image).into(imagemChar)
 
 
         }
