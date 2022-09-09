@@ -1,6 +1,5 @@
 package br.com.projectrickmorty.view.recycler.adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -16,7 +15,7 @@ class CharacterListAdapter(
 
     private var charlist = emptyList<CharPosts>()
 
-    class ViewHolder(view: View) :RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         private var nameCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
         private var specieCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
@@ -41,12 +40,6 @@ class CharacterListAdapter(
     }
 
     override fun getItemCount(): Int = charlist.size
-
-    @SuppressLint("NotifyDataSetChanged")
-    fun setCharacters(characters: List<CharPosts>){
-        charlist = characters
-        notifyDataSetChanged()
-    }
 
 }
 

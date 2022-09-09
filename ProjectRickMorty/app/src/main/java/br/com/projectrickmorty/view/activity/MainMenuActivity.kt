@@ -1,9 +1,10 @@
 package br.com.projectrickmorty.view.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import br.com.projectrickmorty.R
 
 class MainMenuActivity : AppCompatActivity() {
@@ -12,19 +13,19 @@ class MainMenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main_menu)
 
         val characterButton = findViewById<Button>(R.id.menu_botao_personagens)
-        characterButton.setOnClickListener{
+        characterButton.setOnClickListener {
             val intent = Intent(this, CharacterListActivity::class.java)
             startActivity(intent)
         }
 
         val episodesButton = findViewById<Button>(R.id.menu_botao_episodios)
-        episodesButton.setOnClickListener{
+        episodesButton.setOnClickListener {
             val intent = Intent(this, EpisodeListActivity::class.java)
             startActivity(intent)
         }
 
         val placesButton = findViewById<Button>(R.id.menu_botao_locais)
-        placesButton.setOnClickListener{
+        placesButton.setOnClickListener {
             val intent = Intent(this, LocalListActivity::class.java)
             startActivity(intent)
         }
