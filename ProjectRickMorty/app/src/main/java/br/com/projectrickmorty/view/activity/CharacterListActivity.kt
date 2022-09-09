@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.view.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
@@ -17,8 +18,8 @@ class CharacterListActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.character_list_recyclerview)
         recyclerView.adapter = CharacterListAdapter(this)
 
-//        val intent = Intent(this, CharacterInfoActivity::class.java)
-//        startActivity(intent)
+        val intent = Intent(this, CharacterInfoActivity::class.java)
+        startActivity(intent)
 
     }
 }

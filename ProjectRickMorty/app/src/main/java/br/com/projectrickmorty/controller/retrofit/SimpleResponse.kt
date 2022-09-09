@@ -31,7 +31,7 @@ data class SimpleResponse<T>(
         object Failure : Status()
     }
 
-    private val failed: Boolean
+    val failed: Boolean
         get() = this.status == Status.Failure
 
     val isSuccessful: Boolean
