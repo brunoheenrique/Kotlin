@@ -1,10 +1,5 @@
 package br.com.projectrickmorty.model
 
-import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
-
-@Suppress("DEPRECATED_ANNOTATION")
-@Parcelize
 data class CharPosts(
     val id : Int,
     val name : String,
@@ -16,4 +11,4 @@ data class CharPosts(
     val image : String,
     val episode:List<String>
 
-): Parcelable
+)

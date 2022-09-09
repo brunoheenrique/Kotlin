@@ -1,14 +1,14 @@
 package br.com.projectrickmorty.controller.retrofit.services
 
 import br.com.projectrickmorty.model.CharPosts
-import br.com.projectrickmorty.model.CharacterList
-import retrofit2.Call
+import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface CharacterService {
 
-    @GET("character/1")
-    fun getPosts(): Call<CharPosts>
+    @GET("character/{id}")
+    suspend fun getPosts(@Path("id") id:Int): Response<CharPosts>
 
 
 
