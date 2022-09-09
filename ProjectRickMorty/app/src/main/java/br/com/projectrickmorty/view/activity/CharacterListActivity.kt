@@ -2,7 +2,6 @@ package br.com.projectrickmorty.view.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
@@ -13,20 +12,17 @@ import br.com.projectrickmorty.view.recycler.adapter.CharacterListAdapter
 
 class CharacterListActivity : AppCompatActivity() {
 
-    private val charlist = ArrayList<CharPosts>()
+    private val charlist:List<CharPosts> = emptyList()
     private val viewModel = SharedViewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_list)
 
-        for(i:Int in 1..826){
+        for(i:Int in 1..10){
 
             viewModel.refreshCharacter(i)
             viewModel.characterByIdLiveData.observe(this) { response ->
-
-                Log.i("TAG","$response")
-
                 if (response == null) {
                     Toast.makeText(
                         this@CharacterListActivity,
@@ -36,7 +32,7 @@ class CharacterListActivity : AppCompatActivity() {
                     return@observe
                 }
 
-                charlist.add(response)
+                charlist.plus(response)
             }
         }
 
