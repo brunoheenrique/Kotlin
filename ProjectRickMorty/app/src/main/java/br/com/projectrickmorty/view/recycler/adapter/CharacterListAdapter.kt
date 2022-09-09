@@ -18,14 +18,14 @@ class CharacterListAdapter(
 
     class ViewHolder(view: View) :RecyclerView.ViewHolder(view) {
 
-        var name_character = view.findViewById<TextView>(R.id.item_character_name)
-        var specie_character = view.findViewById<TextView>(R.id.item_character_name)
-        var gender_character = view.findViewById<TextView>(R.id.item_character_name)
+        private var nameCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
+        private var specieCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
+        private var genderCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
 
         fun bind(character: CharPosts) {
-            name_character.text = character.name
-            specie_character.text = character.species
-            gender_character.text = character.gender
+            nameCharacter.text = character.name
+            specieCharacter.text = character.species
+            genderCharacter.text = character.gender
         }
     }
 

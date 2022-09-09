@@ -7,8 +7,8 @@ import retrofit2.http.GET
 
 interface CharacterService {
 
-    @GET("api/character")
-    fun getPosts(): Call<List<CharPosts>>
+    @GET("character/1")
+    fun getPosts(): Call<CharPosts>
 
 
 

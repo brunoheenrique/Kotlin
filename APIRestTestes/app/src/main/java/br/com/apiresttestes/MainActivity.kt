@@ -15,19 +15,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val nome = findViewById<TextView>(R.id.id_texto)
+        val fotoImageView = findViewById<ImageView>(R.id.imageView)
+
         val retrofit = NetworkUtils.getRetrofitInstance("https://rickandmortyapi.com/api/")
 
         val characterService: CharService = retrofit.create(CharService::class.java)
 
-        characterService.getCharById().enqueue(object : Callback<Modelo> {
+        characterService.getCharById(145).enqueue(object : Callback<Modelo> {
             override fun onResponse(call: Call<Modelo>, response: Response<Modelo>) {
                 Log.i("MainActivity", response.toString())
-
                 val body = response.body()!!
                 val nomeapi = body.name
                 val fotoapi = body.image
-                val nome = findViewById<TextView>(R.id.id_texto)
-                val fotoImageView = findViewById<ImageView>(R.id.imageView)
                 Picasso.get().load(fotoapi).into(fotoImageView)
                 nome.text = nomeapi
 

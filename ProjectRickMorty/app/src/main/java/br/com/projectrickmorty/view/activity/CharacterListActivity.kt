@@ -1,6 +1,5 @@
 package br.com.projectrickmorty.view.activity
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
@@ -18,7 +17,7 @@ import retrofit2.Response
 
 class CharacterListActivity : AppCompatActivity() {
 
-    private val charlist = emptyList<CharPosts>()
+//    private val charlist = emptyList<CharPosts>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,27 +35,17 @@ class CharacterListActivity : AppCompatActivity() {
     }
 
     private fun fetchChars() {
-        val retrofitClient = NetworkUtils.getretrofit("https://rickandmortyapi.com/")
+        val retrofitClient = NetworkUtils.getretrofit("https://rickandmortyapi.com/api/")
         val endpoint = retrofitClient.create(CharacterService::class.java)
         val callback = endpoint.getPosts()
 
-        callback.enqueue(object : Callback<List<CharPosts>>{
-            override fun onResponse(
-                call: Call<List<CharPosts>>,
-                response: Response<List<CharPosts>>
-            ) {
-                response.body()?.forEach{
-                    val charName = findViewById<TextView>(R.id.item_character_name)
-                    val charSpecie = findViewById<TextView>(R.id.item_character_specie)
-                    val charGender = findViewById<TextView>(R.id.item_character_gender)
-                    charName.text = charName.text.toString().plus(it.name)
-                    charSpecie.text = charSpecie.text.toString().plus(it.species)
-                    charGender.text = charGender.text.toString().plus(it.gender)
-                }
+        callback.enqueue(object : Callback<CharPosts>{
+            override fun onResponse(call: Call<CharPosts>, response: Response<CharPosts>) {
+
 
             }
 
-            override fun onFailure(call: Call<List<CharPosts>>, t: Throwable) {
+            override fun onFailure(call: Call<CharPosts>, t: Throwable) {
                 Toast.makeText(baseContext, t.message, Toast.LENGTH_SHORT).show()
                 Log.i("API", "API NAO ENTROU ENTROU - $t")
             }
