@@ -1,6 +1,5 @@
 package br.com.projectrickmorty.view.recycler.adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -36,11 +35,9 @@ class CharacterListAdapter(
         return ViewHolder(view)
     }
 
-    @SuppressLint("NotifyDataSetChanged")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val character = charlist[position]
         holder.bind(character)
-        notifyDataSetChanged()
     }
 
     override fun getItemCount(): Int = charlist.size
