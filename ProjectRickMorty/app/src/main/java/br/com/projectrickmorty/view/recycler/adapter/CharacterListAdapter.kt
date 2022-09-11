@@ -19,8 +19,8 @@ class CharacterListAdapter(
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         var nameCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
-        var specieCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
-        var genderCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
+        var specieCharacter = view.findViewById<TextView>(R.id.item_character_specie)!!
+        var genderCharacter = view.findViewById<TextView>(R.id.item_character_gender)!!
 
 //        fun bind(character: CharPosts) {
 //            nameCharacter.text = character.name
