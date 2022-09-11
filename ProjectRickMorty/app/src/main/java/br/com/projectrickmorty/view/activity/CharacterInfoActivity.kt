@@ -25,7 +25,7 @@ class CharacterInfoActivity : AppCompatActivity() {
         val imagemChar = findViewById<ImageView>(R.id.character_info_imageview)
         val origemTexto = findViewById<TextView>(R.id.character_info_origem)
 
-        val i = 4
+//        val i = 4
 
         viewModel.refreshCharacter(4)
         viewModel.characterByIdLiveData.observe(this) { response ->
