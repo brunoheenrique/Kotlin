@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.view.recycler.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -10,10 +11,10 @@ import br.com.projectrickmorty.R
 import br.com.projectrickmorty.model.CharPosts
 
 class CharacterListAdapter(
-    private val context: Context,
-    private val charlist: List<CharPosts>
+    private val context: Context
 ) : RecyclerView.Adapter<CharacterListAdapter.ViewHolder>() {
 
+    private var charlist: List<CharPosts> = emptyList()
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -22,10 +23,10 @@ class CharacterListAdapter(
         var genderCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
 
 //        fun bind(character: CharPosts) {
-////            nameCharacter.text = character.name
-////            specieCharacter.text = character.species
-////            genderCharacter.text = character.gender
-////        }
+//            nameCharacter.text = character.name
+//            specieCharacter.text = character.species
+//            genderCharacter.text = character.gender
+//        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -40,8 +41,15 @@ class CharacterListAdapter(
         holder.specieCharacter.text = character.species
         holder.genderCharacter.text = character.gender
     }
-        override fun getItemCount(): Int = charlist.size
 
+    override fun getItemCount(): Int = charlist.size
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun setData(newList: List<CharPosts>) {
+        charlist = newList
+        notifyDataSetChanged()
     }
+
+}
 
 
