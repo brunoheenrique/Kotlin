@@ -27,7 +27,7 @@ class CharacterInfoActivity : AppCompatActivity() {
 
         val i = 4
 
-        viewModel.refreshCharacter(i)
+        viewModel.refreshCharacter(4)
         viewModel.characterByIdLiveData.observe(this) { response ->
             if (response == null) {
                 Toast.makeText(

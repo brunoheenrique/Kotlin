@@ -1,6 +1,7 @@
 package br.com.projectrickmorty.controller.retrofit
 
 import br.com.projectrickmorty.model.CharPosts
+import retrofit2.Response
 
 class SharedRepository {
 
@@ -17,4 +18,9 @@ class SharedRepository {
 
         return request.body
     }
+
+    suspend fun getList(): Response<List<CharPosts>>{
+        return NetworkUtils.api.getListPost()
+    }
+
 }

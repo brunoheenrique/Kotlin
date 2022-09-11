@@ -8,7 +8,7 @@ class ApiClient(
     private val rickAndMortyService: CharacterService
 ) {
     suspend fun getCharacterById(characterId:Int): SimpleResponse<CharPosts>{
-        return safeApiCall { rickAndMortyService.getPosts(characterId) }
+        return safeApiCall { rickAndMortyService.getPost(characterId) }
     }
 
     private inline fun <T> safeApiCall(apiCall:() -> Response<T>):SimpleResponse<T>{

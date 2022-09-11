@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.view.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -19,29 +20,29 @@ class CharacterListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_list)
 
-        for (i: Int in 1..10) {
+//        for (i: Int in 1..10) {
+//
+//            viewModel.refreshCharacter(i)
+//            viewModel.characterByIdLiveData.observe(this) { response ->
+//                if (response == null) {
+//                    Toast.makeText(
+//                        this@CharacterListActivity,
+//                        "Chamada de API falhou!",
+//                        Toast.LENGTH_SHORT
+//                    ).show()
+//                    return@observe
+//                }
+//
+//                Log.i("TAG","$response")
+//
+//            }
+//
+//        }
+//            val recyclerView = findViewById<RecyclerView>(R.id.character_list_recyclerview)
+//            recyclerView.adapter = CharacterListAdapter(this, charlist)
 
-            viewModel.refreshCharacter(i)
-            viewModel.characterByIdLiveData.observe(this) { response ->
-                if (response == null) {
-                    Toast.makeText(
-                        this@CharacterListActivity,
-                        "Chamada de API falhou!",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    return@observe
-                }
+        val intent = Intent(this, CharacterInfoActivity::class.java)
+        startActivity(intent)
 
-                charlist[response.id]
-            }
-
-            Log.i("LIST","${charlist.size}")
-
-            val recyclerView = findViewById<RecyclerView>(R.id.character_list_recyclerview)
-            recyclerView.adapter = CharacterListAdapter(this, charlist)
-
-//        val intent = Intent(this, CharacterInfoActivity::class.java)
-//        startActivity(intent)
-        }
     }
 }

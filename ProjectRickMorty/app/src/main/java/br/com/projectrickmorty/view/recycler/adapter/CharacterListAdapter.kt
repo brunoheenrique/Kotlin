@@ -15,18 +15,17 @@ class CharacterListAdapter(
 ) : RecyclerView.Adapter<CharacterListAdapter.ViewHolder>() {
 
 
-
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private var nameCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
-        private var specieCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
-        private var genderCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
+        var nameCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
+        var specieCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
+        var genderCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
 
-        fun bind(character: CharPosts) {
-            nameCharacter.text = character.name
-            specieCharacter.text = character.species
-            genderCharacter.text = character.gender
-        }
+//        fun bind(character: CharPosts) {
+////            nameCharacter.text = character.name
+////            specieCharacter.text = character.species
+////            genderCharacter.text = character.gender
+////        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -37,11 +36,12 @@ class CharacterListAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val character = charlist[position]
-        holder.bind(character)
+        holder.nameCharacter.text = character.name
+        holder.specieCharacter.text = character.species
+        holder.genderCharacter.text = character.gender
     }
+        override fun getItemCount(): Int = charlist.size
 
-    override fun getItemCount(): Int = charlist.size
-
-}
+    }
 
 

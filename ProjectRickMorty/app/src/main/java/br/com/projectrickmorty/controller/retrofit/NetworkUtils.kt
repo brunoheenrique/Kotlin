@@ -17,4 +17,8 @@ object  NetworkUtils {
 
     val apiClient = ApiClient(rickAndMortyService)
 
+    val api: CharacterService by lazy {
+        retrofit.create(CharacterService::class.java)
+    }
+
 }
