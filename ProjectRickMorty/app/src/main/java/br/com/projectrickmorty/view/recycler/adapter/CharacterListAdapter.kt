@@ -33,7 +33,7 @@ class CharacterListAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val character = charlist[position]
-        val id = charlist[position].id
+        val id = character.id
         holder.nameCharacter.text = character.name
         holder.specieCharacter.text = character.species
         holder.originCharacter.text = character.origin.name
