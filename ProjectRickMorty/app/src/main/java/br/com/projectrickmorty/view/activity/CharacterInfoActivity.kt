@@ -59,7 +59,6 @@ class CharacterInfoActivity : AppCompatActivity() {
             origemTexto.text = response.origin.name
             Picasso.get().load(response.image).into(imagemChar)
 
-
         }
     }
 }

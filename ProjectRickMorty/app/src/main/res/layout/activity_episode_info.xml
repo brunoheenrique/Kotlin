@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/fundo_azul_escuro_rick">
-
-    <!--    ao implantar API deixar textos como tools-->
 
     <TextView
         android:id="@+id/episode_info_label_name"
@@ -24,7 +23,7 @@
         android:id="@+id/episode_info_nome"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:text="@string/string_nome_ep_teste"
+        tools:text="@string/string_nome_ep_teste"
         android:textColor="@color/cinza_mais_branco"
         android:textStyle="bold"
         android:textSize="18sp"
@@ -37,7 +36,7 @@
         android:id="@+id/episode_info_label_code_ep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/string_codigo_ep_label"
+        tools:text="@string/string_codigo_ep_label"
         android:textSize="22sp"
         android:layout_marginTop="45dp"
         android:textStyle="bold"
@@ -74,7 +73,7 @@
         android:id="@+id/episode_info_air_data"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:text="@string/string_air_date_teste"
+        tools:text="@string/string_air_date_teste"
         android:textColor="@color/cinza_mais_branco"
         android:textSize="18sp"
         android:textStyle="bold"
