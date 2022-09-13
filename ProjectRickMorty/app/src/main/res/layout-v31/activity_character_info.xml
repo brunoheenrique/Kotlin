@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/character_info_imageview"
-        android:layout_width="200dp"
+        android:layout_width="380dp"
         android:layout_height="280dp"
         android:background="@drawable/formato_arredondado_imagem"
         android:clipToOutline="true"
@@ -18,21 +18,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintVertical_bias="0.16"
         app:srcCompat="@drawable/rick_profile_1"
+        tools:ignore="ImageContrastCheck"
         tools:targetApi="s" />
 
     <TextView
         android:id="@+id/character_info_label_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="450dp"
+        android:fontFamily="casual"
         android:text="@string/string_label_nome"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:fontFamily = "casual"
         app:layout_constraintEnd_toStartOf="@id/character_info_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

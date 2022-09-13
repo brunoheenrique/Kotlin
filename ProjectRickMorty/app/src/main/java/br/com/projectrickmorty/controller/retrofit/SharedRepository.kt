@@ -20,7 +20,7 @@ class SharedRepository {
     }
 
     suspend fun getCharList(): Response<List<CharPosts>>{
-        return NetworkUtils.api.getCharListPost()
+        return NetworkUtils.charApi.getCharListPost()
     }
 
 }
