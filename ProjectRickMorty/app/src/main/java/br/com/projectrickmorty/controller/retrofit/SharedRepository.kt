@@ -6,7 +6,7 @@ import retrofit2.Response
 class SharedRepository {
 
     suspend fun getCharId(id: Int): CharPosts? {
-        val request = NetworkUtils.apiClient.getCharacterById(id)
+        val request = NetworkUtils.charApiClient.getCharacterById(id)
 
         if(request.failed){
             return null
@@ -19,8 +19,8 @@ class SharedRepository {
         return request.body
     }
 
-    suspend fun getList(): Response<List<CharPosts>>{
-        return NetworkUtils.api.getListPost()
+    suspend fun getCharList(): Response<List<CharPosts>>{
+        return NetworkUtils.api.getCharListPost()
     }
 
 }

@@ -4,11 +4,10 @@ import br.com.projectrickmorty.controller.retrofit.services.CharacterService
 import br.com.projectrickmorty.model.CharPosts
 import retrofit2.Response
 
-class ApiClient(
-    private val rickAndMortyService: CharacterService
-) {
+class CharApiClient(
+    private val rickAndMortyService: CharacterService) {
     suspend fun getCharacterById(characterId:Int): SimpleResponse<CharPosts>{
-        return safeApiCall { rickAndMortyService.getPost(characterId) }
+        return safeApiCall { rickAndMortyService.getCharPost(characterId) }
     }
 
     private inline fun <T> safeApiCall(apiCall:() -> Response<T>):SimpleResponse<T>{

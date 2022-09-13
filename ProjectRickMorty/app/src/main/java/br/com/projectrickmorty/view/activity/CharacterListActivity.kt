@@ -1,6 +1,5 @@
 package br.com.projectrickmorty.view.activity
 
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +19,7 @@ class CharacterListActivity : AppCompatActivity() {
 
         setupRecyclerView()
 
-        viewModel.refreshList()
+        viewModel.refreshCharList()
         viewModel.listCharacterLiveData.observe(this) { response ->
             if (response.isSuccessful) {
                 response.body()?.let { adapter.setData(it) }

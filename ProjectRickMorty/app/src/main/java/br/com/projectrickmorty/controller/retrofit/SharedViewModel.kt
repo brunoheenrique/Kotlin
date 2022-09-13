@@ -24,9 +24,9 @@ class SharedViewModel : ViewModel() {
         }
     }
 
-    fun refreshList(){
+    fun refreshCharList(){
         viewModelScope.launch {
-            val response = repository.getList()
+            val response = repository.getCharList()
             listCharacterLiveData.value = response
         }
     }

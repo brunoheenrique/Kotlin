@@ -11,11 +11,11 @@ object  NetworkUtils {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    private val rickAndMortyService:CharacterService by lazy {
+    private val charService:CharacterService by lazy {
         retrofit.create(CharacterService::class.java)
     }
 
-    val apiClient = ApiClient(rickAndMortyService)
+    val charApiClient = CharApiClient(charService)
 
     val api: CharacterService by lazy {
         retrofit.create(CharacterService::class.java)
