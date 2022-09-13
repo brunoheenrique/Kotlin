@@ -2,6 +2,7 @@ package br.com.projectrickmorty.view.recycler.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.projectrickmorty.R
 import br.com.projectrickmorty.model.CharPosts
+import br.com.projectrickmorty.view.activity.CharacterInfoActivity
 
 class CharacterListAdapter(
     private val context: Context
@@ -20,13 +22,7 @@ class CharacterListAdapter(
 
         var nameCharacter = view.findViewById<TextView>(R.id.item_character_name)!!
         var specieCharacter = view.findViewById<TextView>(R.id.item_character_specie)!!
-        var genderCharacter = view.findViewById<TextView>(R.id.item_character_gender)!!
-
-//        fun bind(character: CharPosts) {
-//            nameCharacter.text = character.name
-//            specieCharacter.text = character.species
-//            genderCharacter.text = character.gender
-//        }
+        var originCharacter = view.findViewById<TextView>(R.id.item_character_origin)!!
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -37,9 +33,17 @@ class CharacterListAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val character = charlist[position]
+        val id = charlist[position].id
         holder.nameCharacter.text = character.name
         holder.specieCharacter.text = character.species
-        holder.genderCharacter.text = character.gender
+        holder.originCharacter.text = character.origin.name
+
+        holder.itemView.setOnClickListener { v ->
+            val intent = Intent(v.context,CharacterInfoActivity::class.java )
+            intent.putExtra("id",id)
+            v.context.startActivity(intent)
+        }
+
     }
 
     override fun getItemCount(): Int = charlist.size

@@ -18,6 +18,8 @@ class CharacterInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_info)
 
+        val id = intent.getIntExtra("id",1)
+
         val nomeTexto = findViewById<TextView>(R.id.character_info_name)
         val statusTexto = findViewById<TextView>(R.id.character_info_status)
         val specieTexto = findViewById<TextView>(R.id.character_info_specie)
@@ -25,9 +27,7 @@ class CharacterInfoActivity : AppCompatActivity() {
         val imagemChar = findViewById<ImageView>(R.id.character_info_imageview)
         val origemTexto = findViewById<TextView>(R.id.character_info_origem)
 
-//        val i = 4
-
-        viewModel.refreshCharacter(4)
+        viewModel.refreshCharacter(id)
         viewModel.characterByIdLiveData.observe(this) { response ->
             if (response == null) {
                 Toast.makeText(
