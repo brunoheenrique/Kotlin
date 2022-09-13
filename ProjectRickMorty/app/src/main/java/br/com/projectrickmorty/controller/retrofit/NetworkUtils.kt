@@ -1,12 +1,13 @@
 package br.com.projectrickmorty.controller.retrofit
 
+import br.com.projectrickmorty.controller.retrofit.api.CharApiClient
+import br.com.projectrickmorty.controller.retrofit.api.EpApiClient
+import br.com.projectrickmorty.controller.retrofit.api.LocalApiClient
 import br.com.projectrickmorty.controller.retrofit.services.CharacterService
 import br.com.projectrickmorty.controller.retrofit.services.EpisodeService
 import br.com.projectrickmorty.controller.retrofit.services.LocationService
-import br.com.projectrickmorty.model.LocationPosts
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 
 object NetworkUtils {
 
