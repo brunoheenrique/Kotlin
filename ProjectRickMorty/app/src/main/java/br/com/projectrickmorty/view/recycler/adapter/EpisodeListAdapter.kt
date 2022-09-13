@@ -16,7 +16,7 @@ class EpisodeListAdapter(
     private val context: Context
 ) : RecyclerView.Adapter<EpisodeListAdapter.ViewHolder>() {
 
-    private var episodelist :List<EpisodePosts> = emptyList()
+    private var episodelist: List<EpisodePosts> = emptyList()
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -38,8 +38,8 @@ class EpisodeListAdapter(
         holder.epCode.text = episode.episode
 
         holder.itemView.setOnClickListener { v ->
-            val intent = Intent(v.context, EpisodeInfoActivity::class.java )
-            intent.putExtra("id",id)
+            val intent = Intent(v.context, EpisodeInfoActivity::class.java)
+            intent.putExtra("id", id)
             v.context.startActivity(intent)
         }
     }
