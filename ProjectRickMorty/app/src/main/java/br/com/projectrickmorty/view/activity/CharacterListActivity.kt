@@ -1,7 +1,6 @@
 package br.com.projectrickmorty.view.activity
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import br.com.projectrickmorty.R
@@ -10,6 +9,7 @@ import br.com.projectrickmorty.view.recycler.adapter.CharacterListAdapter
 
 class CharacterListActivity : AppCompatActivity() {
 
+    private var pagina: Int = 1
     private var viewModel = SharedViewModel()
     private val adapter by lazy { CharacterListAdapter(this) }
 
@@ -19,13 +19,9 @@ class CharacterListActivity : AppCompatActivity() {
 
         setupRecyclerView()
 
-        viewModel.refreshCharList()
-        viewModel.listCharacterLiveData.observe(this) { response ->
-            if (response.isSuccessful) {
-                response.body()?.let { adapter.setData(it) }
-            } else {
-                Toast.makeText(this, response.code(), Toast.LENGTH_SHORT).show()
-            }
+        viewModel.refreshCharList(pagina)
+        viewModel.listCharacterLiveData.observe(this) {
+            adapter.setData(it)
         }
     }
 

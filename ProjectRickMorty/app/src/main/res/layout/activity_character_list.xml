@@ -7,6 +7,34 @@
     tools:context=".view.activity.CharacterListActivity"
     android:background="@drawable/rick_backgroun7">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_proxima_pagina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background = "@drawable/ic_right_arrow"
+        android:contentDescription="@string/content_description_images"
+        app:layout_constraintBottom_toTopOf="@id/character_list_recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/botao_pagina_anterior"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_pagina_anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background = "@drawable/ic_left_arrow"
+        android:contentDescription="@string/content_description_images"
+        app:layout_constraintBottom_toTopOf="@id/character_list_recyclerview"
+        app:layout_constraintEnd_toStartOf="@id/botao_proxima_pagina"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/character_list_recyclerview"
         android:layout_width="0dp"
@@ -16,6 +44,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botao_pagina_anterior"
         tools:listitem="@layout/item_character_list"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

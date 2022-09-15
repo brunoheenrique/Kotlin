@@ -23,9 +23,9 @@ class ListFragment : Fragment(R.layout.fragment_list) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.listCharactersInEpisode.observe(viewLifecycleOwner, {
+        viewModel.listCharactersInEpisode.observe(viewLifecycleOwner) {
             adapter.setCharacters(it)
-        })
+        }
 
         recycclerview.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         recycclerview.adapter = adapter

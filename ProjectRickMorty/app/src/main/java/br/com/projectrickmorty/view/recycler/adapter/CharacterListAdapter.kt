@@ -16,7 +16,7 @@ class CharacterListAdapter(
     private val context: Context
 ) : RecyclerView.Adapter<CharacterListAdapter.ViewHolder>() {
 
-    private var charlist: List<CharPosts> = emptyList()
+    private var charlist = emptyList<CharPosts>()
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 

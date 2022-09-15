@@ -50,8 +50,8 @@ class SharedRepository {
         return request.body
     }
 
-    suspend fun getCharList(): Response<CharList> {
-        return NetworkUtils.charApi.getCharListPost2()
+    suspend fun getCharList(page:Int): Response<CharList> {
+        return NetworkUtils.charApi.getCharListPost(page)
     }
 
     suspend fun getEpisodeList(): Response<List<EpisodePosts>>{

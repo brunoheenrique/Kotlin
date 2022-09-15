@@ -71,11 +71,12 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    app:layout_constraintStart_toStartOf="pare"
+                    app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="TextContrastCheck"
-                    tools:layout_editor_absoluteX="83dp"
                     tools:layout_editor_absoluteY="456dp"
-                    tools:text="@string/string_teste_nome" />
+                    tools:text="@string/string_teste_nome"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
                 <TextView
                     android:id="@+id/character_info_label_status"
