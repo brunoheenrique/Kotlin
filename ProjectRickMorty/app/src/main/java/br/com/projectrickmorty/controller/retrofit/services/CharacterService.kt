@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.controller.retrofit.services
 
+import br.com.projectrickmorty.model.CharList
 import br.com.projectrickmorty.model.CharPosts
 import retrofit2.Response
 import retrofit2.http.GET
@@ -33,5 +34,8 @@ interface CharacterService {
             "468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489," +
             "490,491,492,493,494,495,496,497,498,499,500]")
     suspend fun getCharListPost():Response<List<CharPosts>>
+
+    @GET("character")
+    suspend fun getCharListPost2():Response<CharList>
 
 }

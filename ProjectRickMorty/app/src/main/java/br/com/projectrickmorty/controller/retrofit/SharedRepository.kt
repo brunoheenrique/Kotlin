@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.controller.retrofit
 
+import br.com.projectrickmorty.model.CharList
 import br.com.projectrickmorty.model.CharPosts
 import br.com.projectrickmorty.model.EpisodePosts
 import br.com.projectrickmorty.model.LocationPosts
@@ -49,8 +50,8 @@ class SharedRepository {
         return request.body
     }
 
-    suspend fun getCharList(): Response<List<CharPosts>>{
-        return NetworkUtils.charApi.getCharListPost()
+    suspend fun getCharList(): Response<CharList> {
+        return NetworkUtils.charApi.getCharListPost2()
     }
 
     suspend fun getEpisodeList(): Response<List<EpisodePosts>>{
