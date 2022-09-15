@@ -13,14 +13,15 @@ class CharacterListActivity : AppCompatActivity() {
     private var pagina: Int = 1
     private var viewModel = SharedViewModel()
     private val adapter by lazy { CharacterListAdapter(this) }
-    private val botao_proxima_pagina = findViewById<Button>(R.id.botao_charlist_proxima_pagina)
-    private val botao_pagina_anterior = findViewById<Button>(R.id.botao_charlist_pagina_anterior)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_list)
 
-        botao_proxima_pagina.setOnClickListener {
+        val botaoProximaPagina = findViewById<Button>(R.id.botao_charlist_proxima_pagina)
+        val botaoPaginaAnterior = findViewById<Button>(R.id.botao_charlist_pagina_anterior)
+
+        botaoProximaPagina.setOnClickListener {
             pagina += 1
             viewModel.refreshCharList(pagina)
             viewModel.listCharacterLiveData.observe(this) {
@@ -28,7 +29,7 @@ class CharacterListActivity : AppCompatActivity() {
             }
         }
 
-        botao_pagina_anterior.setOnClickListener {
+        botaoPaginaAnterior.setOnClickListener {
             pagina-=1
             viewModel.refreshCharList(pagina)
             viewModel.listCharacterLiveData.observe(this) {
