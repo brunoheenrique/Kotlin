@@ -2,6 +2,7 @@ package br.com.projectrickmorty.view.activity
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import br.com.projectrickmorty.R
@@ -20,27 +21,23 @@ class CharacterListActivity : AppCompatActivity() {
 
         val botaoProximaPagina = findViewById<Button>(R.id.botao_charlist_proxima_pagina)
         val botaoPaginaAnterior = findViewById<Button>(R.id.botao_charlist_pagina_anterior)
+        val paginaTextview = findViewById<TextView>(R.id.charlist_pagina_textview)
 
         botaoProximaPagina.setOnClickListener {
             pagina += 1
             viewModel.refreshCharList(pagina)
-            viewModel.listCharacterLiveData.observe(this) {
-                adapter.setData(it)
-            }
         }
 
         botaoPaginaAnterior.setOnClickListener {
             pagina-=1
             viewModel.refreshCharList(pagina)
-            viewModel.listCharacterLiveData.observe(this) {
-                adapter.setData(it)
-            }
         }
 
         setupRecyclerView()
 
         viewModel.refreshCharList(pagina)
         viewModel.listCharacterLiveData.observe(this) {
+            paginaTextview.text = pagina.toString()
             adapter.setData(it)
         }
     }

@@ -21,6 +21,20 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <TextView
+        android:id="@+id/charlist_pagina_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/character_list_recyclerview"
+        app:layout_constraintEnd_toStartOf="@id/botao_charlist_proxima_pagina"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@id/botao_charlist_pagina_anterior"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/botao_charlist_pagina_anterior"
         android:layout_width="wrap_content"
@@ -43,7 +57,8 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/botao_charlist_pagina_anterior"
-        tools:listitem="@layout/item_character_list"/>
+        tools:listitem="@layout/item_character_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>
