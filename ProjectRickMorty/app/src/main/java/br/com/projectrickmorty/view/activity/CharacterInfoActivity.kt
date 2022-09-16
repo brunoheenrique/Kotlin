@@ -39,9 +39,11 @@ class CharacterInfoActivity : AppCompatActivity() {
             }
 
             if(response.gender.equals(other = "Male",  true)){
-                generoTexto.setTextColor(Color.parseColor("#FF3DA4BD"))
-            } else {
-                generoTexto.setTextColor(Color.parseColor("#FF1493"))
+                generoTexto.setBackgroundResource(R.drawable.ic_male)
+            } else if(response.gender.equals(other = "Female",  true)) {
+                generoTexto.setBackgroundResource(R.drawable.ic_female)
+            }else{
+                generoTexto.setBackgroundResource(R.drawable.ic_question)
             }
 
             if(response.status.equals("Alive",  true)){
@@ -55,7 +57,6 @@ class CharacterInfoActivity : AppCompatActivity() {
             nomeTexto.text = response.name
             statusTexto.text = response.status
             specieTexto.text = response.species
-            generoTexto.text = response.gender
             origemTexto.text = response.origin.name
             Picasso.get().load(response.image).into(imagemChar)
 
