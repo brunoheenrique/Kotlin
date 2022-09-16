@@ -52,28 +52,43 @@
                     android:id="@+id/character_info_name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
                     android:layout_marginStart="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
                     android:textSize="36sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    app:layout_constraintHorizontal_weight="1"
-                    app:layout_constraintVertical_bias="0.2"
                     app:layout_constraintBottom_toTopOf="@id/character_info_imageview"
                     app:layout_constraintEnd_toStartOf="@id/character_info_genero"
+                    app:layout_constraintHorizontal_weight="1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.2"
                     tools:ignore="TextContrastCheck"
                     tools:layout_editor_absoluteY="456dp"
                     tools:text="@string/string_teste_nome" />
+
+                <ImageView
+                    android:id="@+id/bolinha_status_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:contentDescription="@string/content_description_images"
+                    android:srcCompact=''
+                    app:layout_constraintBottom_toBottomOf="@id/character_info_status"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.37"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/character_info_status"
+                    app:srcCompat="@drawable/ic_bolinha_status"
+                    app:tint="@color/verde_limao" />
 
                 <TextView
                     android:id="@+id/character_info_status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/verde_limao"
+                    android:layout_marginTop="5dp"
                     android:textSize="25sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
@@ -89,16 +104,16 @@
                     android:id="@+id/character_info_label_specie"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="100dp"
                     android:layout_marginStart="5dp"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily='casual'
                     android:text="@string/string_specie_label"
                     android:textColor="@color/white"
                     android:textSize="22sp"
                     android:textStyle="bold"
-                    android:fontFamily = 'casual'
-                    tools:ignore="TextContrastCheck"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/character_info_imageview"/>
+                    app:layout_constraintTop_toBottomOf="@id/character_info_imageview"
+                    tools:ignore="TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/character_info_specie"
@@ -109,46 +124,46 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    tools:ignore="TextContrastCheck"
-                    tools:text="@string/string_specie"
+                    app:layout_constraintBottom_toBottomOf="@id/character_info_label_specie"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0"
                     app:layout_constraintStart_toEndOf="@id/character_info_label_specie"
                     app:layout_constraintTop_toTopOf="@id/character_info_label_specie"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="@id/character_info_label_specie"/>
+                    tools:ignore="TextContrastCheck"
+                    tools:text="@string/string_specie" />
 
                 <TextView
                     android:id="@+id/character_info_genero"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
+                    android:layout_marginEnd="10dp"
                     android:textColor="@color/azul_claro_rick"
-                    android:layout_marginEnd="5dp"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
+                    app:layout_constraintBottom_toBottomOf="@id/character_info_name"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_weight="1"
-                    tools:ignore="TextContrastCheck"
-                    tools:background = "@drawable/ic_male"
-                    tools:text="@string/content_description_images"
                     app:layout_constraintStart_toEndOf="@id/character_info_name"
                     app:layout_constraintTop_toTopOf="@id/character_info_name"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="@id/character_info_name"/>
+                    tools:background="@drawable/ic_male"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="@string/content_description_images" />
 
                 <TextView
                     android:id="@+id/character_info_label_origem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="55dp"
+                    android:fontFamily='casual'
                     android:text="@string/string_origem_label"
                     android:textColor="@color/white"
                     android:textSize="22sp"
                     android:textStyle="bold"
-                    android:fontFamily = 'casual'
-                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@id/character_info_label_specie"
                     app:layout_constraintTop_toBottomOf="@id/character_info_label_specie"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    app:layout_constraintVertical_bias="0" />
 
                 <TextView
                     android:id="@+id/character_info_origem"
@@ -159,13 +174,13 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    tools:ignore="TextContrastCheck"
-                    tools:text="@string/string_origem"
+                    app:layout_constraintBottom_toBottomOf="@id/character_info_label_origem"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0"
                     app:layout_constraintStart_toEndOf="@id/character_info_label_origem"
                     app:layout_constraintTop_toTopOf="@id/character_info_label_origem"
-                    app:layout_constraintBottom_toBottomOf="@id/character_info_label_origem"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    tools:ignore="TextContrastCheck"
+                    tools:text="@string/string_origem" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
