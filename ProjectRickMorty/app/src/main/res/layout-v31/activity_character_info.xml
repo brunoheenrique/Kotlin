@@ -141,7 +141,7 @@
 
                 <TextView
                     android:id="@+id/character_info_specie"
-                    android:layout_width="120dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:textColor="#BCAAA4"
@@ -201,7 +201,7 @@
 
                 <TextView
                     android:id="@+id/character_info_origem"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:textColor="@color/cinza_mais_branco"
