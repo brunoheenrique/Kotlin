@@ -10,10 +10,10 @@
         android:id="@+id/logo_main_menu"
         android:layout_width="0dp"
         android:layout_height="240dp"
-        android:contentDescription="@string/content_description_images"
-        android:src="@mipmap/ic_logo_menu_foreground"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
+        android:contentDescription="@string/content_description_images"
+        android:src="@mipmap/ic_logo_menu_foreground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,51 +26,49 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="135dp"
         android:layout_marginEnd="35dp"
-        android:background = "@drawable/botao_com_efeito_clique"
+        android:background="@drawable/botao_com_efeito_clique"
+        android:fontFamily="@font/new_era_casual_bold_italic"
         android:text="@string/string_menu_personagens"
         android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:textSize="33sp"
         app:layout_constraintBottom_toTopOf="@id/menu_botao_personagens"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo_main_menu"
         tools:ignore="TextContrastCheck" />
 
-<!--    android:background="@drawable/botao_arredondado"-->
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/menu_botao_episodios"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_marginTop="15dp"
         android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="35dp"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:background = "@drawable/botao_com_efeito_clique"
+        android:background="@drawable/botao_com_efeito_clique"
         android:text="@string/string_menu_episodios"
-        app:layout_constraintTop_toBottomOf="@id/menu_botao_personagens"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        android:fontFamily='@font/new_era_casual_bold_italic'
+        app:layout_constraintBottom_toTopOf="@id/menu_botao_locais"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/menu_botao_locais"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_botao_personagens"
+        tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/menu_botao_locais"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_marginTop="15dp"
         android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="35dp"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:background = "@drawable/botao_com_efeito_clique"
+        android:background="@drawable/botao_com_efeito_clique"
         android:text="@string/string_menu_locais"
-        app:layout_constraintTop_toBottomOf="@id/menu_botao_episodios"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        android:fontFamily='@font/new_era_casual_bold_italic'
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
+        app:layout_constraintTop_toBottomOf="@id/menu_botao_episodios" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

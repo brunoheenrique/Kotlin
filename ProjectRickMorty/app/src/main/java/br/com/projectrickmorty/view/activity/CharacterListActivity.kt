@@ -1,7 +1,7 @@
 package br.com.projectrickmorty.view.activity
 
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
@@ -19,8 +19,8 @@ class CharacterListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_list)
 
-        val botaoProximaPagina = findViewById<Button>(R.id.botao_charlist_proxima_pagina)
-        val botaoPaginaAnterior = findViewById<Button>(R.id.botao_charlist_pagina_anterior)
+        val botaoProximaPagina = findViewById<ImageButton>(R.id.botao_charlist_proxima_pagina)
+        val botaoPaginaAnterior = findViewById<ImageButton>(R.id.botao_charlist_pagina_anterior)
         val paginaTextview = findViewById<TextView>(R.id.charlist_pagina_textview)
 
         botaoProximaPagina.setOnClickListener {

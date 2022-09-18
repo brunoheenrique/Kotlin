@@ -19,4 +19,6 @@
     <color name="cinza_mais_branco">#BCAAA4</color>
     <color name="azul_meio_cinza">#F3495A65</color>
     <color name="transparente">#00FFFFFF</color>
+    <color name="cinza_meio_transparente">#BFBAB6B6</color>
+    <color name="cinza_escuro">#534F4F</color>
 </resources>

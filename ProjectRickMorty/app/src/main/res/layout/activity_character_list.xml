@@ -7,12 +7,12 @@
     tools:context=".view.activity.CharacterListActivity"
     android:background="@drawable/rick_backgroun7">
 
-    <androidx.appcompat.widget.AppCompatButton
+    <ImageButton
         android:id="@+id/botao_charlist_proxima_pagina"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="8dp"
-        android:background = "@drawable/ic_right_arrow"
+        android:background = "@drawable/ic_circle_arrow_right"
         android:contentDescription="@string/content_description_images"
         app:layout_constraintBottom_toTopOf="@id/character_list_recyclerview"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:textSize="23sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/character_list_recyclerview"
         app:layout_constraintEnd_toStartOf="@id/botao_charlist_proxima_pagina"
@@ -35,12 +35,12 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="2" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <ImageButton
         android:id="@+id/botao_charlist_pagina_anterior"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:background = "@drawable/ic_left_arrow"
+        android:background = "@drawable/ic_circle_arrow_left"
         android:contentDescription="@string/content_description_images"
         app:layout_constraintBottom_toTopOf="@id/character_list_recyclerview"
         app:layout_constraintEnd_toStartOf="@id/botao_charlist_proxima_pagina"
@@ -54,6 +54,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="1dp"
+        android:background = "@color/transparente"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
