@@ -1,9 +1,6 @@
 package br.com.projectrickmorty.controller.retrofit
 
-import br.com.projectrickmorty.model.CharList
-import br.com.projectrickmorty.model.CharPosts
-import br.com.projectrickmorty.model.EpisodePosts
-import br.com.projectrickmorty.model.LocationPosts
+import br.com.projectrickmorty.model.*
 import retrofit2.Response
 
 class SharedRepository {
@@ -11,11 +8,11 @@ class SharedRepository {
     suspend fun getCharId(id: Int): CharPosts? {
         val request = NetworkUtils.charApiClient.getCharacterById(id)
 
-        if(request.failed){
+        if (request.failed) {
             return null
         }
 
-        if (!request.isSuccessful){
+        if (!request.isSuccessful) {
             return null
         }
 
@@ -25,11 +22,11 @@ class SharedRepository {
     suspend fun getEpisodeId(id: Int): EpisodePosts? {
         val request = NetworkUtils.epApiClient.getEpisodeById(id)
 
-        if(request.failed){
+        if (request.failed) {
             return null
         }
 
-        if (!request.isSuccessful){
+        if (!request.isSuccessful) {
             return null
         }
 
@@ -39,26 +36,26 @@ class SharedRepository {
     suspend fun getLocalId(id: Int): LocationPosts? {
         val request = NetworkUtils.localApiClient.getLocationById(id)
 
-        if(request.failed){
+        if (request.failed) {
             return null
         }
 
-        if (!request.isSuccessful){
+        if (!request.isSuccessful) {
             return null
         }
 
         return request.body
     }
 
-    suspend fun getCharList(page:Int): Response<CharList> {
+    suspend fun getCharList(page: Int): Response<CharList> {
         return NetworkUtils.charApi.getCharListPost(page)
     }
 
-    suspend fun getEpisodeList(): Response<List<EpisodePosts>>{
-        return NetworkUtils.epiApi.getEpisodeListPost()
+    suspend fun getEpisodeList(page: Int): Response<EpisodeList> {
+        return NetworkUtils.epiApi.getEpisodeListPost(page)
     }
 
-    suspend fun getLocationList(): Response<List<LocationPosts>>{
+    suspend fun getLocationList(): Response<List<LocationPosts>> {
         return NetworkUtils.localApi.getLocalListPost()
     }
 

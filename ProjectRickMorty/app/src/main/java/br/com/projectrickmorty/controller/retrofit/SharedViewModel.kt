@@ -23,7 +23,7 @@ class SharedViewModel : ViewModel() {
     private val _localByIdLiveData = MutableLiveData<LocationPosts?>()
     val localByIdLiveData : LiveData<LocationPosts?> = _localByIdLiveData
 
-    val listEpisodeLiveData : MutableLiveData<Response<List<EpisodePosts>>> = MutableLiveData()
+    val listEpisodeLiveData = MutableLiveData<List<EpisodePosts>>()
     val listCharacterLiveData = MutableLiveData<List<CharPosts>>()
     val listLocalLiveData : MutableLiveData<Response<List<LocationPosts>>> = MutableLiveData()
 
@@ -58,10 +58,10 @@ class SharedViewModel : ViewModel() {
         }
     }
 
-    fun refreshEpList(){
+    fun refreshEpList(page: Int){
         viewModelScope.launch {
-            val response = repository.getEpisodeList()
-            listEpisodeLiveData.value = response
+            val response = repository.getEpisodeList(page)
+            listEpisodeLiveData.value = response.body()?.results
         }
     }
 

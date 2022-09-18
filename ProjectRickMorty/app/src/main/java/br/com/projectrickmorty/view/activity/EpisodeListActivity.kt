@@ -1,7 +1,8 @@
 package br.com.projectrickmorty.view.activity
 
 import android.os.Bundle
-import android.widget.Toast
+import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import br.com.projectrickmorty.R
@@ -10,6 +11,7 @@ import br.com.projectrickmorty.view.recycler.adapter.EpisodeListAdapter
 
 class EpisodeListActivity : AppCompatActivity() {
 
+    private var pagina: Int = 1
     private var viewModel = SharedViewModel()
     private val adapter by lazy { EpisodeListAdapter(this) }
 
@@ -17,15 +19,26 @@ class EpisodeListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_episode_list)
 
+        val botaoProximaPagina = findViewById<ImageButton>(R.id.botao_eplist_proxima_pagina)
+        val botaoPaginaAnterior= findViewById<ImageButton>(R.id.botao_eplist_pagina_anterior)
+        val paginaTextView= findViewById<TextView>(R.id.eplist_pagina_textview)
+
+        botaoProximaPagina.setOnClickListener {
+            pagina += 1
+            viewModel.refreshEpList(pagina)
+        }
+
+        botaoPaginaAnterior.setOnClickListener {
+            pagina-=1
+            viewModel.refreshEpList(pagina)
+        }
+
         setupRecyclerView()
 
-        viewModel.refreshEpList()
-        viewModel.listEpisodeLiveData.observe(this) { response ->
-            if (response.isSuccessful) {
-                response.body()?.let { adapter.setData(it) }
-            } else {
-                Toast.makeText(this, response.code(), Toast.LENGTH_SHORT).show()
-            }
+        viewModel.refreshEpList(pagina)
+        viewModel.listEpisodeLiveData.observe(this) {
+            paginaTextView.text = pagina.toString()
+            adapter.setData(it)
         }
     }
 

@@ -24,13 +24,17 @@ class CharacterListActivity : AppCompatActivity() {
         val paginaTextview = findViewById<TextView>(R.id.charlist_pagina_textview)
 
         botaoProximaPagina.setOnClickListener {
-            pagina += 1
-            viewModel.refreshCharList(pagina)
+            if (pagina < 42) {
+                pagina += 1
+                viewModel.refreshCharList(pagina)
+            }
         }
 
         botaoPaginaAnterior.setOnClickListener {
-            pagina-=1
-            viewModel.refreshCharList(pagina)
+            if (pagina > 1) {
+                pagina -= 1
+                viewModel.refreshCharList(pagina)
+            }
         }
 
         setupRecyclerView()
