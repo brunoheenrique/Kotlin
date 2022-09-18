@@ -1,48 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/fundo_azul_escuro_rick">
+
+    <TextView
+        android:id="@+id/episode_info_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90"
+        android:fontFamily='@font/casual_hardcore'
+        android:text='@string/string_titulo_info_eps'
+        android:textColor='@color/white'
+        android:textSize='57sp'
+        android:gravity='center'
+        app:layout_constraintBottom_toTopOf="@id/linha_layout_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id='@+id/linha_layout_1'
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginBottom="37dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/episode_info_label_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/episode_info_titulo" />
 
     <TextView
         android:id="@+id/episode_info_label_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="180dp"
         android:text="@string/string_label_nome"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/linha_layout_1" />
 
     <TextView
         android:id="@+id/episode_info_nome"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        tools:text="@string/string_nome_ep_teste"
-        android:textColor="@color/cinza_mais_branco"
-        android:textStyle="bold"
-        android:textSize="18sp"
         android:layout_marginStart="5dp"
+        android:textColor="@color/cinza_mais_branco"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/episode_info_label_name"
         app:layout_constraintStart_toEndOf="@id/episode_info_label_name"
         app:layout_constraintTop_toTopOf="@id/episode_info_label_name"
-        app:layout_constraintBottom_toBottomOf="@id/episode_info_label_name"/>
+        tools:text="@string/string_nome_ep_teste" />
 
     <TextView
         android:id="@+id/episode_info_label_code_ep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/string_codigo_ep_label"
-        android:textSize="22sp"
         android:layout_marginTop="45dp"
-        android:textStyle="bold"
         android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/episode_info_label_name"
-        app:layout_constraintTop_toBottomOf="@id/episode_info_label_name"/>
+        app:layout_constraintTop_toBottomOf="@id/episode_info_label_name"
+        tools:text="@string/string_codigo_ep_label" />
 
     <TextView
         android:id="@+id/episode_info_code_ep"
@@ -51,11 +78,11 @@
         android:layout_marginStart="5dp"
         android:text="@string/string_codigo_ep_teste"
         android:textColor="@color/cinza_mais_branco"
-        android:textStyle="bold"
         android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/episode_info_label_code_ep"
         app:layout_constraintStart_toEndOf="@id/episode_info_label_code_ep"
-        app:layout_constraintTop_toTopOf="@id/episode_info_label_code_ep"
-        app:layout_constraintBottom_toBottomOf="@id/episode_info_label_code_ep"/>
+        app:layout_constraintTop_toTopOf="@id/episode_info_label_code_ep" />
 
     <TextView
         android:id="@+id/episode_info_label_air_data"
@@ -63,23 +90,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:text="@string/string_data_lancamento_label"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@id/episode_info_label_code_ep"
-        app:layout_constraintTop_toBottomOf="@id/episode_info_label_code_ep"/>
+        app:layout_constraintTop_toBottomOf="@id/episode_info_label_code_ep" />
 
     <TextView
         android:id="@+id/episode_info_air_data"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        tools:text="@string/string_air_date_teste"
+        android:layout_marginStart="5dp"
         android:textColor="@color/cinza_mais_branco"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/episode_info_label_air_data"
         app:layout_constraintStart_toEndOf="@id/episode_info_label_air_data"
         app:layout_constraintTop_toTopOf="@id/episode_info_label_air_data"
-        app:layout_constraintBottom_toBottomOf="@id/episode_info_label_air_data"/>
+        tools:text="@string/string_air_date_teste" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
