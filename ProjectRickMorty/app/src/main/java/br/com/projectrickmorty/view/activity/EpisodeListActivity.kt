@@ -20,17 +20,21 @@ class EpisodeListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_episode_list)
 
         val botaoProximaPagina = findViewById<ImageButton>(R.id.botao_eplist_proxima_pagina)
-        val botaoPaginaAnterior= findViewById<ImageButton>(R.id.botao_eplist_pagina_anterior)
-        val paginaTextView= findViewById<TextView>(R.id.eplist_pagina_textview)
+        val botaoPaginaAnterior = findViewById<ImageButton>(R.id.botao_eplist_pagina_anterior)
+        val paginaTextView = findViewById<TextView>(R.id.eplist_pagina_textview)
 
         botaoProximaPagina.setOnClickListener {
-            pagina += 1
-            viewModel.refreshEpList(pagina)
+            if (pagina < 3) {
+                pagina += 1
+                viewModel.refreshEpList(pagina)
+            }
         }
 
         botaoPaginaAnterior.setOnClickListener {
-            pagina-=1
-            viewModel.refreshEpList(pagina)
+            if (pagina > 1) {
+                pagina -= 1
+                viewModel.refreshEpList(pagina)
+            }
         }
 
         setupRecyclerView()
