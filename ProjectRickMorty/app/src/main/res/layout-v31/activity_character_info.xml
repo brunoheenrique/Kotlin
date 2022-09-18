@@ -56,9 +56,9 @@
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:textColor="@color/white"
-                    android:textSize="36sp"
+                    android:textSize="58sp"
                     android:textStyle="bold"
-                    app:fontFamily="casual"
+                    app:fontFamily="@font/casual_hardcore"
                     app:layout_constraintBottom_toTopOf="@id/character_info_imageview"
                     app:layout_constraintEnd_toStartOf="@id/character_info_genero"
                     app:layout_constraintHorizontal_weight="1"
@@ -69,15 +69,26 @@
                     tools:layout_editor_absoluteY="456dp"
                     tools:text="@string/string_teste_nome" />
 
+                <View
+                    android:id='@+id/linha_layout_1'
+                    android:layout_width="327dp"
+                    android:layout_height="8dp"
+                    android:layout_marginBottom="37dp"
+                    android:background = "@color/white"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintTop_toBottomOf="@id/character_info_name"
+                    app:layout_constraintBottom_toTopOf="@id/character_info_imageview"
+                    app:layout_constraintStart_toStartOf="@id/character_info_name"
+                    app:layout_constraintEnd_toEndOf="@id/character_info_name"/>
+
                 <ImageView
                     android:id="@+id/bolinha_status_info"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
+                    android:layout_marginStart="150dp"
                     android:contentDescription="@string/content_description_images"
-                    android:srcCompact=''
                     app:layout_constraintBottom_toBottomOf="@id/character_info_status"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.37"
+                    app:layout_constraintEnd_toStartOf="@id/bolinha_status_info"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/character_info_status"
                     app:srcCompat="@drawable/ic_bolinha_status"
@@ -85,34 +96,47 @@
 
                 <TextView
                     android:id="@+id/character_info_status"
-                    android:layout_width="wrap_content"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/verde_limao"
+                    android:layout_marginStart="40dp"
                     android:layout_marginTop="5dp"
-                    android:textSize="25sp"
+                    android:layout_marginEnd="160dp"
+                    android:textColor="@color/verde_limao"
+                    android:textSize="33sp"
                     android:textStyle="bold"
-                    app:fontFamily="casual"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:fontFamily="@font/new_era_casual_regular"
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_2"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toEndOf="@id/bolinha_status_info"
                     app:layout_constraintTop_toBottomOf="@id/character_info_imageview"
                     app:layout_constraintVertical_bias="0.02"
                     tools:ignore="TextContrastCheck"
                     tools:text="@string/string_status" />
 
+                <View
+                    android:id='@+id/linha_layout_2'
+                    android:layout_width="380dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background = "@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/bolinha_status_info"
+                    app:layout_constraintBottom_toTopOf="@id/character_info_label_specie"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
                 <TextView
                     android:id="@+id/character_info_label_specie"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="100dp"
-                    android:fontFamily='casual'
+                    android:fontFamily='@font/new_era_casual_regular'
                     android:text="@string/string_specie_label"
                     android:textColor="@color/white"
-                    android:textSize="22sp"
+                    android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/character_info_imageview"
+                    app:layout_constraintStart_toStartOf="@id/linha_layout_2"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_2"
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
                     tools:ignore="TextContrastCheck" />
 
                 <TextView
@@ -121,21 +145,31 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:textColor="#BCAAA4"
-                    android:textSize="20sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
-                    app:fontFamily="casual"
+                    app:fontFamily="@font/new_era_casual_regular"
                     app:layout_constraintBottom_toBottomOf="@id/character_info_label_specie"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0"
                     app:layout_constraintStart_toEndOf="@id/character_info_label_specie"
                     app:layout_constraintTop_toTopOf="@id/character_info_label_specie"
                     tools:ignore="TextContrastCheck"
-                    tools:text="@string/string_specie" />
+                    tools:text="@string/string_specie"/>
+
+                <View
+                    android:id='@+id/linha_layout_3'
+                    android:layout_width="380dp"
+                    android:layout_height="5dp"
+                    android:background = "@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/character_info_label_specie"
+                    app:layout_constraintBottom_toTopOf="@id/character_info_label_origem"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
                 <TextView
                     android:id="@+id/character_info_genero"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
                     android:layout_marginEnd="10dp"
                     android:textColor="@color/azul_claro_rick"
                     android:textSize="18sp"
@@ -154,15 +188,15 @@
                     android:id="@+id/character_info_label_origem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
-                    android:fontFamily='casual'
+                    android:layout_marginTop="1dp"
+                    android:fontFamily='@font/new_era_casual_regular'
                     android:text="@string/string_origem_label"
                     android:textColor="@color/white"
-                    android:textSize="22sp"
+                    android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@id/character_info_label_specie"
-                    app:layout_constraintTop_toBottomOf="@id/character_info_label_specie"
+                    app:layout_constraintBottom_toBottomOf="@id/linha_layout_4"
+                    app:layout_constraintStart_toStartOf="@id/linha_layout_3"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_3"
                     app:layout_constraintVertical_bias="0" />
 
                 <TextView
@@ -171,9 +205,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:textColor="@color/cinza_mais_branco"
-                    android:textSize="18sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
-                    app:fontFamily="casual"
+                    android:maxLines = "1"
+                    android:ellipsize = "end"
+                    app:fontFamily="@font/new_era_casual_regular"
                     app:layout_constraintBottom_toBottomOf="@id/character_info_label_origem"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0"
@@ -181,6 +217,17 @@
                     app:layout_constraintTop_toTopOf="@id/character_info_label_origem"
                     tools:ignore="TextContrastCheck"
                     tools:text="@string/string_origem" />
+
+                <View
+                    android:id='@+id/linha_layout_4'
+                    android:layout_width="380dp"
+                    android:layout_height="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:background = "@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/character_info_label_origem"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>

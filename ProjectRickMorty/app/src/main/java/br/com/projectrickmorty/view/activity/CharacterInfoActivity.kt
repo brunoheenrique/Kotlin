@@ -6,6 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import br.com.projectrickmorty.R
 import br.com.projectrickmorty.controller.retrofit.SharedViewModel
 import com.squareup.picasso.Picasso
@@ -26,6 +27,7 @@ class CharacterInfoActivity : AppCompatActivity() {
         val generoTexto = findViewById<TextView>(R.id.character_info_genero)
         val imagemChar = findViewById<ImageView>(R.id.character_info_imageview)
         val origemTexto = findViewById<TextView>(R.id.character_info_origem)
+        val bolinhaStatus = findViewById<ImageView>(R.id.bolinha_status_info)
 
         viewModel.refreshCharacter(id)
         viewModel.characterByIdLiveData.observe(this) { response ->
@@ -48,10 +50,13 @@ class CharacterInfoActivity : AppCompatActivity() {
 
             if(response.status.equals("Alive",  true)){
                 statusTexto.setTextColor(Color.parseColor("#32CD32"))
+                bolinhaStatus.setColorFilter(ContextCompat.getColor(baseContext,R.color.verde_limao))
             } else if (response.status.equals("Dead", true)) {
                 statusTexto.setTextColor(Color.parseColor("#FFEC0000"))
+                bolinhaStatus.setColorFilter(ContextCompat.getColor(baseContext,R.color.vermelho_mais_claro))
             }else {
                 statusTexto.setTextColor(Color.parseColor("#808080"))
+                bolinhaStatus.setColorFilter(ContextCompat.getColor(baseContext,R.color.cinza))
             }
 
             nomeTexto.text = response.name
