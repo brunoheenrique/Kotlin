@@ -207,7 +207,7 @@
                     android:textColor="@color/cinza_mais_branco"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:maxLines = "1"
+                    android:maxLines = "2"
                     android:ellipsize = "end"
                     app:fontFamily="@font/new_era_casual_regular"
                     app:layout_constraintBottom_toBottomOf="@id/character_info_label_origem"
