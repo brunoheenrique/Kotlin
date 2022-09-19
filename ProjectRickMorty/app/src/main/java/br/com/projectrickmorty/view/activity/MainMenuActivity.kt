@@ -11,21 +11,33 @@ class MainMenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
-        val characterButton = findViewById<Button>(R.id.menu_botao_personagens)
-        characterButton.setOnClickListener {
-            val intent = Intent(this, CharacterListActivity::class.java)
+        entraCharListActivity()
+
+        entraEpisodeListActivity()
+
+        entraLocalListActivity()
+    }
+
+    private fun entraLocalListActivity() {
+        val placesButton = findViewById<Button>(R.id.menu_botao_locais)
+        placesButton.setOnClickListener {
+            val intent = Intent(this, LocalListActivity::class.java)
             startActivity(intent)
         }
+    }
 
+    private fun entraEpisodeListActivity() {
         val episodesButton = findViewById<Button>(R.id.menu_botao_episodios)
         episodesButton.setOnClickListener {
             val intent = Intent(this, EpisodeListActivity::class.java)
             startActivity(intent)
         }
+    }
 
-        val placesButton = findViewById<Button>(R.id.menu_botao_locais)
-        placesButton.setOnClickListener {
-            val intent = Intent(this, LocalListActivity::class.java)
+    private fun entraCharListActivity() {
+        val characterButton = findViewById<Button>(R.id.menu_botao_personagens)
+        characterButton.setOnClickListener {
+            val intent = Intent(this, CharacterListActivity::class.java)
             startActivity(intent)
         }
     }

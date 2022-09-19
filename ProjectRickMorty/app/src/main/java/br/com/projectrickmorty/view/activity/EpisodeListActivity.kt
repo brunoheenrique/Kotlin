@@ -23,6 +23,21 @@ class EpisodeListActivity : AppCompatActivity() {
         val botaoPaginaAnterior = findViewById<ImageButton>(R.id.botao_eplist_pagina_anterior)
         val paginaTextView = findViewById<TextView>(R.id.eplist_pagina_textview)
 
+        defineListenersBotoes(botaoProximaPagina, botaoPaginaAnterior)
+
+        setupRecyclerView()
+
+        viewModel.refreshEpList(pagina)
+        viewModel.listEpisodeLiveData.observe(this) {
+            paginaTextView.text = pagina.toString()
+            adapter.setData(it)
+        }
+    }
+
+    private fun defineListenersBotoes(
+        botaoProximaPagina: ImageButton,
+        botaoPaginaAnterior: ImageButton
+    ) {
         botaoProximaPagina.setOnClickListener {
             if (pagina < 3) {
                 pagina += 1
@@ -35,14 +50,6 @@ class EpisodeListActivity : AppCompatActivity() {
                 pagina -= 1
                 viewModel.refreshEpList(pagina)
             }
-        }
-
-        setupRecyclerView()
-
-        viewModel.refreshEpList(pagina)
-        viewModel.listEpisodeLiveData.observe(this) {
-            paginaTextView.text = pagina.toString()
-            adapter.setData(it)
         }
     }
 

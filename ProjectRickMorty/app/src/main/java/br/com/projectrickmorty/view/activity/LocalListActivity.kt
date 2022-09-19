@@ -23,6 +23,21 @@ class LocalListActivity : AppCompatActivity() {
         val botaoPaginaAnterior = findViewById<ImageButton>(R.id.botao_locallist_pagina_anterior)
         val paginaTextView = findViewById<TextView>(R.id.locallist_pagina_textview)
 
+        defineListenerBotoes(botaoProximaPagina, botaoPaginaAnterior)
+
+        setupRecyclerView()
+
+        viewModel.refreshLocalList(pagina)
+        viewModel.listLocalLiveData.observe(this) {
+            paginaTextView.text = pagina.toString()
+            adapter.setData(it)
+        }
+    }
+
+    private fun defineListenerBotoes(
+        botaoProximaPagina: ImageButton,
+        botaoPaginaAnterior: ImageButton
+    ) {
         botaoProximaPagina.setOnClickListener {
             if (pagina < 7) {
                 pagina += 1
@@ -35,14 +50,6 @@ class LocalListActivity : AppCompatActivity() {
                 pagina -= 1
                 viewModel.refreshLocalList(pagina)
             }
-        }
-
-        setupRecyclerView()
-
-        viewModel.refreshLocalList(pagina)
-        viewModel.listLocalLiveData.observe(this) {
-            paginaTextView.text = pagina.toString()
-            adapter.setData(it)
         }
     }
 

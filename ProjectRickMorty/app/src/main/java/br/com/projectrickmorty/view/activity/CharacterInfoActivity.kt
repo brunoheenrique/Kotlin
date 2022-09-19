@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import br.com.projectrickmorty.R
 import br.com.projectrickmorty.controller.retrofit.SharedViewModel
+import br.com.projectrickmorty.model.CharPosts
 import com.squareup.picasso.Picasso
 
 class CharacterInfoActivity : AppCompatActivity() {
@@ -43,59 +44,12 @@ class CharacterInfoActivity : AppCompatActivity() {
 
             origemTexto.setOnClickListener {
                 val pagina = response.origin.url
-                when (pagina.length) {
-                    43 -> {
-                        val paginaString = pagina.subSequence(41, 43) as String
-                        val idPagina: Int = paginaString.toInt()
-                        val intent = Intent(this, LocalInfoActivity::class.java)
-                        intent.putExtra("id",idPagina)
-                        startActivity(intent)
-                    }
-                    42 -> {
-                        val paginaString = pagina.subSequence(41, 42) as String
-                        val idPagina: Int = paginaString.toInt()
-                        val intent = Intent(this, LocalInfoActivity::class.java)
-                        intent.putExtra("id",idPagina)
-                        startActivity(intent)
-                    }
-                    44 -> {
-                        val paginaString = pagina.subSequence(41, 44) as String
-                        val idPagina: Int = paginaString.toInt()
-                        val intent = Intent(this, LocalInfoActivity::class.java)
-                        intent.putExtra("id",idPagina)
-                        startActivity(intent)
-                    }
-                }
+                defineIdPaginaNoClick(pagina)
             }
 
-            if (response.gender.equals(other = "Male", true)) {
-                generoTexto.setBackgroundResource(R.drawable.ic_male)
-            } else if (response.gender.equals(other = "Female", true)) {
-                generoTexto.setBackgroundResource(R.drawable.ic_female)
-            } else {
-                generoTexto.setBackgroundResource(R.drawable.ic_question)
-            }
+            defineGenero(response, generoTexto)
 
-            if (response.status.equals("Alive", true)) {
-                statusTexto.setTextColor(Color.parseColor("#32CD32"))
-                bolinhaStatus.setColorFilter(
-                    ContextCompat.getColor(
-                        baseContext,
-                        R.color.verde_limao
-                    )
-                )
-            } else if (response.status.equals("Dead", true)) {
-                statusTexto.setTextColor(Color.parseColor("#FFEC0000"))
-                bolinhaStatus.setColorFilter(
-                    ContextCompat.getColor(
-                        baseContext,
-                        R.color.vermelho_mais_claro
-                    )
-                )
-            } else {
-                statusTexto.setTextColor(Color.parseColor("#808080"))
-                bolinhaStatus.setColorFilter(ContextCompat.getColor(baseContext, R.color.cinza))
-            }
+            defineStatus(response, statusTexto, bolinhaStatus)
 
             nomeTexto.text = response.name
             statusTexto.text = response.status
@@ -103,6 +57,72 @@ class CharacterInfoActivity : AppCompatActivity() {
             origemTexto.text = response.origin.name
             Picasso.get().load(response.image).into(imagemChar)
 
+        }
+    }
+
+    private fun defineGenero(
+        response: CharPosts,
+        generoTexto: TextView
+    ) {
+        if (response.gender.equals(other = "Male", true)) {
+            generoTexto.setBackgroundResource(R.drawable.ic_male)
+        } else if (response.gender.equals(other = "Female", true)) {
+            generoTexto.setBackgroundResource(R.drawable.ic_female)
+        } else {
+            generoTexto.setBackgroundResource(R.drawable.ic_question)
+        }
+    }
+
+    private fun defineStatus(
+        response: CharPosts,
+        statusTexto: TextView,
+        bolinhaStatus: ImageView
+    ) {
+        if (response.status.equals("Alive", true)) {
+            statusTexto.setTextColor(Color.parseColor("#32CD32"))
+            bolinhaStatus.setColorFilter(
+                ContextCompat.getColor(
+                    baseContext,
+                    R.color.verde_limao
+                )
+            )
+        } else if (response.status.equals("Dead", true)) {
+            statusTexto.setTextColor(Color.parseColor("#FFEC0000"))
+            bolinhaStatus.setColorFilter(
+                ContextCompat.getColor(
+                    baseContext,
+                    R.color.vermelho_mais_claro
+                )
+            )
+        } else {
+            statusTexto.setTextColor(Color.parseColor("#808080"))
+            bolinhaStatus.setColorFilter(ContextCompat.getColor(baseContext, R.color.cinza))
+        }
+    }
+
+    private fun defineIdPaginaNoClick(pagina: String) {
+        when (pagina.length) {
+            43 -> {
+                val paginaString = pagina.subSequence(41, 43) as String
+                val idPagina: Int = paginaString.toInt()
+                val intent = Intent(this, LocalInfoActivity::class.java)
+                intent.putExtra("id", idPagina)
+                startActivity(intent)
+            }
+            42 -> {
+                val paginaString = pagina.subSequence(41, 42) as String
+                val idPagina: Int = paginaString.toInt()
+                val intent = Intent(this, LocalInfoActivity::class.java)
+                intent.putExtra("id", idPagina)
+                startActivity(intent)
+            }
+            44 -> {
+                val paginaString = pagina.subSequence(41, 44) as String
+                val idPagina: Int = paginaString.toInt()
+                val intent = Intent(this, LocalInfoActivity::class.java)
+                intent.putExtra("id", idPagina)
+                startActivity(intent)
+            }
         }
     }
 }

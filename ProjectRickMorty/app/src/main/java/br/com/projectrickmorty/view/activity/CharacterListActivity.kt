@@ -23,6 +23,21 @@ class CharacterListActivity : AppCompatActivity() {
         val botaoPaginaAnterior = findViewById<ImageButton>(R.id.botao_charlist_pagina_anterior)
         val paginaTextview = findViewById<TextView>(R.id.charlist_pagina_textview)
 
+        defineListenersBotoes(botaoProximaPagina, botaoPaginaAnterior)
+
+        setupRecyclerView()
+
+        viewModel.refreshCharList(pagina)
+        viewModel.listCharacterLiveData.observe(this) {
+            paginaTextview.text = pagina.toString()
+            adapter.setData(it)
+        }
+    }
+
+    private fun defineListenersBotoes(
+        botaoProximaPagina: ImageButton,
+        botaoPaginaAnterior: ImageButton
+    ) {
         botaoProximaPagina.setOnClickListener {
             if (pagina < 42) {
                 pagina += 1
@@ -35,14 +50,6 @@ class CharacterListActivity : AppCompatActivity() {
                 pagina -= 1
                 viewModel.refreshCharList(pagina)
             }
-        }
-
-        setupRecyclerView()
-
-        viewModel.refreshCharList(pagina)
-        viewModel.listCharacterLiveData.observe(this) {
-            paginaTextview.text = pagina.toString()
-            adapter.setData(it)
         }
     }
 
