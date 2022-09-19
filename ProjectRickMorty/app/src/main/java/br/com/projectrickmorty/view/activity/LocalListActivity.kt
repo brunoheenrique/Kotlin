@@ -24,7 +24,7 @@ class LocalListActivity : AppCompatActivity() {
         val paginaTextView = findViewById<TextView>(R.id.locallist_pagina_textview)
 
         botaoProximaPagina.setOnClickListener {
-            if (pagina < 3) {
+            if (pagina < 7) {
                 pagina += 1
                 viewModel.refreshLocalList(pagina)
             }
