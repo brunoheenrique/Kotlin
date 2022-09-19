@@ -106,7 +106,7 @@
         android:layout_marginStart="5dp"
         android:ellipsize='end'
         android:fontFamily='@font/new_era_casual_regular'
-        android:maxLines='1'
+        android:maxLines='2'
         android:textColor="@color/cinza_mais_branco"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@id/local_info_type_label"
@@ -142,14 +142,15 @@
 
     <TextView
         android:id="@+id/local_info_dimensao"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:ellipsize='end'
         android:fontFamily='@font/new_era_casual_regular'
-        android:maxLines='1'
+        android:maxLines='2'
         android:textColor="@color/cinza_mais_branco"
         android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/local_info_dimensao_label"
         app:layout_constraintStart_toEndOf="@id/local_info_dimensao_label"
         app:layout_constraintTop_toTopOf="@id/local_info_dimensao_label"
