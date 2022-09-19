@@ -31,4 +31,5 @@
     <string name="string_residents_label">Residentes:</string>
     <string name="string_residentes_teste">Humanos</string>
     <string name="string_titulo_info_eps">Episódio Info.</string>
+    <string name="string_titulo_info_locais">Local Info.</string>
 </resources>

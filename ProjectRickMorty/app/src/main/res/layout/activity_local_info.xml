@@ -7,81 +7,164 @@
     android:background="@drawable/fundo_azul_escuro_rick">
 
     <TextView
+        android:id="@+id/local_info_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily='@font/casual_hardcore'
+        android:gravity='center'
+        android:text='@string/string_titulo_info_locais'
+        android:textColor='@color/white'
+        android:textSize='57sp'
+        app:layout_constraintBottom_toTopOf="@id/linha_layout_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id='@+id/linha_layout_1'
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/linha_layout_2"
+        app:layout_constraintEnd_toEndOf="@id/local_info_titulo"
+        app:layout_constraintStart_toStartOf="@id/local_info_titulo"
+        app:layout_constraintTop_toBottomOf="@id/local_info_titulo" />
+
+    <View
+        android:id='@+id/linha_layout_2'
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/local_info_label_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linha_layout_1" />
+
+    <TextView
         android:id="@+id/local_info_label_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily='@font/new_era_casual_bold'
         android:text="@string/string_label_nome"
-        android:textSize="22sp"
-        android:textStyle="bold"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
+        app:layout_constraintStart_toStartOf="@id/linha_layout_2"
+        app:layout_constraintTop_toBottomOf="@id/linha_layout_2" />
 
     <TextView
         android:id="@+id/local_info_name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        tools:text="@string/string_local"
+        android:ellipsize='end'
+        android:fontFamily='@font/new_era_casual_regular'
+        android:maxLines='1'
         android:textColor="@color/cinza_mais_branco"
-        android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@id/local_info_label_name"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/local_info_label_name"
         app:layout_constraintTop_toTopOf="@id/local_info_label_name"
-        app:layout_constraintBottom_toBottomOf="@id/local_info_label_name"/>
+        tools:text="@string/string_local" />
+
+    <View
+        android:id='@+id/linha_layout_3'
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/local_info_type_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/local_info_label_name" />
 
     <TextView
         android:id="@+id/local_info_type_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily='@font/new_era_casual_bold'
         android:text="@string/string_tipo_label"
-        android:textSize="22sp"
-        android:textStyle="bold"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@id/local_info_label_name"
-        app:layout_constraintTop_toBottomOf="@id/local_info_label_name"/>
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@id/linha_layout_3"
+        app:layout_constraintTop_toBottomOf="@id/linha_layout_3" />
 
     <TextView
         android:id="@+id/local_info_tipo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        tools:text="@string/string_local_tipo"
+        android:ellipsize='end'
+        android:fontFamily='@font/new_era_casual_regular'
+        android:maxLines='1'
         android:textColor="@color/cinza_mais_branco"
-        android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@id/local_info_type_label"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/local_info_type_label"
         app:layout_constraintTop_toTopOf="@id/local_info_type_label"
-        app:layout_constraintBottom_toBottomOf="@id/local_info_type_label"/>
+        tools:text="@string/string_local_tipo" />
+
+    <View
+        android:id='@+id/linha_layout_4'
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/local_info_dimensao_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/local_info_type_label" />
 
     <TextView
         android:id="@+id/local_info_dimensao_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/string_dimensao_label"
         android:layout_marginTop="45dp"
-        android:textSize="22sp"
-        android:textStyle="bold"
+        android:fontFamily='@font/new_era_casual_bold'
+        android:text="@string/string_dimensao_label"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@id/local_info_type_label"
-        app:layout_constraintTop_toBottomOf="@id/local_info_type_label"/>
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@id/linha_layout_4"
+        app:layout_constraintTop_toBottomOf="@id/linha_layout_4" />
 
     <TextView
         android:id="@+id/local_info_dimensao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        tools:text="@string/string_dimensao_teste"
+        android:ellipsize='end'
+        android:fontFamily='@font/new_era_casual_regular'
+        android:maxLines='1'
         android:textColor="@color/cinza_mais_branco"
-        android:textStyle="bold"
-        android:textSize="18sp"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@id/local_info_dimensao_label"
         app:layout_constraintStart_toEndOf="@id/local_info_dimensao_label"
         app:layout_constraintTop_toTopOf="@id/local_info_dimensao_label"
-        app:layout_constraintBottom_toBottomOf="@id/local_info_dimensao_label"/>
+        tools:text="@string/string_dimensao_teste" />
 
-
+    <View
+        android:id='@+id/linha_layout_5'
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/local_info_dimensao_label" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

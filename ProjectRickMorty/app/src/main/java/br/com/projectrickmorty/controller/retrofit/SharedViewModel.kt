@@ -8,7 +8,6 @@ import br.com.projectrickmorty.model.CharPosts
 import br.com.projectrickmorty.model.EpisodePosts
 import br.com.projectrickmorty.model.LocationPosts
 import kotlinx.coroutines.launch
-import retrofit2.Response
 
 class SharedViewModel : ViewModel() {
 
@@ -18,14 +17,14 @@ class SharedViewModel : ViewModel() {
     val characterByIdLiveData: LiveData<CharPosts?> = _characterByIdLiveData
 
     private val _episodeByIdLiveData = MutableLiveData<EpisodePosts?>()
-    val episodeByIdLiveData : LiveData<EpisodePosts?> = _episodeByIdLiveData
+    val episodeByIdLiveData: LiveData<EpisodePosts?> = _episodeByIdLiveData
 
     private val _localByIdLiveData = MutableLiveData<LocationPosts?>()
-    val localByIdLiveData : LiveData<LocationPosts?> = _localByIdLiveData
+    val localByIdLiveData: LiveData<LocationPosts?> = _localByIdLiveData
 
     val listEpisodeLiveData = MutableLiveData<List<EpisodePosts>>()
     val listCharacterLiveData = MutableLiveData<List<CharPosts>>()
-    val listLocalLiveData : MutableLiveData<Response<List<LocationPosts>>> = MutableLiveData()
+    val listLocalLiveData = MutableLiveData<List<LocationPosts>>()
 
     fun refreshCharacter(charId: Int) {
         viewModelScope.launch {
@@ -51,24 +50,24 @@ class SharedViewModel : ViewModel() {
         }
     }
 
-    fun refreshCharList(page:Int){
+    fun refreshCharList(page: Int) {
         viewModelScope.launch {
             val response = repository.getCharList(page)
             listCharacterLiveData.value = response.body()?.results
         }
     }
 
-    fun refreshEpList(page: Int){
+    fun refreshEpList(page: Int) {
         viewModelScope.launch {
             val response = repository.getEpisodeList(page)
             listEpisodeLiveData.value = response.body()?.results
         }
     }
 
-    fun refreshLocalList(){
+    fun refreshLocalList(page: Int) {
         viewModelScope.launch {
-            val response = repository.getLocationList()
-            listLocalLiveData.value = response
+            val response = repository.getLocationList(page)
+            listLocalLiveData.value = response.body()?.results
         }
     }
 

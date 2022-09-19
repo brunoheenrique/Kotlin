@@ -55,8 +55,8 @@ class SharedRepository {
         return NetworkUtils.epiApi.getEpisodeListPost(page)
     }
 
-    suspend fun getLocationList(): Response<List<LocationPosts>> {
-        return NetworkUtils.localApi.getLocalListPost()
+    suspend fun getLocationList(page: Int): Response<LocalList> {
+        return NetworkUtils.localApi.getLocalListPost(page)
     }
 
 }

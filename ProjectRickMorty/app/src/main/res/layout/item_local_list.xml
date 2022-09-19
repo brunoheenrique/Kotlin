@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/item_local_list_cardview"
@@ -13,6 +13,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="3dp"
+        app:cardBackgroundColor="@color/transparente"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,30 +27,34 @@
 
             <TextView
                 android:id="@+id/item_local_label_nome"
-                android:layout_width="60dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:textSize="22sp"
-                android:textColor="@color/black"
+                android:fontFamily='@font/new_era_casual_regular'
                 android:text="@string/string_lista_local_label"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/item_local_nome"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/item_local_nome"
-                android:layout_width="322dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                tools:text="@string/string_local"
                 android:layout_marginStart="3dp"
-                android:textSize="24sp"
+                android:layout_marginEnd="3dp"
                 android:textColor="@color/black"
-                android:textStyle="bold"
+                android:textSize="36sp"
+                android:maxLines = '1'
+                android:ellipsize = 'end'
+                android:fontFamily='@font/new_era_casual_bold'
                 app:layout_constraintBottom_toBottomOf="@id/item_local_label_nome"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/item_local_label_nome"
                 app:layout_constraintTop_toTopOf="@id/item_local_label_nome"
-                />
+                tools:text="@string/string_local" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

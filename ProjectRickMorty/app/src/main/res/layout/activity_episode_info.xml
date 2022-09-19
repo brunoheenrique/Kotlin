@@ -14,7 +14,7 @@
         android:background="@drawable/fundo_azul_escuro_rick">
 
         <TextView
-            android:id="@+id/episode_info_titulo"
+            android:id="@+id/local_info_titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
@@ -35,9 +35,9 @@
             android:layout_marginBottom="10dp"
             android:background="@color/white"
             app:layout_constraintBottom_toTopOf="@id/linha_layout_2"
-            app:layout_constraintEnd_toEndOf="@id/episode_info_titulo"
-            app:layout_constraintStart_toStartOf="@id/episode_info_titulo"
-            app:layout_constraintTop_toBottomOf="@id/episode_info_titulo" />
+            app:layout_constraintEnd_toEndOf="@id/local_info_titulo"
+            app:layout_constraintStart_toStartOf="@id/local_info_titulo"
+            app:layout_constraintTop_toBottomOf="@id/local_info_titulo"/>
 
         <View
             android:id='@+id/linha_layout_2'
@@ -50,8 +50,7 @@
             app:layout_constraintBottom_toTopOf="@id/episode_info_label_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/linha_layout_1"
-            app:layout_constraintVertical_weight="5" />
+            app:layout_constraintTop_toBottomOf="@id/linha_layout_1"/>
 
 
         <TextView
@@ -65,8 +64,7 @@
             android:textSize="36sp"
             app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
             app:layout_constraintStart_toStartOf="@id/linha_layout_2"
-            app:layout_constraintTop_toBottomOf="@id/linha_layout_2"
-            app:layout_constraintVertical_weight="5" />
+            app:layout_constraintTop_toBottomOf="@id/linha_layout_2"/>
 
         <TextView
             android:id="@+id/episode_info_nome"

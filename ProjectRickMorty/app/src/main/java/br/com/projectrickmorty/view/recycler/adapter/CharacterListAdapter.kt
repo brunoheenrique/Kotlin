@@ -43,7 +43,6 @@ class CharacterListAdapter(
             intent.putExtra("id",id)
             v.context.startActivity(intent)
         }
-
     }
 
     override fun getItemCount(): Int = charlist.size
