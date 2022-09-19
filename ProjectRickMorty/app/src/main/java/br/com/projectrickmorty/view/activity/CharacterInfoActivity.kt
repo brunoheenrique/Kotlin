@@ -1,5 +1,6 @@
 package br.com.projectrickmorty.view.activity
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.ImageView
@@ -19,7 +20,7 @@ class CharacterInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_info)
 
-        val id = intent.getIntExtra("id",1)
+        val id = intent.getIntExtra("id", 1)
 
         val nomeTexto = findViewById<TextView>(R.id.character_info_name)
         val statusTexto = findViewById<TextView>(R.id.character_info_status)
@@ -40,23 +41,60 @@ class CharacterInfoActivity : AppCompatActivity() {
                 return@observe
             }
 
-            if(response.gender.equals(other = "Male",  true)){
+            origemTexto.setOnClickListener {
+                val pagina = response.origin.url
+                when (pagina.length) {
+                    43 -> {
+                        val paginaString = pagina.subSequence(41, 43) as String
+                        val idPagina: Int = paginaString.toInt()
+                        val intent = Intent(this, LocalInfoActivity::class.java)
+                        intent.putExtra("id",idPagina)
+                        startActivity(intent)
+                    }
+                    42 -> {
+                        val paginaString = pagina.subSequence(41, 42) as String
+                        val idPagina: Int = paginaString.toInt()
+                        val intent = Intent(this, LocalInfoActivity::class.java)
+                        intent.putExtra("id",idPagina)
+                        startActivity(intent)
+                    }
+                    44 -> {
+                        val paginaString = pagina.subSequence(41, 44) as String
+                        val idPagina: Int = paginaString.toInt()
+                        val intent = Intent(this, LocalInfoActivity::class.java)
+                        intent.putExtra("id",idPagina)
+                        startActivity(intent)
+                    }
+                }
+            }
+
+            if (response.gender.equals(other = "Male", true)) {
                 generoTexto.setBackgroundResource(R.drawable.ic_male)
-            } else if(response.gender.equals(other = "Female",  true)) {
+            } else if (response.gender.equals(other = "Female", true)) {
                 generoTexto.setBackgroundResource(R.drawable.ic_female)
-            }else{
+            } else {
                 generoTexto.setBackgroundResource(R.drawable.ic_question)
             }
 
-            if(response.status.equals("Alive",  true)){
+            if (response.status.equals("Alive", true)) {
                 statusTexto.setTextColor(Color.parseColor("#32CD32"))
-                bolinhaStatus.setColorFilter(ContextCompat.getColor(baseContext,R.color.verde_limao))
+                bolinhaStatus.setColorFilter(
+                    ContextCompat.getColor(
+                        baseContext,
+                        R.color.verde_limao
+                    )
+                )
             } else if (response.status.equals("Dead", true)) {
                 statusTexto.setTextColor(Color.parseColor("#FFEC0000"))
-                bolinhaStatus.setColorFilter(ContextCompat.getColor(baseContext,R.color.vermelho_mais_claro))
-            }else {
+                bolinhaStatus.setColorFilter(
+                    ContextCompat.getColor(
+                        baseContext,
+                        R.color.vermelho_mais_claro
+                    )
+                )
+            } else {
                 statusTexto.setTextColor(Color.parseColor("#808080"))
-                bolinhaStatus.setColorFilter(ContextCompat.getColor(baseContext,R.color.cinza))
+                bolinhaStatus.setColorFilter(ContextCompat.getColor(baseContext, R.color.cinza))
             }
 
             nomeTexto.text = response.name
