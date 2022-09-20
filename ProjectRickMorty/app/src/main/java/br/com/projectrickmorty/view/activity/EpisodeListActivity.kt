@@ -19,6 +19,12 @@ class EpisodeListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_episode_list)
 
+        title = "Lista de Episódios"
+
+        val toolbar = supportActionBar
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+
         val botaoProximaPagina = findViewById<ImageButton>(R.id.botao_eplist_proxima_pagina)
         val botaoPaginaAnterior = findViewById<ImageButton>(R.id.botao_eplist_pagina_anterior)
         val paginaTextView = findViewById<TextView>(R.id.eplist_pagina_textview)
@@ -51,6 +57,11 @@ class EpisodeListActivity : AppCompatActivity() {
                 viewModel.refreshEpList(pagina)
             }
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     fun setupRecyclerView() {

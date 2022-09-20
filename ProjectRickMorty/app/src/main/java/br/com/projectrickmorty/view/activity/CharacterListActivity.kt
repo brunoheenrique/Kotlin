@@ -19,6 +19,12 @@ class CharacterListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_list)
 
+        title = "Lista de Personagens"
+
+        val toolbar = supportActionBar
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+
         val botaoProximaPagina = findViewById<ImageButton>(R.id.botao_charlist_proxima_pagina)
         val botaoPaginaAnterior = findViewById<ImageButton>(R.id.botao_charlist_pagina_anterior)
         val paginaTextview = findViewById<TextView>(R.id.charlist_pagina_textview)
@@ -51,6 +57,11 @@ class CharacterListActivity : AppCompatActivity() {
                 viewModel.refreshCharList(pagina)
             }
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     fun setupRecyclerView() {

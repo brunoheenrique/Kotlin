@@ -21,6 +21,12 @@ class CharacterInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_info)
 
+        title = ""
+
+        val toolbar = supportActionBar
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+
         val id = intent.getIntExtra("id", 1)
 
         val nomeTexto = findViewById<TextView>(R.id.character_info_name)
@@ -125,4 +131,10 @@ class CharacterInfoActivity : AppCompatActivity() {
             }
         }
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
 }

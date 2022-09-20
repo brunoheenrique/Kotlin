@@ -19,6 +19,12 @@ class LocalListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_local_list)
 
+        title = "Lista de Locais"
+
+        val toolbar = supportActionBar
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+
         val botaoProximaPagina = findViewById<ImageButton>(R.id.botao_locallist_proxima_pagina)
         val botaoPaginaAnterior = findViewById<ImageButton>(R.id.botao_locallist_pagina_anterior)
         val paginaTextView = findViewById<TextView>(R.id.locallist_pagina_textview)
@@ -51,6 +57,11 @@ class LocalListActivity : AppCompatActivity() {
                 viewModel.refreshLocalList(pagina)
             }
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     fun setupRecyclerView() {

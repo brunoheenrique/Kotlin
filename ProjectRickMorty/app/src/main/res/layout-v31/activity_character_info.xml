@@ -17,11 +17,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="50dp"
             app:cardBackgroundColor="@color/transparente"
-            app:cardCornerRadius="10dp"
+            app:cardCornerRadius="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,6 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
                 <ImageView
                     android:id="@+id/character_info_imageview"
                     android:layout_width="390dp"
@@ -53,13 +52,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:textColor="@color/white"
                     android:textSize="58sp"
                     android:textStyle="bold"
                     app:fontFamily="@font/casual_hardcore"
-                    app:layout_constraintBottom_toTopOf="@id/character_info_imageview"
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_1"
                     app:layout_constraintEnd_toStartOf="@id/character_info_genero"
                     app:layout_constraintHorizontal_weight="1"
                     app:layout_constraintStart_toStartOf="parent"
@@ -74,12 +74,11 @@
                     android:layout_width="0dp"
                     android:layout_height="8dp"
                     android:layout_marginBottom="37dp"
-                    android:background = "@color/white"
-                    app:layout_constraintHorizontal_bias="0"
-                    app:layout_constraintTop_toBottomOf="@id/character_info_name"
+                    android:background="@color/white"
                     app:layout_constraintBottom_toTopOf="@id/character_info_imageview"
+                    app:layout_constraintEnd_toEndOf="@id/character_info_name"
                     app:layout_constraintStart_toStartOf="@id/character_info_name"
-                    app:layout_constraintEnd_toEndOf="@id/character_info_name"/>
+                    app:layout_constraintTop_toBottomOf="@id/character_info_name" />
 
                 <ImageView
                     android:id="@+id/bolinha_status_info"
@@ -92,7 +91,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/character_info_status"
                     app:srcCompat="@drawable/ic_bolinha_status"
-                    app:tint="@color/verde_limao" />
+                    app:tint="@color/verde_limao"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/character_info_status"
@@ -119,11 +119,11 @@
                     android:layout_width="380dp"
                     android:layout_height="5dp"
                     android:layout_marginTop="20dp"
-                    android:background = "@color/white"
-                    app:layout_constraintTop_toBottomOf="@id/bolinha_status_info"
+                    android:background="@color/white"
                     app:layout_constraintBottom_toTopOf="@id/character_info_label_specie"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintTop_toBottomOf="@id/bolinha_status_info" />
 
                 <TextView
                     android:id="@+id/character_info_label_specie"
@@ -134,9 +134,9 @@
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
                     app:layout_constraintStart_toStartOf="@id/linha_layout_2"
                     app:layout_constraintTop_toBottomOf="@id/linha_layout_2"
-                    app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
                     tools:ignore="TextContrastCheck" />
 
                 <TextView
@@ -154,17 +154,17 @@
                     app:layout_constraintStart_toEndOf="@id/character_info_label_specie"
                     app:layout_constraintTop_toTopOf="@id/character_info_label_specie"
                     tools:ignore="TextContrastCheck"
-                    tools:text="@string/string_specie"/>
+                    tools:text="@string/string_specie" />
 
                 <View
                     android:id='@+id/linha_layout_3'
                     android:layout_width="380dp"
                     android:layout_height="5dp"
-                    android:background = "@color/white"
-                    app:layout_constraintTop_toBottomOf="@id/character_info_label_specie"
+                    android:background="@color/white"
                     app:layout_constraintBottom_toTopOf="@id/character_info_label_origem"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintTop_toBottomOf="@id/character_info_label_specie" />
 
                 <TextView
                     android:id="@+id/character_info_genero"
@@ -204,11 +204,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
                     android:textColor="@color/cinza_mais_branco"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:maxLines = "2"
-                    android:ellipsize = "end"
                     app:fontFamily="@font/new_era_casual_regular"
                     app:layout_constraintBottom_toBottomOf="@id/character_info_label_origem"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -223,11 +224,11 @@
                     android:layout_width="380dp"
                     android:layout_height="5dp"
                     android:layout_marginBottom="50dp"
-                    android:background = "@color/white"
-                    app:layout_constraintTop_toBottomOf="@id/character_info_label_origem"
+                    android:background="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintTop_toBottomOf="@id/character_info_label_origem" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>

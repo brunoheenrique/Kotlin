@@ -15,6 +15,12 @@ class LocalInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_local_info)
 
+        title = ""
+
+        val toolbar = supportActionBar
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.setDisplayHomeAsUpEnabled(true)
+
         val id = intent.getIntExtra("id",1)
 
         val nomeTexto = findViewById<TextView>(R.id.local_info_name)
@@ -37,5 +43,10 @@ class LocalInfoActivity : AppCompatActivity() {
             dimensaoTexto.text = response.dimension
 
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
