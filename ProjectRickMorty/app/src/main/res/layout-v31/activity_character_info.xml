@@ -29,7 +29,9 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background = '@drawable/formato_arredondado_cardview'>
+
                 <ImageView
                     android:id="@+id/character_info_imageview"
                     android:layout_width="390dp"
@@ -229,6 +231,41 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/character_info_label_origem" />
+
+                <ImageButton
+                    android:id='@+id/botao_personagem_anterior'
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background='@drawable/square_left_arrow_button'
+                    android:contentDescription="@string/content_description_images"
+                    android:elevation="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_charInfo"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="@id/linha_layout_4"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_4"
+                    tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_charInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="200dp" />
+
+                <ImageButton
+                    android:id='@+id/botao_proximo_personagem'
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background='@drawable/square_right_arrow_button'
+                    android:contentDescription="@string/content_description_images"
+                    android:elevation="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/linha_layout_4"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintStart_toEndOf="@id/guideline_charInfo"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_4"
+                    tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>

@@ -1,171 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo_azul_escuro_rick">
+    android:contentDescription="@string/content_description_images"
+    android:fillViewport='true'
+    android:overScrollMode='never'>
 
-    <TextView
-        android:id="@+id/local_info_titulo"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:fontFamily='@font/casual_hardcore'
-        android:gravity='center'
-        android:text='@string/string_titulo_info_locais'
-        android:textColor='@color/white'
-        android:textSize='57sp'
-        app:layout_constraintBottom_toTopOf="@id/linha_layout_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@drawable/fundo_azul_escuro_rick">
 
-    <View
-        android:id='@+id/linha_layout_1'
-        android:layout_width="0dp"
-        android:layout_height="8dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/linha_layout_2"
-        app:layout_constraintEnd_toEndOf="@id/local_info_titulo"
-        app:layout_constraintStart_toStartOf="@id/local_info_titulo"
-        app:layout_constraintTop_toBottomOf="@id/local_info_titulo" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="@color/transparente"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <View
-        android:id='@+id/linha_layout_2'
-        android:layout_width="0dp"
-        android:layout_height="5dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/local_info_label_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linha_layout_1" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background='@drawable/formato_arredondado_cardview'>
 
-    <TextView
-        android:id="@+id/local_info_label_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily='@font/new_era_casual_bold'
-        android:text="@string/string_label_nome"
-        android:textColor="@color/white"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
-        app:layout_constraintStart_toStartOf="@id/linha_layout_2"
-        app:layout_constraintTop_toBottomOf="@id/linha_layout_2" />
+                <TextView
+                    android:id="@+id/local_info_titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:fontFamily='@font/casual_hardcore'
+                    android:gravity='center'
+                    android:text='@string/string_titulo_info_locais'
+                    android:textColor='@color/white'
+                    android:textSize='57sp'
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/local_info_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:ellipsize='end'
-        android:fontFamily='@font/new_era_casual_regular'
-        android:maxLines='1'
-        android:textColor="@color/cinza_mais_branco"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="@id/local_info_label_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/local_info_label_name"
-        app:layout_constraintTop_toTopOf="@id/local_info_label_name"
-        tools:text="@string/string_local" />
+                <View
+                    android:id='@+id/linha_layout_1'
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_2"
+                    app:layout_constraintEnd_toEndOf="@id/local_info_titulo"
+                    app:layout_constraintStart_toStartOf="@id/local_info_titulo"
+                    app:layout_constraintTop_toBottomOf="@id/local_info_titulo" />
 
-    <View
-        android:id='@+id/linha_layout_3'
-        android:layout_width="0dp"
-        android:layout_height="5dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/local_info_type_label"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/local_info_label_name" />
+                <View
+                    android:id='@+id/linha_layout_2'
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/local_info_label_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_1" />
 
-    <TextView
-        android:id="@+id/local_info_type_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily='@font/new_era_casual_bold'
-        android:text="@string/string_tipo_label"
-        android:textColor="@color/white"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="@id/linha_layout_3"
-        app:layout_constraintTop_toBottomOf="@id/linha_layout_3" />
+                <TextView
+                    android:id="@+id/local_info_label_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily='@font/new_era_casual_bold'
+                    android:text="@string/string_label_nome"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
+                    app:layout_constraintStart_toStartOf="@id/linha_layout_2"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_2" />
 
-    <TextView
-        android:id="@+id/local_info_tipo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:ellipsize='end'
-        android:fontFamily='@font/new_era_casual_regular'
-        android:maxLines='2'
-        android:textColor="@color/cinza_mais_branco"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="@id/local_info_type_label"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/local_info_type_label"
-        app:layout_constraintTop_toTopOf="@id/local_info_type_label"
-        tools:text="@string/string_local_tipo" />
+                <TextView
+                    android:id="@+id/local_info_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:ellipsize='end'
+                    android:fontFamily='@font/new_era_casual_regular'
+                    android:maxLines='1'
+                    android:textColor="@color/cinza_mais_branco"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="@id/local_info_label_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/local_info_label_name"
+                    app:layout_constraintTop_toTopOf="@id/local_info_label_name"
+                    tools:text="@string/string_local" />
 
-    <View
-        android:id='@+id/linha_layout_4'
-        android:layout_width="0dp"
-        android:layout_height="5dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/local_info_dimensao_label"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/local_info_type_label" />
+                <View
+                    android:id='@+id/linha_layout_3'
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/local_info_type_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/local_info_label_name" />
 
-    <TextView
-        android:id="@+id/local_info_dimensao_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:fontFamily='@font/new_era_casual_bold'
-        android:text="@string/string_dimensao_label"
-        android:textColor="@color/white"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="@id/linha_layout_4"
-        app:layout_constraintTop_toBottomOf="@id/linha_layout_4" />
+                <TextView
+                    android:id="@+id/local_info_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily='@font/new_era_casual_bold'
+                    android:text="@string/string_tipo_label"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    app:layout_constraintStart_toStartOf="@id/linha_layout_3"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_3" />
 
-    <TextView
-        android:id="@+id/local_info_dimensao"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:ellipsize='end'
-        android:fontFamily='@font/new_era_casual_regular'
-        android:maxLines='2'
-        android:textColor="@color/cinza_mais_branco"
-        android:textSize="26sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/local_info_dimensao_label"
-        app:layout_constraintStart_toEndOf="@id/local_info_dimensao_label"
-        app:layout_constraintTop_toTopOf="@id/local_info_dimensao_label"
-        tools:text="@string/string_dimensao_teste" />
+                <TextView
+                    android:id="@+id/local_info_tipo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:ellipsize='end'
+                    android:fontFamily='@font/new_era_casual_regular'
+                    android:maxLines='2'
+                    android:textColor="@color/cinza_mais_branco"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="@id/local_info_type_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/local_info_type_label"
+                    app:layout_constraintTop_toTopOf="@id/local_info_type_label"
+                    tools:text="@string/string_local_tipo" />
 
-    <View
-        android:id='@+id/linha_layout_5'
-        android:layout_width="0dp"
-        android:layout_height="5dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/local_info_dimensao_label" />
+                <View
+                    android:id='@+id/linha_layout_4'
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/local_info_dimensao_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/local_info_type_label" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/local_info_dimensao_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily='@font/new_era_casual_bold'
+                    android:text="@string/string_dimensao_label"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    app:layout_constraintStart_toStartOf="@id/linha_layout_4"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_4" />
+
+                <TextView
+                    android:id="@+id/local_info_dimensao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:ellipsize='end'
+                    android:fontFamily='@font/new_era_casual_regular'
+                    android:maxLines='2'
+                    android:textColor="@color/cinza_mais_branco"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="@id/local_info_dimensao_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/local_info_dimensao_label"
+                    app:layout_constraintTop_toTopOf="@id/local_info_dimensao_label"
+                    tools:text="@string/string_dimensao_teste" />
+
+                <View
+                    android:id='@+id/linha_layout_5'
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/local_info_dimensao_label" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

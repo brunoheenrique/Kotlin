@@ -3,6 +3,7 @@ package br.com.projectrickmorty.view.activity
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -27,7 +28,7 @@ class CharacterInfoActivity : AppCompatActivity() {
         toolbar?.setDisplayHomeAsUpEnabled(true)
         toolbar?.setDisplayHomeAsUpEnabled(true)
 
-        val id = intent.getIntExtra("id", 1)
+        var id = intent.getIntExtra("id", 1)
 
         val nomeTexto = findViewById<TextView>(R.id.character_info_name)
         val statusTexto = findViewById<TextView>(R.id.character_info_status)
@@ -36,6 +37,21 @@ class CharacterInfoActivity : AppCompatActivity() {
         val imagemChar = findViewById<ImageView>(R.id.character_info_imageview)
         val origemTexto = findViewById<TextView>(R.id.character_info_origem)
         val bolinhaStatus = findViewById<ImageView>(R.id.bolinha_status_info)
+        val botaoProxChar = findViewById<ImageButton>(R.id.botao_proximo_personagem)
+        val botaoCharAnterior= findViewById<ImageButton>(R.id.botao_personagem_anterior)
+
+        botaoProxChar.setOnClickListener {
+            if(id<826){
+                id += 1
+                viewModel.refreshCharacter(id)
+            }
+        }
+        botaoCharAnterior.setOnClickListener {
+            if(id>1){
+                id -=1
+                viewModel.refreshCharacter(id)
+            }
+        }
 
         viewModel.refreshCharacter(id)
         viewModel.characterByIdLiveData.observe(this) { response ->
@@ -48,10 +64,7 @@ class CharacterInfoActivity : AppCompatActivity() {
                 return@observe
             }
 
-            origemTexto.setOnClickListener {
-                val pagina = response.origin.url
-                defineIdPaginaNoClick(pagina)
-            }
+            configuraListenerDeOrigemTexto(origemTexto, response)
 
             defineGenero(response, generoTexto)
 
@@ -63,6 +76,16 @@ class CharacterInfoActivity : AppCompatActivity() {
             origemTexto.text = response.origin.name
             Picasso.get().load(response.image).into(imagemChar)
 
+        }
+    }
+
+    private fun configuraListenerDeOrigemTexto(
+        origemTexto: TextView,
+        response: CharPosts
+    ) {
+        origemTexto.setOnClickListener {
+            val pagina = response.origin.url
+            defineIdPaginaNoClick(pagina)
         }
     }
 

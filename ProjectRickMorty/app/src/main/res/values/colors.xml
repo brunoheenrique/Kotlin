@@ -21,4 +21,5 @@
     <color name="transparente">#00FFFFFF</color>
     <color name="cinza_meio_transparente">#BFBAB6B6</color>
     <color name="cinza_escuro">#534F4F</color>
+    <color name="cor_gradiente">#ccc</color>
 </resources>
