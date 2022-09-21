@@ -12,10 +12,15 @@
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/botao_personagens_arredondado.xml" value="0.1595" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/botao_pressionado.xml" value="0.1555" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/formato_arredondado_imagem.xml" value="0.1555" />
+        <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/ic_baseline_arrow_left_24.xml" value="0.1545" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/ic_circle_arrow_left.xml" value="0.124" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/ic_circle_arrow_right.xml" value="0.124" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/ic_launcher_background.xml" value="0.149" />
+        <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/ic_rick_backgroun6.xml" value="0.145" />
+        <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/ic_rick_morty_launcher.xml" value="0.145" />
+        <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/ic_simple_arrow_right.xml" value="0.145" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/itens_das_listas.xml" value="0.154" />
+        <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/drawable/square_arrow_left.xml" value="0.1545" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/layout-v31/activity_character_info.xml" value="0.16666666666666666" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/layout/activity_character_info.xml" value="0.22" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/layout/activity_character_list.xml" value="0.22" />
@@ -28,8 +33,10 @@
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/layout/item_character_list.xml" value="0.22" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/layout/item_episode_list.xml" value="0.1513157894736842" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/layout/item_local_list.xml" value="0.1796875" />
+        <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/layout/switch_item.xml" value="0.10346301838392476" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/menu/menu_toolbar.xml" value="0.22445489525438223" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/mipmap-anydpi-v26/ic_background_menu.xml" value="0.153" />
+        <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1545" />
         <entry key="..\:/Dev/Kotlin/ProjectRickMorty/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.153" />
       </map>
     </option>
