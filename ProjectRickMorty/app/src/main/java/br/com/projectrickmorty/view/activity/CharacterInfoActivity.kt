@@ -37,8 +37,8 @@ class CharacterInfoActivity : AppCompatActivity() {
         val imagemChar = findViewById<ImageView>(R.id.character_info_imageview)
         val origemTexto = findViewById<TextView>(R.id.character_info_origem)
         val bolinhaStatus = findViewById<ImageView>(R.id.bolinha_status_info)
-        val botaoProxChar = findViewById<ImageButton>(R.id.botao_proximo_personagem)
-        val botaoCharAnterior= findViewById<ImageButton>(R.id.botao_personagem_anterior)
+        val botaoProxChar = findViewById<ImageButton>(R.id.botao_proximo_local)
+        val botaoCharAnterior= findViewById<ImageButton>(R.id.botao_local_anterior)
 
         botaoProxChar.setOnClickListener {
             if(id<826){

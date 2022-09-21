@@ -53,7 +53,7 @@
                     android:id="@+id/character_info_name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
                     android:ellipsize="end"
                     android:maxLines="1"
@@ -233,28 +233,28 @@
                     app:layout_constraintTop_toBottomOf="@id/character_info_label_origem" />
 
                 <ImageButton
-                    android:id='@+id/botao_personagem_anterior'
+                    android:id='@+id/botao_local_anterior'
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background='@drawable/square_left_arrow_button'
                     android:contentDescription="@string/content_description_images"
                     android:elevation="50dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/guideline_charInfo"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_episodeInfo"
                     app:layout_constraintHorizontal_bias="0"
                     app:layout_constraintStart_toStartOf="@id/linha_layout_4"
                     app:layout_constraintTop_toBottomOf="@id/linha_layout_4"
                     tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
 
                 <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline_charInfo"
+                    android:id="@+id/guideline_episodeInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_begin="200dp" />
 
                 <ImageButton
-                    android:id='@+id/botao_proximo_personagem'
+                    android:id='@+id/botao_proximo_local'
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background='@drawable/square_right_arrow_button'
@@ -263,7 +263,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@id/linha_layout_4"
                     app:layout_constraintHorizontal_bias="1"
-                    app:layout_constraintStart_toEndOf="@id/guideline_charInfo"
+                    app:layout_constraintStart_toEndOf="@id/guideline_episodeInfo"
                     app:layout_constraintTop_toBottomOf="@id/linha_layout_4"
                     tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
 

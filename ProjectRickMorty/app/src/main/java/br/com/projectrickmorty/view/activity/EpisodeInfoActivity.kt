@@ -1,6 +1,7 @@
 package br.com.projectrickmorty.view.activity
 
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -21,14 +22,30 @@ class EpisodeInfoActivity : AppCompatActivity() {
         toolbar?.setDisplayHomeAsUpEnabled(true)
         toolbar?.setDisplayHomeAsUpEnabled(true)
 
-        val id = intent.getIntExtra("id",1)
+        var id = intent.getIntExtra("id", 1)
 
         val nomeTexto = findViewById<TextView>(R.id.episode_info_nome)
         val codigoTexto = findViewById<TextView>(R.id.episode_info_code_ep)
         val airDateTexto = findViewById<TextView>(R.id.episode_info_air_data)
+        val botaoProxEp = findViewById<ImageButton>(R.id.botao_proximo_local)
+        val botaoEpAnterior = findViewById<ImageButton>(R.id.botao_local_anterior)
+
+        botaoProxEp.setOnClickListener {
+            if (id < 51) {
+                id += 1
+                viewModel.refreshEpisode(id)
+            }
+        }
+
+        botaoEpAnterior.setOnClickListener {
+            if (id > 1) {
+                id -= 1
+                viewModel.refreshEpisode(id)
+            }
+        }
 
         viewModel.refreshEpisode(id)
-        viewModel.episodeByIdLiveData.observe(this){response ->
+        viewModel.episodeByIdLiveData.observe(this) { response ->
             if (response == null) {
                 Toast.makeText(
                     this@EpisodeInfoActivity,
