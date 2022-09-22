@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.CharacterListActivity"
+    android:background="@drawable/rick_backgroun7">
+
+    <ImageButton
+        android:id="@+id/botao_charlist_proxima_pagina"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:background = "@drawable/ic_circle_arrow_right"
+        android:contentDescription="@string/content_description_images"
+        app:layout_constraintBottom_toTopOf="@id/character_list_recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@id/botao_charlist_pagina_anterior"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/charlist_pagina_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/character_list_recyclerview"
+        app:layout_constraintEnd_toStartOf="@id/botao_charlist_proxima_pagina"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@id/botao_charlist_pagina_anterior"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2" />
+
+    <ImageButton
+        android:id="@+id/botao_charlist_pagina_anterior"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background = "@drawable/ic_circle_arrow_left"
+        android:contentDescription="@string/content_description_images"
+        app:layout_constraintBottom_toTopOf="@id/character_list_recyclerview"
+        app:layout_constraintEnd_toStartOf="@id/botao_charlist_proxima_pagina"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/character_list_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background = "@color/transparente"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botao_charlist_pagina_anterior"
+        tools:listitem="@layout/item_character_list" />
+</androidx.constraintlayout.widget.ConstraintLayout>

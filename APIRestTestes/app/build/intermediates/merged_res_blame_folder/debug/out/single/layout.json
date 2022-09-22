@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.apiresttestes.app-mergeDebugResources-4:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.apiresttestes.app-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "br.com.apiresttestes.app-mergeDebugResources-4:/layout/activity_main.xml",
+        "source": "br.com.apiresttestes.app-main-7:/layout/activity_main.xml"
+    }
+]

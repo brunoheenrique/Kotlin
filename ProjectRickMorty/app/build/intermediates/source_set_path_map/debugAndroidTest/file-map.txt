@@ -1,0 +1,7 @@
+br.com.projectrickmorty.test.app-androidTest-0 C:\Dev\Kotlin\ProjectRickMorty\app\build\generated\res\resValues\androidTest\debug
+br.com.projectrickmorty.test.app-androidTest-1 C:\Dev\Kotlin\ProjectRickMorty\app\build\generated\res\rs\androidTest\debug
+br.com.projectrickmorty.test.app-mergeDebugAndroidTestResources-2 C:\Dev\Kotlin\ProjectRickMorty\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+br.com.projectrickmorty.test.app-mergeDebugAndroidTestResources-3 C:\Dev\Kotlin\ProjectRickMorty\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+br.com.projectrickmorty.test.app-merged_res-4 C:\Dev\Kotlin\ProjectRickMorty\app\build\intermediates\merged_res\debugAndroidTest
+br.com.projectrickmorty.test.app-androidTest-5 C:\Dev\Kotlin\ProjectRickMorty\app\src\androidTest\res
+br.com.projectrickmorty.test.app-androidTestDebug-6 C:\Dev\Kotlin\ProjectRickMorty\app\src\androidTestDebug\res

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout-v31\\activity_character_info.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout-v31\\activity_character_info.xml"
+    },
+    {
+        "merged": "br.com.projectrickmorty.app-mergeDebugResources-4:/layout-v31/activity_character_info.xml",
+        "source": "br.com.projectrickmorty.app-main-7:/layout-v31/activity_character_info.xml"
+    }
+]

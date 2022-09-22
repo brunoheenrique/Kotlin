@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/API_Rest_Testes.iml" filepath="$PROJECT_DIR$/.idea/modules/API_Rest_Testes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/API_Rest_Testes.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/API_Rest_Testes.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/API_Rest_Testes.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/API_Rest_Testes.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/API_Rest_Testes.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/API_Rest_Testes.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/API_Rest_Testes.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/API_Rest_Testes.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

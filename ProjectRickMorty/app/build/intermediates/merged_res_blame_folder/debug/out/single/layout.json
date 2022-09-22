@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\activity_character_info.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_character_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\item_local_list.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\item_local_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\item_character_list.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\item_character_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\activity_local_info.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_local_info.xml"
+    },
+    {
+        "merged": "br.com.projectrickmorty.app-mergeDebugResources-4:/layout/activity_episode_info.xml",
+        "source": "br.com.projectrickmorty.app-main-7:/layout/activity_episode_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\activity_episode_list.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_episode_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\activity_main_menu.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\activity_character_list.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_character_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\item_episode_list.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\item_episode_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\activity_episode_info.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_episode_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\activity_local_list.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_local_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-mergeDebugResources-4:\\layout\\switch_item.xml",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\switch_item.xml"
+    }
+]

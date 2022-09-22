@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/content_description_images"
+    android:fillViewport='true'
+    android:overScrollMode='never'>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_azul_escuro_rick">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="@color/transparente"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background = '@drawable/formato_arredondado_cardview'>
+
+                <ImageView
+                    android:id="@+id/character_info_imageview"
+                    android:layout_width="390dp"
+                    android:layout_height="310dp"
+                    android:background="@drawable/formato_arredondado_imagem"
+                    android:clipToOutline="true"
+                    android:contentDescription="@string/content_description_images"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25"
+                    app:srcCompat="@drawable/rick_profile_1"
+                    tools:ignore="ImageContrastCheck"
+                    tools:targetApi="s" />
+
+                <TextView
+                    android:id="@+id/character_info_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="58sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/casual_hardcore"
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_1"
+                    app:layout_constraintEnd_toStartOf="@id/character_info_genero"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.2"
+                    tools:ignore="TextContrastCheck"
+                    tools:layout_editor_absoluteY="456dp"
+                    tools:text="@string/string_teste_nome" />
+
+                <View
+                    android:id='@+id/linha_layout_1'
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_marginBottom="37dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/character_info_imageview"
+                    app:layout_constraintEnd_toEndOf="@id/character_info_name"
+                    app:layout_constraintStart_toStartOf="@id/character_info_name"
+                    app:layout_constraintTop_toBottomOf="@id/character_info_name" />
+
+                <ImageView
+                    android:id="@+id/bolinha_status_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="157dp"
+                    android:contentDescription="@string/content_description_images"
+                    app:layout_constraintBottom_toBottomOf="@id/character_info_status"
+                    app:layout_constraintEnd_toStartOf="@id/bolinha_status_info"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/character_info_status"
+                    app:srcCompat="@drawable/ic_bolinha_status"
+                    app:tint="@color/verde_limao"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/character_info_status"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="160dp"
+                    android:textColor="@color/verde_limao"
+                    android:textSize="33sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/new_era_casual_regular"
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toEndOf="@id/bolinha_status_info"
+                    app:layout_constraintTop_toBottomOf="@id/character_info_imageview"
+                    app:layout_constraintVertical_bias="0.02"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="@string/string_status" />
+
+                <View
+                    android:id='@+id/linha_layout_2'
+                    android:layout_width="380dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/character_info_label_specie"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bolinha_status_info" />
+
+                <TextView
+                    android:id="@+id/character_info_label_specie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily='@font/new_era_casual_regular'
+                    android:text="@string/string_specie_label"
+                    android:textColor="@color/cinza_mais_branco"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
+                    app:layout_constraintStart_toStartOf="@id/linha_layout_2"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_2"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/character_info_specie"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/new_era_casual_regular"
+                    app:layout_constraintBottom_toBottomOf="@id/character_info_label_specie"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/character_info_label_specie"
+                    app:layout_constraintTop_toTopOf="@id/character_info_label_specie"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="@string/string_specie" />
+
+                <View
+                    android:id='@+id/linha_layout_3'
+                    android:layout_width="380dp"
+                    android:layout_height="5dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/character_info_label_origem"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/character_info_label_specie" />
+
+                <TextView
+                    android:id="@+id/character_info_genero"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/azul_claro_rick"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintBottom_toBottomOf="@id/character_info_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/character_info_name"
+                    app:layout_constraintTop_toTopOf="@id/character_info_name"
+                    tools:background="@drawable/ic_male"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="@string/content_description_images" />
+
+                <TextView
+                    android:id="@+id/character_info_label_origem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily='@font/new_era_casual_regular'
+                    android:text="@string/string_origem_label"
+                    android:textColor="@color/cinza_mais_branco"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/linha_layout_4"
+                    app:layout_constraintStart_toStartOf="@id/linha_layout_3"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_3"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/character_info_origem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/new_era_casual_regular"
+                    app:layout_constraintBottom_toBottomOf="@id/character_info_label_origem"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/character_info_label_origem"
+                    app:layout_constraintTop_toTopOf="@id/character_info_label_origem"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="@string/string_origem" />
+
+                <View
+                    android:id='@+id/linha_layout_4'
+                    android:layout_width="380dp"
+                    android:layout_height="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/character_info_label_origem" />
+
+                <ImageButton
+                    android:id='@+id/botao_local_anterior'
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background='@drawable/square_left_arrow_button'
+                    android:contentDescription="@string/content_description_images"
+                    android:elevation="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_episodeInfo"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="@id/linha_layout_4"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_4"
+                    tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_episodeInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="200dp" />
+
+                <ImageButton
+                    android:id='@+id/botao_proximo_local'
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background='@drawable/square_right_arrow_button'
+                    android:contentDescription="@string/content_description_images"
+                    android:elevation="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/linha_layout_4"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintStart_toEndOf="@id/guideline_episodeInfo"
+                    app:layout_constraintTop_toBottomOf="@id/linha_layout_4"
+                    tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

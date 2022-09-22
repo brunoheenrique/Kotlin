@@ -1,0 +1,346 @@
+[
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_card_female_unchecked.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_card_female_unchecked.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_card_genderless_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_card_genderless_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_card_genderless.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_card_genderless.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_card_male_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_card_male_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_card_female.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_card_female.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_card_female_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_card_female_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_card_female_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_card_female_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_card_male.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_card_male.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_checkbox_genderless_selector.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\checkbox_genderless_selector.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_checkbox_female_selector.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\checkbox_female_selector.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_card_unknown.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\ic_card_unknown.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_app.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\navigation\\nav_app.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_painel.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-xxxhdpi\\painel.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_card_female.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_card_female.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_card_male_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_card_male_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_card_male.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_card_male.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_card_male_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_card_male_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_card_genderless.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_card_genderless.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_card_female.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_card_female.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_card_male.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_card_male.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_card_female.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_card_female.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_painel.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-mdpi\\painel.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_card_male.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_card_male.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_card_male.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_card_male.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_card_female.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_card_female.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_card_female_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_card_female_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\layout\\item_list.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_logo_splash.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-xxhdpi\\logo_splash.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_splash.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-hdpi\\logo_splash.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_painel.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-xhdpi\\painel.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_card_male_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_card_male_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_card_genderless_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_card_genderless_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_card_genderless.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_card_genderless.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\color_costum_chip_color.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\color\\costum_chip_color.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_logo_splash.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-mdpi\\logo_splash.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_card_female_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_card_female_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_filter.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\background_filter.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_filter.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\layout\\fragment_filter.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_card_female_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_card_female_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_button.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\background_button.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_painel.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-hdpi\\painel.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_card_genderless.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_card_genderless.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_search.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\background_search.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logo_splash.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-xhdpi\\logo_splash.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_card_genderless_unchecked.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_card_genderless_unchecked.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_card_genderless_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_card_genderless_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_card_female.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_card_female.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_logo_splash.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-xxxhdpi\\logo_splash.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_painel.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable-xxhdpi\\painel.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_card_male_unchecked.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_card_male_unchecked.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_card_male_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_card_male_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_card_genderless_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_card_genderless_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_card_female_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_card_female_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_card_male.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_card_male.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_checkbox_unknown_selector.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\checkbox_unknown_selector.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_card_unknown_unchecked.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\ic_card_unknown_unchecked.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_checkbox_male_selector.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\checkbox_male_selector.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_card_genderless_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_card_genderless_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_detail.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\layout\\fragment_detail.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_card_female.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_card_female.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_card_genderless_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_card_genderless_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_list.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\layout\\fragment_list.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_filter.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\ic_filter.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_card_male.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_card_male.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_card_genderless.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_card_genderless.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_card_male_unchecked.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_card_male_unchecked.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash_screen_backgroud.xml.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\splash_screen_backgroud.xml"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_card_genderless.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_card_genderless.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_card_genderless.png.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_card_genderless.png"
+    },
+    {
+        "merged": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_imgchar.jpeg.flat",
+        "source": "C:\\Dev\\Kotlin\\Rick-And-Morty-API-Kotlin-master\\Rick-And-Morty-API-Kotlin-master\\app\\src\\main\\res\\drawable\\imgchar.jpeg"
+    }
+]

@@ -1,0 +1,112 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.apiresttestes"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:6:5-8:40
+11-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:7:9-51
+12
+13    <permission
+13-->[androidx.core:core:1.9.0] C:\Users\2902555972\.gradle\caches\transforms-3\a95afa26f328281bbfa4f3c39ce0f562\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+14        android:name="br.com.apiresttestes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.9.0] C:\Users\2902555972\.gradle\caches\transforms-3\a95afa26f328281bbfa4f3c39ce0f562\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.9.0] C:\Users\2902555972\.gradle\caches\transforms-3\a95afa26f328281bbfa4f3c39ce0f562\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="br.com.apiresttestes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.9.0] C:\Users\2902555972\.gradle\caches\transforms-3\a95afa26f328281bbfa4f3c39ce0f562\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] C:\Users\2902555972\.gradle\caches\transforms-3\a95afa26f328281bbfa4f3c39ce0f562\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:10:5-29:19
+20        android:allowBackup="true"
+20-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:11:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.9.0] C:\Users\2902555972\.gradle\caches\transforms-3\a95afa26f328281bbfa4f3c39ce0f562\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:12:9-65
+23        android:debuggable="true"
+24        android:fullBackupContent="@xml/backup_rules"
+24-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:13:9-54
+25        android:icon="@mipmap/ic_launcher"
+25-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:14:9-43
+26        android:label="@string/app_name"
+26-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:15:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:16:9-54
+28        android:supportsRtl="true"
+28-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:17:9-35
+29        android:testOnly="true"
+30        android:theme="@style/Theme.APIRestTestes" >
+30-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:18:9-51
+31        <activity
+31-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:20:9-28:20
+32            android:name="br.com.apiresttestes.MainActivity"
+32-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:21:13-41
+33            android:exported="true" >
+33-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:22:13-36
+34            <intent-filter>
+34-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:23:13-27:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:24:17-69
+35-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:24:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:26:17-77
+37-->C:\Dev\Kotlin\APIRestTestes\app\src\main\AndroidManifest.xml:26:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <uses-library
+41-->[androidx.window:window:1.0.0] C:\Users\2902555972\.gradle\caches\transforms-3\c6bfbdeac1a49c42465e9df215311161\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+42            android:name="androidx.window.extensions"
+42-->[androidx.window:window:1.0.0] C:\Users\2902555972\.gradle\caches\transforms-3\c6bfbdeac1a49c42465e9df215311161\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+43            android:required="false" />
+43-->[androidx.window:window:1.0.0] C:\Users\2902555972\.gradle\caches\transforms-3\c6bfbdeac1a49c42465e9df215311161\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+44        <uses-library
+44-->[androidx.window:window:1.0.0] C:\Users\2902555972\.gradle\caches\transforms-3\c6bfbdeac1a49c42465e9df215311161\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+45            android:name="androidx.window.sidecar"
+45-->[androidx.window:window:1.0.0] C:\Users\2902555972\.gradle\caches\transforms-3\c6bfbdeac1a49c42465e9df215311161\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+46            android:required="false" />
+46-->[androidx.window:window:1.0.0] C:\Users\2902555972\.gradle\caches\transforms-3\c6bfbdeac1a49c42465e9df215311161\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+47
+48        <provider
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\2902555972\.gradle\caches\transforms-3\292e7731fbdf6e8995b58ff65f2f2204\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+49            android:name="androidx.startup.InitializationProvider"
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\2902555972\.gradle\caches\transforms-3\292e7731fbdf6e8995b58ff65f2f2204\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+50            android:authorities="br.com.apiresttestes.androidx-startup"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\2902555972\.gradle\caches\transforms-3\292e7731fbdf6e8995b58ff65f2f2204\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+51            android:exported="false" >
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\2902555972\.gradle\caches\transforms-3\292e7731fbdf6e8995b58ff65f2f2204\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+52            <meta-data
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\2902555972\.gradle\caches\transforms-3\292e7731fbdf6e8995b58ff65f2f2204\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\2902555972\.gradle\caches\transforms-3\292e7731fbdf6e8995b58ff65f2f2204\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+54                android:value="androidx.startup" />
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\2902555972\.gradle\caches\transforms-3\292e7731fbdf6e8995b58ff65f2f2204\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\2902555972\.gradle\caches\transforms-3\627d9540bbb455107febe67d504a7fea\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\2902555972\.gradle\caches\transforms-3\627d9540bbb455107febe67d504a7fea\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+57                android:value="androidx.startup" />
+57-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\2902555972\.gradle\caches\transforms-3\627d9540bbb455107febe67d504a7fea\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+58        </provider>
+59        <provider
+59-->[com.squareup.picasso:picasso:2.71828] C:\Users\2902555972\.gradle\caches\transforms-3\f4f0c055031692393b1c627d3b01cc9a\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+60            android:name="com.squareup.picasso.PicassoProvider"
+60-->[com.squareup.picasso:picasso:2.71828] C:\Users\2902555972\.gradle\caches\transforms-3\f4f0c055031692393b1c627d3b01cc9a\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
+61            android:authorities="br.com.apiresttestes.com.squareup.picasso"
+61-->[com.squareup.picasso:picasso:2.71828] C:\Users\2902555972\.gradle\caches\transforms-3\f4f0c055031692393b1c627d3b01cc9a\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
+62            android:exported="false" />
+62-->[com.squareup.picasso:picasso:2.71828] C:\Users\2902555972\.gradle\caches\transforms-3\f4f0c055031692393b1c627d3b01cc9a\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
+63    </application>
+64
+65</manifest>

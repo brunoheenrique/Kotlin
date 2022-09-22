@@ -1,0 +1,438 @@
+[
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_activity_character_info.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_character_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_activity_episode_list.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_episode_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_item_character_list.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\item_character_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_switch_item.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\switch_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxhdpi_ic_male.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxhdpi\\ic_male.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xhdpi_ic_wallpaper_menu.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xhdpi\\ic_wallpaper_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-anydpi_ic_search_button.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-anydpi\\ic_search_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_ic_circle_arrow_right.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\ic_circle_arrow_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_botao_normal.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\botao_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_ic_circle_arrow_left.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\ic_circle_arrow_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-anydpi-v26_ic_logo_menu.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-anydpi-v26\\ic_logo_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxxhdpi_ic_female.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxxhdpi\\ic_female.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-hdpi_ic_bolinha_status.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-hdpi\\ic_bolinha_status.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout-v31_activity_character_info.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout-v31\\activity_character_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_square_elevation_form.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\square_elevation_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xhdpi_ic_background_menu_foreground.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xhdpi\\ic_background_menu_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxhdpi_ic_search_button.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxhdpi\\ic_search_button.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xhdpi_ic_logo_menu.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xhdpi\\ic_logo_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-mdpi_ic_search_button.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-mdpi\\ic_search_button.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_activity_local_list.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_local_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-mdpi_ic_question.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-mdpi\\ic_question.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_ic_baseline_arrow_left_24.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\ic_baseline_arrow_left_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_ic_rick_morty_launcher.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\ic_rick_morty_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_fundo_azul_escuro_rick.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\fundo_azul_escuro_rick.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxhdpi_ic_unknow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxhdpi\\ic_unknow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_rick_profile_1.jpg.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\rick_profile_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\menu_menu_toolbar.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\menu\\menu_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_square_right_arrow_button.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\square_right_arrow_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-mdpi_ic_female.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-mdpi\\ic_female.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xhdpi_ic_logo_menu_foreground.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xhdpi\\ic_logo_menu_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_botao_com_efeito_clique.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\botao_com_efeito_clique.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xhdpi_ic_search_button.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xhdpi\\ic_search_button.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\font_new_era_casual_bold_italic.ttf.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\font\\new_era_casual_bold_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_rick_backgroun3.jpg.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\rick_backgroun3.jpg"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-hdpi_ic_search_button.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-hdpi\\ic_search_button.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-hdpi_ic_unknow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-hdpi\\ic_unknow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxhdpi_ic_bolinha_status.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxhdpi\\ic_bolinha_status.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_formato_arredondado_imagem.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\formato_arredondado_imagem.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxxhdpi_ic_male.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxxhdpi\\ic_male.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-mdpi_ic_left_arrow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-mdpi\\ic_left_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxhdpi_ic_left_arrow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxhdpi\\ic_left_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_item_episode_list.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\item_episode_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xhdpi_ic_right_arrow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xhdpi\\ic_right_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-mdpi_formato_arredondado_cardview.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-mdpi\\formato_arredondado_cardview.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xhdpi_ic_background_menu.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xhdpi\\ic_background_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_activity_character_list.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_character_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_item_local_list.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\item_local_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-anydpi_ic_unknow.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-anydpi\\ic_unknow.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-anydpi_ic_right_arrow.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-anydpi\\ic_right_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\font_alternate.ttf.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\font\\alternate.ttf"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_rick_backgroun6.jpg.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\rick_backgroun6.jpg"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-anydpi_ic_bolinha_status.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-anydpi\\ic_bolinha_status.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-hdpi_ic_right_arrow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-hdpi\\ic_right_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xhdpi_ic_left_arrow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xhdpi\\ic_left_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-hdpi_ic_left_arrow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-hdpi\\ic_left_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xhdpi_ic_question.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xhdpi\\ic_question.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\font_font_static.ttf.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\font\\font_static.ttf"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xhdpi_ic_unknow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xhdpi\\ic_unknow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_activity_local_info.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_local_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-mdpi_ic_bolinha_status.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-mdpi\\ic_bolinha_status.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-hdpi_ic_question.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-hdpi\\ic_question.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_botao_pressionado.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\botao_pressionado.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-mdpi_ic_right_arrow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-mdpi\\ic_right_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_rick_backgroun5.jpg.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\rick_backgroun5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-hdpi_ic_male.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-hdpi\\ic_male.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xhdpi_ic_male.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xhdpi\\ic_male.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxhdpi_ic_right_arrow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxhdpi\\ic_right_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_rick_backgroun4.jpg.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\rick_backgroun4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\font_new_era_casual_regular.ttf.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\font\\new_era_casual_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\font_casual_hardcore.otf.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\font\\casual_hardcore.otf"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_activity_episode_info.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_episode_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\font_new_era_casual_bold.ttf.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\font\\new_era_casual_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xhdpi_ic_bolinha_status.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xhdpi\\ic_bolinha_status.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxxhdpi_ic_question.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxxhdpi\\ic_question.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxhdpi_ic_question.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxhdpi\\ic_question.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-anydpi-v26_ic_wallpaper_menu.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-anydpi-v26\\ic_wallpaper_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_itens_das_listas.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\itens_das_listas.xml"
+    },
+    {
+        "merged": "br.com.projectrickmorty.app-merged_res-5:/layout_activity_episode_info.xml.flat",
+        "source": "br.com.projectrickmorty.app-main-7:/layout/activity_episode_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-anydpi_ic_left_arrow.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-anydpi\\ic_left_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-anydpi-v26_ic_background_menu.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-anydpi-v26\\ic_background_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_ic_simple_arrow_left.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\ic_simple_arrow_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_rick_backgroun7.jpg.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\rick_backgroun7.jpg"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-hdpi_ic_female.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-hdpi\\ic_female.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_ic_simple_arrow_right.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\ic_simple_arrow_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-mdpi_ic_male.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-mdpi\\ic_male.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xxhdpi_ic_female.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xxhdpi\\ic_female.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-mdpi_ic_unknow.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-mdpi\\ic_unknow.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\layout_activity_main_menu.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\layout\\activity_main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_botao_arredondado.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\botao_arredondado.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-pngs-0:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable_square_left_arrow_button.xml.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable\\square_left_arrow_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xhdpi_ic_wallpaper_menu_foreground.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xhdpi\\ic_wallpaper_menu_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\font_new_era_casual_italic.ttf.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\font\\new_era_casual_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\drawable-xhdpi_ic_female.png.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\drawable-xhdpi\\ic_female.png"
+    },
+    {
+        "merged": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2902555972\\.gradle\\daemon\\7.5.1\\br.com.projectrickmorty.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    }
+]
