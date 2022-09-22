@@ -1,9 +1,10 @@
-package br.com.projectrickmorty.controller.retrofit
+package br.com.projectrickmorty.view
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import br.com.projectrickmorty.controller.retrofit.SharedRepository
 import br.com.projectrickmorty.model.CharPosts
 import br.com.projectrickmorty.model.EpisodePosts
 import br.com.projectrickmorty.model.LocationPosts

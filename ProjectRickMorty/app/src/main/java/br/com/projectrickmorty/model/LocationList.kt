@@ -1,5 +1,5 @@
 package br.com.projectrickmorty.model
 
-data class LocalList(
+data class LocationList(
     val results:List<LocationPosts>
 )

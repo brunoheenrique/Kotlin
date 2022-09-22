@@ -1,4 +1,4 @@
-package br.com.projectrickmorty.controller.retrofit
+package br.com.projectrickmorty.controller.retrofit.api
 
 import retrofit2.Response
 

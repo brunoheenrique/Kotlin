@@ -1,6 +1,6 @@
 package br.com.projectrickmorty.controller.retrofit.services
 
-import br.com.projectrickmorty.model.LocalList
+import br.com.projectrickmorty.model.LocationList
 import br.com.projectrickmorty.model.LocationPosts
 import retrofit2.Response
 import retrofit2.http.GET
@@ -13,5 +13,5 @@ interface LocationService {
     suspend fun getLocalPost(@Path("id") id: Int): Response<LocationPosts>
 
     @GET("location")
-    suspend fun getLocalListPost(@Query("page") page: Int): Response<LocalList>
+    suspend fun getLocalListPost(@Query("page") page: Int): Response<LocationList>
 }

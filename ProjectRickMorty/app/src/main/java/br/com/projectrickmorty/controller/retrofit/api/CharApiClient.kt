@@ -1,6 +1,5 @@
 package br.com.projectrickmorty.controller.retrofit.api
 
-import br.com.projectrickmorty.controller.retrofit.SimpleResponse
 import br.com.projectrickmorty.controller.retrofit.services.CharacterService
 import br.com.projectrickmorty.model.CharPosts
 import retrofit2.Response

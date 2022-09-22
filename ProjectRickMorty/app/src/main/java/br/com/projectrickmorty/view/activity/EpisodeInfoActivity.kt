@@ -6,7 +6,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.projectrickmorty.R
-import br.com.projectrickmorty.controller.retrofit.SharedViewModel
+import br.com.projectrickmorty.view.SharedViewModel
 
 class EpisodeInfoActivity : AppCompatActivity() {
 
