@@ -1,5 +1,7 @@
 package br.com.projectrickmorty.model
 
+import br.com.projectrickmorty.model.data.LocationData
+
 data class CharPosts(
     val id : Int,
     val name : String,

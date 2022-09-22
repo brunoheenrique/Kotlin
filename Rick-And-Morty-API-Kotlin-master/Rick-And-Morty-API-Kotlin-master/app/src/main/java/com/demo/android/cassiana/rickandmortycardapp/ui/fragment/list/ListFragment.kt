@@ -36,9 +36,9 @@ class ListFragment : Fragment(R.layout.fragment_list) {
 
         getNameSearchView()
 
-        viewModel.isFilter.observe(viewLifecycleOwner, {
+        viewModel.isFilter.observe(viewLifecycleOwner) {
             txt_reset.visibility = if (it) View.VISIBLE else View.INVISIBLE
-        })
+        }
 
         txt_reset.setOnClickListener {
             viewModel.getCharacters(1)
