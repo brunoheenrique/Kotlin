@@ -79,7 +79,7 @@
                     android:layout_marginTop="40dp"
                     android:fontFamily='@font/new_era_casual_bold'
                     android:text="@string/string_label_nome"
-                    android:textColor="@color/white"
+                    android:textColor="@color/cinza_mais_branco"
                     android:textSize="36sp"
                     app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
                     app:layout_constraintStart_toStartOf="@id/linha_layout_2"
@@ -94,7 +94,7 @@
                     android:ellipsize='end'
                     android:fontFamily='@font/new_era_casual_regular'
                     android:maxLines='2'
-                    android:textColor="@color/cinza_mais_branco"
+                    android:textColor="@color/white"
                     android:textSize="26sp"
                     app:layout_constraintBottom_toBottomOf="@id/episode_info_label_name"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -117,13 +117,14 @@
 
                 <TextView
                     android:id="@+id/episode_info_label_code_ep"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="45dp"
                     android:fontFamily='@font/new_era_casual_bold'
                     android:text="@string/string_codigo_ep_label"
-                    android:textColor="@color/white"
-                    android:textSize="32sp"
+                    android:textColor="@color/cinza_mais_branco"
+                    android:textSize="28sp"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_episodeInfo"
                     app:layout_constraintStart_toStartOf="@id/linha_layout_3"
                     app:layout_constraintTop_toBottomOf="@id/linha_layout_3" />
 
@@ -134,10 +135,10 @@
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/new_era_casual_regular"
                     android:text="@string/string_codigo_ep_teste"
-                    android:textColor="@color/cinza_mais_branco"
+                    android:textColor="@color/white"
                     android:textSize="26sp"
                     app:layout_constraintBottom_toBottomOf="@id/episode_info_label_code_ep"
-                    app:layout_constraintStart_toEndOf="@id/episode_info_label_code_ep"
+                    app:layout_constraintStart_toEndOf="@id/guideline_episodeInfo"
                     app:layout_constraintTop_toTopOf="@id/episode_info_label_code_ep" />
 
                 <View
@@ -160,7 +161,7 @@
                     android:layout_marginTop="45dp"
                     android:fontFamily='@font/new_era_casual_bold'
                     android:text="@string/string_data_lancamento_label"
-                    android:textColor="@color/white"
+                    android:textColor="@color/cinza_mais_branco"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="@id/linha_layout_4"
                     app:layout_constraintTop_toBottomOf="@id/linha_layout_4" />
@@ -172,7 +173,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:fontFamily='@font/new_era_casual_regular'
-                    android:textColor="@color/cinza_mais_branco"
+                    android:textColor="@color/white"
                     android:textSize="26sp"
                     app:layout_constraintBottom_toBottomOf="@id/episode_info_label_air_data"
                     app:layout_constraintEnd_toEndOf="parent"

@@ -78,7 +78,7 @@
                     android:layout_marginTop="40dp"
                     android:fontFamily='@font/new_era_casual_bold'
                     android:text="@string/string_label_nome"
-                    android:textColor="@color/white"
+                    android:textColor="@color/cinza_mais_branco"
                     android:textSize="36sp"
                     app:layout_constraintBottom_toTopOf="@id/linha_layout_3"
                     app:layout_constraintStart_toStartOf="@id/linha_layout_2"
@@ -92,7 +92,7 @@
                     android:ellipsize='end'
                     android:fontFamily='@font/new_era_casual_regular'
                     android:maxLines='1'
-                    android:textColor="@color/cinza_mais_branco"
+                    android:textColor="@color/white"
                     android:textSize="26sp"
                     app:layout_constraintBottom_toBottomOf="@id/local_info_label_name"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +120,7 @@
                     android:layout_marginTop="40dp"
                     android:fontFamily='@font/new_era_casual_bold'
                     android:text="@string/string_tipo_label"
-                    android:textColor="@color/white"
+                    android:textColor="@color/cinza_mais_branco"
                     android:textSize="36sp"
                     app:layout_constraintStart_toStartOf="@id/linha_layout_3"
                     app:layout_constraintTop_toBottomOf="@id/linha_layout_3" />
@@ -133,7 +133,7 @@
                     android:ellipsize='end'
                     android:fontFamily='@font/new_era_casual_regular'
                     android:maxLines='2'
-                    android:textColor="@color/cinza_mais_branco"
+                    android:textColor="@color/white"
                     android:textSize="26sp"
                     app:layout_constraintBottom_toBottomOf="@id/local_info_type_label"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -161,7 +161,7 @@
                     android:layout_marginTop="45dp"
                     android:fontFamily='@font/new_era_casual_bold'
                     android:text="@string/string_dimensao_label"
-                    android:textColor="@color/white"
+                    android:textColor="@color/cinza_mais_branco"
                     android:textSize="36sp"
                     app:layout_constraintStart_toStartOf="@id/linha_layout_4"
                     app:layout_constraintTop_toBottomOf="@id/linha_layout_4" />
@@ -174,7 +174,7 @@
                     android:ellipsize='end'
                     android:fontFamily='@font/new_era_casual_regular'
                     android:maxLines='2'
-                    android:textColor="@color/cinza_mais_branco"
+                    android:textColor="@color/white"
                     android:textSize="26sp"
                     app:layout_constraintBottom_toBottomOf="@id/local_info_dimensao_label"
                     app:layout_constraintEnd_toEndOf="parent"
