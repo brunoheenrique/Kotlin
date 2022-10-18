@@ -38,7 +38,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ae940265af3d2daabdc0660884ebf365/material-1.2.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4305c3af6e0cb29a5eb86aae6e8df617/constraintlayout-2.0.4-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fe5961bfe60fb098d93d4cab6e2b707d/appcompat-1.2.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41306c35b387da786c2a342460ad460f/jetified-picasso-2.71828-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/44a031f303f7cc71c221a01c55660dda/jetified-picasso-2.71828-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c74d7e8e9dee0912a378779721d740d9/legacy-support-v4-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4feb5f951a738b11e8cc5257452927eb/jetified-viewpager2-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c46f380fb0ccdc9e98965f5cdaf1808/navigation-fragment-2.3.1-api.jar</arg>

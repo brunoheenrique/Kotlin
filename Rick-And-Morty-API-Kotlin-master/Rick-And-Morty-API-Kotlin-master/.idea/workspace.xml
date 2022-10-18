@@ -9,16 +9,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b884e129-2fbb-417f-80bd-28758df80a9f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../ProjectRickMorty/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectRickMorty/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProjectRickMorty/app/src/main/res/layout/activity_episode_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectRickMorty/app/src/main/res/layout/activity_episode_info.xml" afterDir="false" />
+    <list default="true" id="3899f035-ec77-46ae-a8b8-c309a81bfd5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Fragments_exemplo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Fragments_exemplo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Fragments_exemplo/.idea/jarRepositories.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ZF523QJ2LG]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\2902555972\.android\avd\Resizable_API_33.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -27,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="2ELhuzr8oeP2MnesurO6mPsO5Z1" />
+  <component name="ProjectId" id="2FouJYsaVRDXkcH5Y7nOxSX9syM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,13 +40,9 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="RickAndMortyCardApp.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -106,24 +103,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b884e129-2fbb-417f-80bd-28758df80a9f" name="Changes" comment="" />
-      <created>1662380998531</created>
+      <changelist id="3899f035-ec77-46ae-a8b8-c309a81bfd5c" name="Changes" comment="" />
+      <created>1665170686938</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1662380998531</updated>
+      <updated>1665170686938</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
