@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/item_list_cardview"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,15 +33,16 @@
                 android:id="@+id/item_list_imageview"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/black_border_square"
                 android:clipToOutline="true"
+                android:contentDescription="@string/blank_string"
                 android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0"
-                android:contentDescription="@string/blank_string"
                 tools:src='@drawable/bulbasaur_background_icon'
                 tools:targetApi="s" />
 
@@ -50,8 +51,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
+                android:fontFamily="@font/pokemon_hollow"
                 android:textColor="@color/black"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@id/item_type_label"
                 app:layout_constraintEnd_toStartOf="@id/item_guideline"
@@ -64,39 +66,42 @@
                 android:id="@+id/item_type_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="18sp"
+                android:fontFamily="@font/toon_around_df"
+                android:text="@string/type_label_string"
+                android:textColor="@color/dark_gray"
+                android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="@id/item_guideline"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toStartOf="@id/item_pokemon_name"
-                app:layout_constraintTop_toBottomOf="@id/item_pokemon_name"
-                android:text="@string/type_label_string" />
+                app:layout_constraintTop_toBottomOf="@id/item_pokemon_name" />
 
             <TextView
                 android:id="@+id/item_pokemon_type_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/toon_around_df"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@id/item_guideline"
-                app:layout_constraintHorizontal_bias="0"
+                android:textSize="24sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/item_pokemon_separator"
                 app:layout_constraintStart_toStartOf="@id/item_type_label"
                 app:layout_constraintTop_toBottomOf="@id/item_type_label"
-                tools:text="grass" />
+                tools:text="grass"/>
 
             <TextView
                 android:id="@+id/item_pokemon_separator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintEnd_toEndOf="@id/item_guideline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/item_pokemon_type_2"
                 app:layout_constraintStart_toEndOf="@id/item_pokemon_type_1"
                 app:layout_constraintTop_toTopOf="@id/item_pokemon_type_1"
                 tools:text="/" />
@@ -105,35 +110,19 @@
                 android:id="@+id/item_pokemon_type_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                tools:text= 'poison'
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="75dp"
+                android:fontFamily="@font/toon_around_df"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
+                android:textSize="24sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/item_guideline"
+                app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toEndOf="@id/item_pokemon_separator"
                 app:layout_constraintTop_toTopOf="@id/item_pokemon_separator"
-                app:layout_constraintEnd_toEndOf="@id/item_guideline"
-                app:layout_constraintHorizontal_bias="0"/>
-
-            <TextView
-                android:id="@+id/item_height_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/item_weight_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/item_pokemon_height"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/item_pokemon_weight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                tools:text='poison' />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
