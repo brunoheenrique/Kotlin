@@ -1,7 +1,8 @@
-package br.com.mypokedex
+package br.com.mypokedex.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.com.mypokedex.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
