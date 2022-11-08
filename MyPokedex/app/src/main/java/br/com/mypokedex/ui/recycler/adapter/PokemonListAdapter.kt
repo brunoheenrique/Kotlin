@@ -1,48 +1,37 @@
 package br.com.mypokedex.ui.recycler.adapter
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import br.com.mypokedex.R
+import br.com.mypokedex.databinding.ItemPokemonListBinding
 import br.com.mypokedex.model.PokemonPost
 import com.squareup.picasso.Picasso
 
-class PokemonListAdapter(
-    private val context: Context
-) : RecyclerView.Adapter<PokemonListAdapter.ViewHolder>() {
+class PokemonListAdapter() : RecyclerView.Adapter<PokemonListAdapter.ViewHolder>() {
 
     private var pokelist = emptyList<PokemonPost>()
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        fun bindView(item:PokemonPost) = with(itemView){
-            val imagePokemon = findViewById<ImageView>(R.id.item_list_imageview)
-            val namePokemon = findViewById<TextView>(R.id.item_pokemon_name)
-            val type1Pokemon = findViewById<TextView>(R.id.item_pokemon_type_1)
-            val type2Pokemon = findViewById<TextView>(R.id.item_pokemon_type_2)
-
-            // TODO: Load image with Glide
-
-            namePokemon.text = item.name
-            type1Pokemon.text = item.types[0].name
-
-            if (item.types.size > 1){
-                type2Pokemon.visibility = View.VISIBLE
-                type2Pokemon.text = item.types[1].name
-            }else{
-                type2Pokemon.visibility = View.GONE
+    class ViewHolder(val binding: ItemPokemonListBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+            fun bindView(pokemon: PokemonPost){
+                binding.itemPokemonName.text = pokemon.name.toString()
+                binding.itemPokemonType1.text = pokemon.types[0].toString()
+                if(pokemon.types.size >1) {
+                    binding.itemPokemonType2.visibility = View.VISIBLE
+                    binding.itemPokemonType2.text = pokemon.types[1].toString()
+                }else{
+                    binding.itemPokemonType2.visibility = View.GONE
+                }
+                Picasso.get().load(pokemon.imageUrl).into(binding.itemListImageview)
             }
-        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val inflater = LayoutInflater.from(context)
-        val view = inflater.inflate(R.layout.item_pokemon_list, parent, false)
-        return ViewHolder(view)
+        val inflater = LayoutInflater.from(parent.context)
+        val binding = ItemPokemonListBinding.inflate(inflater,parent,false)
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -53,7 +42,7 @@ class PokemonListAdapter(
     override fun getItemCount(): Int = pokelist.size
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setData(newList: List<PokemonPost>){
+    fun setData(newList: List<PokemonPost>) {
         pokelist = newList
         notifyDataSetChanged()
     }

@@ -8,7 +8,9 @@ import br.com.mypokedex.retrofit.repository.Repository
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
-class SharedViewModel(private val repository: Repository):ViewModel() {
+class SharedViewModel:ViewModel() {
+
+    private val repository = Repository()
 
     var listPokemons = MutableLiveData<Response<PokemonList>>()
 
