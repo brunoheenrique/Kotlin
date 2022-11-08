@@ -8,6 +8,10 @@ import retrofit2.Response
 
 class Repository {
 
+    suspend fun getPokemonList(page:Int):Response<PokemonList>{
+        return NetworkUtils.pokeApi.getPokemonList(page)
+    }
+
     suspend fun getPokemonId(id: Int): PokemonPost? {
         val request = NetworkUtils.pokeApiClient.getPokemonByID(id)
 
@@ -20,9 +24,5 @@ class Repository {
         }
 
         return request.body
-    }
-
-    suspend fun getPokemonList(page:Int):Response<PokemonList>{
-        return NetworkUtils.pokeApi.getPokemonList(page)
     }
 }
