@@ -9,27 +9,34 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import br.com.mypokedex.databinding.FragmentPokemonListBinding
 import br.com.mypokedex.ui.SharedViewModel
+import br.com.mypokedex.ui.recycler.adapter.PokemonListAdapter
 
 class PokemonListFragment : Fragment() {
 
-    private var pagina: Int = 1
+    private var limite: Int = 151
     private var viewModel = SharedViewModel()
     private var _binding: FragmentPokemonListBinding? = null
     private val binding get() = _binding!!
+    private var adapter = PokemonListAdapter()
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        viewModel.getPokemons(pagina)
+        viewModel.getPokemons(limite)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         viewModel.listPokemons.observe(viewLifecycleOwner) { response ->
             if (response.isSuccessful) {
+                adapter.setData(response.body()!!.results)
                 Log.d("Result", response.body()!!.results.toString())
             } else {
                 Log.d("ResultError", response.code().toString())
             }
+        }
+        binding.apply {
+            fragmentPokemonListRecyclerview.adapter = adapter
         }
     }
     override fun onCreateView(

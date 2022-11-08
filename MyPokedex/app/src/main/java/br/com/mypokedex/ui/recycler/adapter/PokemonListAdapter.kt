@@ -6,17 +6,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.mypokedex.databinding.ItemPokemonListBinding
-import br.com.mypokedex.model.PokemonPost
+import br.com.mypokedex.model.PokemonResult
 import com.squareup.picasso.Picasso
 
-class PokemonListAdapter() : RecyclerView.Adapter<PokemonListAdapter.ViewHolder>() {
+class PokemonListAdapter: RecyclerView.Adapter<PokemonListAdapter.ViewHolder>() {
 
-    private var pokelist = emptyList<PokemonPost>()
+    private var pokelist = emptyList<PokemonResult>()
 
     class ViewHolder(val binding: ItemPokemonListBinding) :
         RecyclerView.ViewHolder(binding.root) {
-            fun bindView(pokemon: PokemonPost){
-                binding.itemPokemonName.text = pokemon.name.toString()
+            fun bindView(pokemon: PokemonResult){
+                binding.itemPokemonName.text = pokemon.name
                 binding.itemPokemonType1.text = pokemon.types[0].toString()
                 if(pokemon.types.size >1) {
                     binding.itemPokemonType2.visibility = View.VISIBLE
@@ -42,7 +42,7 @@ class PokemonListAdapter() : RecyclerView.Adapter<PokemonListAdapter.ViewHolder>
     override fun getItemCount(): Int = pokelist.size
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setData(newList: List<PokemonPost>) {
+    fun setData(newList: List<PokemonResult>) {
         pokelist = newList
         notifyDataSetChanged()
     }

@@ -1,5 +1,8 @@
 package br.com.mypokedex.model
 
 data class PokemonList(
-    var results: List<PokemonPost>
+    val count:Int,
+    val next:String?,
+    val previous:String?,
+    val results: List<PokemonResult>
 )

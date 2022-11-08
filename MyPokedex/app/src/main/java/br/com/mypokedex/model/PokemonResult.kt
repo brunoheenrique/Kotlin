@@ -1,6 +1,6 @@
 package br.com.mypokedex.model
 
-data class PokemonPost(
+data class PokemonResult(
     val id: Int,
     val name: String,
     val imageUrl: String,
