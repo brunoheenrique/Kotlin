@@ -12,12 +12,14 @@ object NetworkUtils {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
+    // Utilizar na parte de detalhes para alterar ID
     private val pokeService: PokeService by lazy{
         retrofit.create(PokeService::class.java)
     }
 
-    // Utilizar na parte de detalhes para alterar ID
     val pokeApiClient = PokemonApiClient(pokeService)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Utilizar para listas
     val pokeApi: PokeService by lazy {
