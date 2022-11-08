@@ -30,6 +30,12 @@ class PokemonListAdapter(
             namePokemon.text = item.name
             type1Pokemon.text = item.types[0].name
 
+            if (item.types.size > 1){
+                type2Pokemon.visibility = View.VISIBLE
+                type2Pokemon.text = item.types[1].name
+            }else{
+                type2Pokemon.visibility = View.GONE
+            }
         }
     }
 
