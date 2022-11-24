@@ -14,5 +14,5 @@ interface PokeService {
     suspend fun getPokemonPost(@Path("id") id:Int): Response<PokemonResult>
 
     @GET("pokemon")
-    suspend fun getPokemonList(@Query("limit") limit:Int): Call<PokemonList>
+    suspend fun getPokemonList(@Query("limit") limit:Int): Response<PokemonList>
 }

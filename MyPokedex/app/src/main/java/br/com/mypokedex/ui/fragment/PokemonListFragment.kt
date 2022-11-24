@@ -17,7 +17,7 @@ class PokemonListFragment : Fragment() {
     private var viewModel = SharedViewModel()
     private var _binding: FragmentPokemonListBinding? = null
     private val binding get() = _binding!!
-    private var adapter = PokemonListAdapter()
+    private val adapter by lazy{PokemonListAdapter()}
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
